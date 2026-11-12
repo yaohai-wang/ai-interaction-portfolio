@@ -1,0 +1,23 @@
+{
+  "mode": "draft",
+  "todoEntries": 27,
+  "files": 147,
+  "externalResources": [],
+  "largestImageBytes": 397355,
+  "htmlCssJsGzipBytes": 12462,
+  "externalLinks": [
+    {
+      "url": "https://home.youkai-ou.com/",
+      "status": 200
+    },
+    {
+      "url": "https://f1.youkai-ou.com/zh/home",
+      "status": 200
+    },
+    {
+      "url": "https://youkai-ou.com/",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

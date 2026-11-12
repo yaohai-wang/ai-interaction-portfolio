@@ -1,0 +1,12 @@
+{
+  "mode": "release",
+  "todoEntries": 27,
+  "files": 147,
+  "externalResources": [],
+  "largestImageBytes": 397355,
+  "htmlCssJsGzipBytes": 12440,
+  "externalLinks": [],
+  "errors": [
+    "Unresolved TODO/draft entries: 27"
+  ]
+}

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import fs from 'node:fs';
 import YAML from 'yaml';
-const Note=z.object({x:z.number().min(0).max(1),y:z.number().min(0).max(1),title:z.string(),text:z.string()});
+const Note=z.object({x:z.number().min(0).max(1),y:z.number().min(0).max(1),title:z.string(),text:z.string(),labelX:z.number().min(0).max(1).optional(),labelY:z.number().min(0).max(1).optional()});
 const Shot=z.object({src:z.string(),caption:z.string(),alt:z.string().optional(),label:z.string().optional(),notes:z.array(Note).default([])});
 const Node=z.object({title:z.string(),detail:z.string().optional(),kind:z.enum(['ai','human','default']).default('default')});
 const Item=z.object({title:z.string(),text:z.string(),label:z.string().optional(),href:z.string().optional()});

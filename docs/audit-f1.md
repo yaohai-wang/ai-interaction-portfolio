@@ -103,7 +103,7 @@
 
 ## 截图建议与限制
 
-清单：/zh/home 首屏、首页季节速览、AI 助手空态、/zh/teams/ferrari、/zh/teams/mercedes/upgrades、/zh/championship、/zh/methodology。只点顶部 AI 助手打开空态，不发送。所有非 GET/HEAD/OPTIONS 与助手 API 均由捕获上下文阻断。等待实际 DOM、图像解码，不依赖 networkidle。
+清单：/zh/home 首屏、首页季节速览、AI 助手空态、/zh/teams/ferrari、/zh/teams/mercedes/upgrades、/zh/championship、/zh/methodology。只点顶部 AI 助手打开空态，不发送。所有非 GET/HEAD/OPTIONS 与模型生成 API 均由捕获上下文阻断，只读 context GET 允许。等待实际 DOM、图像解码，不依赖 networkidle。
 
 官方车图、肖像、标识出现在内页截图时，图注写“来源：围场智析界面；赛车/车手/队徽原素材来自 Formula 1 官方，权利归原权利人；非商业展示”。封面、总览、案例头图不要以这些素材为主体；建议用自制的页面/上下文/证据流程线图。
 

@@ -53,13 +53,13 @@
 
 | commit | 日期（+09:00） | 原始提交标题 | 素材价值 |
 |---|---|---|---|
-| `30c007c` | 2026-10-11 21:54:08 | Prepare private portfolio with isolated Cloudflare environments | 最早可恢复版本；旧桌面十主题（需实际启动核验）与后续五主题对比 |
+| `30c007c` | 2026-10-11 21:54:08 | Prepare private portfolio with isolated Cloudflare environments | 最早可恢复版本；旧桌面十主题（本轮已归档启动并截图核验）与后续五主题对比 |
 | `aea24b5` | 2026-10-11 22:42:38 | Fix Safari desk masking and update shelf and news monitor | 中间版本，窗景遮罩与桌面物件修正；可与初版同构图对比 |
 | `0deaeef` | 2026-10-12 11:05:23 | Publish integrated five-theme portfolio and personal modules | 五主题、个人介绍、音乐、理想之家等整合；适合做主要 after |
 | `fb6e425` | 2026-10-13 11:06:26 | Refresh news on entry and recover unavailable news sources | 新闻刷新语义迭代；无需将数据更新细节放到案例主视觉 |
 | `9c10322` | 2026-10-13 11:33:35 | Prefetch news immediately when entering the website | 页面进入即预取；可作为工作流事件 |
 
-建议选前三个旧版本，分别 `git archive <commit>` 导出到 portfolio 内 tmp 路径或任务临时目录。本地启动各自 `node scripts/serve.mjs`，只读静态画面。未提交的最新 F1 美术不在历史 archive，当前对照优先使用线上截图并明确出处。旧版本启动失败要记录，不通过改原仓库修复。Git 日期只能证明记录发生时间，不能据此写「两天独立完成整站」。
+建议选前三个旧版本，分别 `git archive <commit>` 导出到 portfolio 内 tmp 路径或任务临时目录。本轮已用 `scripts/capture-personal.mjs` 的独立静态服务器运行三个导出副本；不调用原项目会读取 env、刷新缓存的 `scripts/serve.mjs`。未提交的最新 F1 美术不在历史 archive，当前对照优先使用线上截图并明确出处。旧版本归档超时及重试路径已记录在 `docs/assets-personal.md`，最终三个版本均成功，不通过改原仓库修复。Git 日期只能证明记录发生时间，不能据此写「两天独立完成整站」。
 
 ## 截图配置建议（无需模型调用）
 

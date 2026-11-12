@@ -1,0 +1,239 @@
+{
+  "renderer": "macOS PDFKit PDFPage.thumbnail / AppKit NSBitmapImageRep via JXA",
+  "generatedAt": "2026-11-12T13:27:01.602Z",
+  "input": "/Users/youkaiou/就职/portfolio/output/pdf/王耀海-AI创新交互设计师-作品集-草稿.pdf",
+  "inputBytes": 3833268,
+  "inputUnchanged": true,
+  "outputDirectory": "/Users/youkaiou/就职/portfolio/tmp/qa/native",
+  "pageCount": 22,
+  "renderedPageCount": 22,
+  "targetWidth": 1200,
+  "pages": [
+    {
+      "page": 1,
+      "image": "page-01.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 90993,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 2,
+      "image": "page-02.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 142659,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 3,
+      "image": "page-03.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 137995,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 4,
+      "image": "page-04.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 124860,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 5,
+      "image": "page-05.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 221527,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 6,
+      "image": "page-06.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 128416,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 7,
+      "image": "page-07.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 140454,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 8,
+      "image": "page-08.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 375638,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 9,
+      "image": "page-09.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 376694,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 10,
+      "image": "page-10.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 130634,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 11,
+      "image": "page-11.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 131800,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 12,
+      "image": "page-12.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 188395,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 13,
+      "image": "page-13.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 212330,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 14,
+      "image": "page-14.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 283734,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 15,
+      "image": "page-15.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 117999,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 16,
+      "image": "page-16.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 132305,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 17,
+      "image": "page-17.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 153409,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 18,
+      "image": "page-18.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 167310,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 19,
+      "image": "page-19.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 208509,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 20,
+      "image": "page-20.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 399766,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 21,
+      "image": "page-21.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 159379,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    },
+    {
+      "page": 22,
+      "image": "page-22.png",
+      "width": 1200,
+      "height": 675,
+      "bytes": 113660,
+      "pdfWidthPoints": 1440,
+      "pdfHeightPoints": 810,
+      "rotation": 0
+    }
+  ],
+  "environmentNote": "Swift 6.1.2 CLT failed with duplicate SwiftBridging module definitions; this native Objective-C bridge needs no compiler or system installation.",
+  "inputSHA256": "9a8640d989224fd1709efa64d93cf8f848c2ce850b085d638a77ea2055a0216b",
+  "visualReview": {
+    "scope": "最终22页原生联系表逐页复核；关键页单页检查及页20双渲染器对照",
+    "result": "未发现缺字、黑块、缺图、重叠或裁切；模糊阴影平台差异已修复"
+  }
+}

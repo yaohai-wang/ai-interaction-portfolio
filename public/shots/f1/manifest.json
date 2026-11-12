@@ -147,5 +147,36 @@
     "bytes": 228712,
     "webp": "/shots/f1/history-f7c61d3-home.webp",
     "caption": "git archive f7c61d3；原 Vite 客户端与该提交的公开 seed 本地运行，显示时钟固定 2026-10-18。仅以只读本地 manifest 适配静态文件，助手关闭；原页面代码未改。官方赛车素材权利归原权利人；非商业展示。"
+  },
+  {
+    "id": "assistant-detail",
+    "title": "助手空态 · 完整抽屉局部",
+    "kind": "derived-crop",
+    "date": "2026-11-12T13:20:19.223Z",
+    "sourceURL": "https://f1.youkai-ou.com/zh/home",
+    "sourceId": "assistant-empty",
+    "sourceImage": "/shots/f1/assistant-empty.jpg",
+    "sourceCapturedAt": "2026-11-12T12:46:55.085Z",
+    "sourcePixels": {
+      "width": 1920,
+      "height": 1200
+    },
+    "sourceSHA256": "b298d29158e188f2c5f568138effad61140463d25d2fa9249aa33d61346008e3",
+    "cropPixels": {
+      "left": 1200,
+      "top": 0,
+      "width": 720,
+      "height": 1200
+    },
+    "transform": "sharp.extract only; no resize, retouch, generation, UI change, or live request",
+    "image": "/shots/f1/assistant-detail.jpg",
+    "webp": "/shots/f1/assistant-detail.webp",
+    "width": 720,
+    "height": 1200,
+    "bytes": 50360,
+    "webpBytes": 40388,
+    "jpegQuality": 94,
+    "webpQuality": 94,
+    "caption": "由 assistant-empty 原图裁切，保留助手完整高度及少量页面背景；仅空态与只读上下文，未发送问题，不证明真实回答可用。来源：围场智析界面；原站官方赛车素材权利归原权利人，非商业展示。"
   }
 ]

@@ -28,4 +28,4 @@
 
 ## TODO 索引
 
-运行 `npm run check` 后生成 `docs/todo-report.json`，以内容文件中的 Q 编号（K01–K17）回连本页。同一个问题可能在多页出现。
+运行 `npm run check` 后生成 `docs/todo-report.json`，以内容文件中的 K 编号（K01–K17）回连本页。同一个问题可能在多页出现。

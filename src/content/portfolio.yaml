@@ -168,7 +168,8 @@ pages:
     caption: 候选精华 80 秒；最终片段和公开权限待 Kai 确认。
     todo:
       - K02 / K03 · TODO(Kai)：本人角色、能否公开、精华范围与公开链接。
-    source: Q · review/CODEX-TASK-flow-v1.md:13；README.md:224、228、232；03-recommend.mp4；候选片段不是正式发布版。
+    source: Q ·
+      review/CODEX-TASK-flow-v1.md:13；README.md:224、228、232；03-recommend.mp4；候选片段不是正式发布版。
   - id: agent-problem
     type: decision
     case: agent
@@ -277,13 +278,17 @@ pages:
         y: 0.855
         title: 明确的生效点
         text: 点击“确认记录”才写入；录屏后续展示合计更新。
+        labelY: 0.77
       - x: 0.613
         y: 0.855
         title: 保留暂不记录的出口
         text: “先不记”让用户可以退出确认，不强迫完成记录。
+        labelX: 0.68
+        labelY: 0.88
     todo:
       - K03 · TODO(Kai)：确认这两张标注图与其他候选帧；全部素材公开权限待定。
-    source: Q · README.md:228、232 / recommend.js:22、30 / store.js:87–91；00:56.3 → 01:07.4；详见素材审阅页。
+    source: Q · README.md:228、232 / recommend.js:22、30 / store.js:87–91；00:56.3 →
+      01:07.4；详见素材审阅页。
   - id: home-intro
     type: hero
     case: ideal-home
@@ -364,14 +369,20 @@ pages:
     notes:
       - x: 0.3
         y: 0.25
+        labelX: 0.14
+        labelY: 0.17
         title: 先说明生效条件
         text: 面板明确提示：确认做过的行动之后，才会计分。
       - x: 0.42
         y: 0.45
+        labelX: 0.85
+        labelY: 0.41
         title: 自然语言输入
         text: 用户描述今天做了什么；整理后的候选仍需本人确认。
       - x: 0.5
         y: 0.76
+        labelX: 0.85
+        labelY: 0.83
         title: 愿景是前置条件
         text: 尚未保存愿景时，先给“完善愿景”入口，说明行动需要方向。
     source: H-HOME11–13 · JournalPanel.tsx:99、139–174、222–239；S-home/journal。
@@ -389,14 +400,20 @@ pages:
     notes:
       - x: 0.5
         y: 0.48
+        labelX: 0.28
+        labelY: 0.48
         title: 用空间呈现产品价值
         text: 家具与房间提供可观看的反馈对象；图中为产品样板间。
       - x: 0.5
         y: 0.925
+        labelX: 0.75
+        labelY: 0.82
         title: 视角服务观察
         text: 底部提供全景、第一视角与重置视角，方便理解同一空间。
       - x: 0.94
         y: 0.06
+        labelX: 0.79
+        labelY: 0.15
         title: 与自己的存档保持区分
         text: 返回我的房间始终可见；参观样板间不更改用户的家具与积分。
     source: H-HOME17–23 · RoomHome.tsx:142–175；设计分析待 K10；标注以样板间画面核对。
@@ -425,7 +442,8 @@ pages:
       - title: 需要本人补充
         text: 为什么选择这个方向、如何判断改版更合适，仍待 Kai 确认。
         label: ""
-    source: H · docs/design/welcome-island/CODEX_TASK.md:18–23；97bd65f → 8c468d4 → 78d0202。
+    source: H · docs/design/welcome-island/CODEX_TASK.md:18–23；97bd65f → 8c468d4 →
+      78d0202。
   - id: home-reflection
     type: reflection
     case: ideal-home
@@ -470,7 +488,8 @@ pages:
     detail: 助手入口与数据界面已核对；未发起真实问答。首页等页面只携带导航上下文。
     todo:
       - K04 / K12 · TODO(Kai)：确认角色与项目期，并手动复测 AI 回答可用性。
-    source: F · Shell.tsx；hosted/browser；context.ts:70–87；ASSISTANT_DIAGNOSIS_2026-10-24.md。
+    source: F ·
+      Shell.tsx；hosted/browser；context.ts:70–87；ASSISTANT_DIAGNOSIS_2026-10-24.md。
   - id: f1-context
     type: flow
     case: pitwall
@@ -513,7 +532,8 @@ pages:
         text: 让范围在输入前可见；减少“助手已经知道一切”的错误预期。
         label: ""
     draft: true
-    source: F · Shell.tsx:28–29；Assistant.tsx:35–108；hosted/lib/assistant/context.ts:70–87。
+    source: F ·
+      Shell.tsx:28–29；Assistant.tsx:35–108；hosted/lib/assistant/context.ts:70–87。
   - id: f1-assistant
     type: annotated-shot
     case: pitwall
@@ -521,23 +541,29 @@ pages:
     title: 先告诉用户：你正在问哪个页面。
     lead: 仅打开助手抽屉。建议问题和“解读本页”只用于预填，不把预填当作已得到答案。
     shots:
-      - src: /shots/f1/assistant-empty.jpg
-        caption: 线上只读空态；赛车、车手与标识来自原站官方素材，权利归原权利人，非商业展示。
+      - src: /shots/f1/assistant-detail.jpg
+        caption: 线上只读空态的助手局部；保留完整抽屉，未发送问题。原站官方赛车素材权利归原权利人，非商业展示。
         label: ""
         notes: []
     notes:
-      - x: 0.72
-        y: 0.14
+      - x: 0.32
+        y: 0.142
         title: 本页上下文
         text: 面板明确当前页面名称，减少用户对对话范围的猜测。
-      - x: 0.83
+        labelX: 0.83
+        labelY: 0.142
+      - x: 0.94
         y: 0.196
         title: 可用范围
         text: 不同页面返回不同范围；截图以实际可用选项为准。
-      - x: 0.83
-        y: 0.6
+        labelX: 0.9
+        labelY: 0.29
+      - x: 0.55
+        y: 0.699
         title: 从建议问题开始
         text: 空态提供问题入口；本轮未点击发送，也未验证真实回答质量。
+        labelX: 0.55
+        labelY: 0.78
     source: F · Assistant.tsx:94–108；S-f1/assistant-empty；来源展示能力见 :102、111–149。
   - id: f1-boundaries
     type: annotated-shot
@@ -553,27 +579,34 @@ pages:
     notes:
       - x: 0.83
         y: 0.14
+        labelX: 0.83
+        labelY: 0.26
         title: 保存状态一直可见
         text: 保存站次与日期出现在方法页顶部，说明数据并非实时。
       - x: 0.34
         y: 0.54
+        labelX: 0.55
+        labelY: 0.45
         title: 来源和更新规则公开
         text: 页面说明官方赛果、原始资料和失败保留最近有效数据的规则。
       - x: 0.13
         y: 0.73
+        labelX: 0.3
+        labelY: 0.77
         title: 允许回到原始资料
         text: 来源链接可继续核对；问答能力仍需另行复测，最近诊断是 provider 403。
     todo:
       - K12 · TODO(Kai)：提供手动复测结果；未确认前保留 AI 回答可用性边界。
-    source: F · RealPageContent.tsx:49–51；RefreshForecast.tsx:17；2026-10-24 诊断；预测边界见素材页。
+    source: F · RealPageContent.tsx:49–51；RefreshForecast.tsx:17；2026-10-24
+      诊断；预测边界见素材页。
   - id: desktop
     type: gallery
     case: desktop
     eyebrow: 04 / DESKTOP UNIVERSES
     title: 同一张桌面，五种表达，共享一套内容。
-    lead: 以物件和文字双入口导航；主题改变场景与界面，业务状态继续保留。
+    lead: 取舍分析：保留物件探索，也提供文字直达；切换主题时继续保留业务状态。
     role: TODO(Kai)：设计与开发职责
-    period: 提交记录始于 2026-10-11；实际项目期待确认
+    period: 提交记录始于 2026-10-11；实际项目周期待确认
     tools: Codex / 原生 JavaScript
     demo: https://youkai-ou.com/
     qr: /qr/desktop.svg
@@ -620,8 +653,8 @@ pages:
       - title: 返回桌面
         detail: ""
         kind: default
-    caption: 个人站截图；第三方角色与品牌权利归原权利人，非商业展示。角色与项目期待 K04 确认。
-    source: P01–14 · theme-provider.js / desk-chat.js；桌面为预渲染图 + DOM，非实时 3D。
+    caption: 个人站截图；第三方角色与品牌权利归原权利人，非商业展示。角色与项目周期待 K04 确认。
+    source: P01–14 · theme-provider.js / desk-chat.js；桌面为预渲染图 + DOM，非实时 3D；取舍分析待 K10 确认。
   - id: workflow
     type: build-notes
     eyebrow: WORKFLOW / VIBE CODING

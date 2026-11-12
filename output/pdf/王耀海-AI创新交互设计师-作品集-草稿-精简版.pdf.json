@@ -1,0 +1,53 @@
+{
+  "file": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿-精简版.pdf",
+  "pages": 22,
+  "bytes": 1563345,
+  "links": 13,
+  "fonts": [
+    "/AAAAAA+NotoSansSC-Thin",
+    "/BAAAAA+NotoSansSC-Thin"
+  ],
+  "allFontsEmbedded": true,
+  "ratio": 1.7777777777777777,
+  "uriLinks": [
+    "https://home.youkai-ou.com/",
+    "https://f1.youkai-ou.com/zh/home",
+    "https://youkai-ou.com/",
+    "https://home.youkai-ou.com/",
+    "https://f1.youkai-ou.com/zh/home",
+    "https://youkai-ou.com/"
+  ],
+  "internalLinks": [
+    {
+      "destination": "/agent-intro",
+      "page": 5
+    },
+    {
+      "destination": "/home-intro",
+      "page": 10
+    },
+    {
+      "destination": "/f1-intro",
+      "page": 16
+    },
+    {
+      "destination": "/desktop",
+      "page": 20
+    },
+    {
+      "destination": "/home-intro",
+      "page": 10
+    },
+    {
+      "destination": "/f1-intro",
+      "page": 16
+    },
+    {
+      "destination": "/agent-intro",
+      "page": 5
+    }
+  ],
+  "invalidInternalLinks": [],
+  "localServerLinks": false,
+  "textExtractable": true
+}

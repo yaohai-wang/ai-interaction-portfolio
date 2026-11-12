@@ -83,31 +83,66 @@ cases:
     status: 可运行 Demo / 原生 JavaScript
 pages:
   - id: cover
-    type: statement
+    type: cover
     eyebrow: KAI WANG / PORTFOLIO 2027
     title: |-
       把 AI 的能力，
       变成可理解的体验。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 王耀海 · AI 交互设计作品集
+    draft: true
+    todo:
+      - K01 · TODO(Kai)：确认封面标题与定位句。
+    source: B01 · 面向 AI 创新交互设计岗位；本地审阅草稿，未公开。
   - id: about
-    type: statement
+    type: about
     eyebrow: ABOUT / 从结构到交互
     title: 理解结构，也把概念做成可以操作的界面。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 建筑训练带来的结构感，加上亲手把概念跑起来的能力。
+    draft: true
+    items:
+      - title: 建筑结构背景
+        text: 东京科学大学建筑结构工程硕士在读，预计 2027 年 3 月毕业；日本大学建筑工程本科。
+        label: EDUCATION
+      - title: 用作品说明能力
+        text: 空间反馈、上下文助手、主题系统与交互原型。三个独立站点与一段本地原型演示。
+        label: PRACTICE
+      - title: 语言与工具
+        text: 中文母语；日语 N1；英语 TOEIC 805。已确认在 Codex 制作项目；其他工具与模型待补。
+        label: LANGUAGE / TOOLS
+      - title: 协作经历待审阅
+        text: AI 产品实习经历以本人简历与可公开范围为准，当前草稿不展开内部项目。
+        label: EXPERIENCE
+    todo:
+      - K06 / K07 / K16 · TODO(Kai)：确认实际工具、实习公开范围与教育语言资料。
+    source: B02 / P-B01–B04 · 个人站 desk-about-content.js；定位文案为草稿。
   - id: works
-    type: statement
+    type: overview
     eyebrow: SELECTED WORK / 01–04
     title: 先看理想之家，再看三种交互探索。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 主打案例：把自然语言行动整理、人工确认与空间反馈接在一起。
+    source: B / H / F / P / Q · 每个案例区分可运行产品与交互原型，不以示例数值作为成果。
   - id: principles
-    type: statement
+    type: principles
     eyebrow: POINT OF VIEW / 三条判断
     title: AI 交互，先回答人怎样参与。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 从自己的产品实现中归纳，仍待本人改写和确认。
+    draft: true
+    items:
+      - title: 输出可以成为环境的变化。
+        text: 理想之家把行动整理连接到积分、家具与房间；反馈不止停留在聊天文本。
+        label: "01"
+        href: /cases/ideal-home/
+      - title: 上下文应先被看见。
+        text: 围场助手先显示本页与允许范围；TasteTwin 先把输入转成可核对的条件。
+        label: "02"
+        href: /cases/pitwall/
+      - title: 建议与生效之间，需要人的决定。
+        text: 手记勾选后才计分，餐食确认后才记录；可见的确认点让结果有明确的归属。
+        label: "03"
+        href: /cases/agent/
+    todo:
+      - K10 · TODO(Kai)：请将这三条判断改成自己的表达。
+    source: 分析草稿；H-HOME10–14 / F-Assistant.tsx / Q-live-2d/README。
   - id: agent-intro
     type: hero
     case: agent
@@ -412,44 +447,217 @@ pages:
       - K05 / K11 · TODO(Kai)：补充真实反馈、评估理由与下一步优先级。
     source: H-HOME05–06 / 25–28 · ai-operations.ts:48–61；task-coordinator.ts:63–107。
   - id: f1-intro
-    type: statement
+    type: hero
+    case: pitwall
     eyebrow: 03 / PITWALL · 围场智析
     title: 让范围、依据和边界，先于回答出现。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 围绕 F1 数据与围场新闻的独立车迷 Web 产品，中英双语。
+    role: TODO(Kai)：确认本人设计、开发与数据工作的边界
+    period: 保留提交始于 2026-10-17；实际起止待 K04
+    tools: Codex；React / TypeScript；线上 Vite 客户端 + Worker
+    demo: https://f1.youkai-ou.com/zh/home
+    qr: /qr/pitwall.svg
+    nodes:
+      - title: 查看页面
+        detail: 当前主题
+        kind: default
+      - title: 选择范围
+        detail: 本页 / 全站 / 联网
+        kind: default
+      - title: 检查依据
+        detail: 来源与时间
+        kind: default
+    detail: 助手入口与数据界面已核对；未发起真实问答。首页等页面只携带导航上下文。
+    todo:
+      - K04 / K12 · TODO(Kai)：确认角色与项目期，并手动复测 AI 回答可用性。
+    source: F · Shell.tsx；hosted/browser；context.ts:70–87；ASSISTANT_DIAGNOSIS_2026-10-24.md。
   - id: f1-context
-    type: statement
+    type: flow
+    case: pitwall
     eyebrow: 03 / INFORMATION ARCHITECTURE
     title: 页面就是起点，但每页的证据范围不同。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 主导航覆盖车队、积分、新闻、升级、赛果与预测，助手沿页面注册可用范围。
+    nodes:
+      - title: 进入页面
+        detail: 全局入口
+        kind: default
+      - title: 打开助手
+        detail: 显示本页名称
+        kind: default
+      - title: 获取范围
+        detail: 只读 context
+        kind: default
+      - title: 选择问题
+        detail: 输入或预填
+        kind: human
+      - title: 用户发送
+        detail: 显式提交
+        kind: human
+      - title: 读取允许证据
+        detail: 部分页面仅联网
+        kind: default
+      - title: 给出回答
+        detail: 附依据与时间
+        kind: default
+      - title: 继续或停止
+        detail: 用户决定
+        kind: human
+    items:
+      - title: 站内证据页面
+        text: 车队概览、车手、积分、赛果与新闻支持相应页面证据。
+        label: ""
+      - title: 仅导航上下文
+        text: 首页、方法、预测、升级等为 webOnly，不宣称整页数据自动进入模型。
+        label: ""
+      - title: 设计取舍 · 待确认
+        text: 让范围在输入前可见；减少“助手已经知道一切”的错误预期。
+        label: ""
+    draft: true
+    source: F · Shell.tsx:28–29；Assistant.tsx:35–108；hosted/lib/assistant/context.ts:70–87。
   - id: f1-assistant
-    type: statement
+    type: annotated-shot
+    case: pitwall
     eyebrow: 03 / 可信交互 · 助手空态
     title: 先告诉用户：你正在问哪个页面。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 仅打开助手抽屉。建议问题和“解读本页”只用于预填，不把预填当作已得到答案。
+    shots:
+      - src: /shots/f1/assistant-empty.jpg
+        caption: 线上只读空态；赛车、车手与标识来自原站官方素材，权利归原权利人，非商业展示。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.72
+        y: 0.14
+        title: 本页上下文
+        text: 面板明确当前页面名称，减少用户对对话范围的猜测。
+      - x: 0.83
+        y: 0.196
+        title: 可用范围
+        text: 不同页面返回不同范围；截图以实际可用选项为准。
+      - x: 0.83
+        y: 0.6
+        title: 从建议问题开始
+        text: 空态提供问题入口；本轮未点击发送，也未验证真实回答质量。
+    source: F · Assistant.tsx:94–108；S-f1/assistant-empty；来源展示能力见 :102、111–149。
   - id: f1-boundaries
-    type: statement
+    type: annotated-shot
+    case: pitwall
     eyebrow: 03 / 实现与反思 · 方法与数据
     title: 公开计算依据，也公开尚未验证的能力。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 方法页说明来源、假设与局限；预测频率不等于确定性。
+    shots:
+      - src: /shots/f1/methodology.jpg
+        caption: 线上方法与数据页；官方素材权利归原权利人，非商业展示。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.83
+        y: 0.14
+        title: 保存状态一直可见
+        text: 保存站次与日期出现在方法页顶部，说明数据并非实时。
+      - x: 0.34
+        y: 0.54
+        title: 来源和更新规则公开
+        text: 页面说明官方赛果、原始资料和失败保留最近有效数据的规则。
+      - x: 0.13
+        y: 0.73
+        title: 允许回到原始资料
+        text: 来源链接可继续核对；问答能力仍需另行复测，最近诊断是 provider 403。
+    todo:
+      - K12 · TODO(Kai)：提供手动复测结果；未确认前保留 AI 回答可用性边界。
+    source: F · RealPageContent.tsx:49–51；RefreshForecast.tsx:17；2026-10-24 诊断；预测边界见素材页。
   - id: desktop
-    type: statement
+    type: gallery
+    case: desktop
     eyebrow: 04 / DESKTOP UNIVERSES
     title: 同一张桌面，五种表达，共享一套内容。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 以物件和文字双入口导航；主题改变场景与界面，业务状态继续保留。
+    role: TODO(Kai)：设计与开发职责
+    period: 提交记录始于 2026-10-11；实际项目期待确认
+    tools: Codex / 原生 JavaScript
+    demo: https://youkai-ou.com/
+    qr: /qr/desktop.svg
+    shots:
+      - src: /shots/personal/comic.jpg
+        caption: Comic · 物件与文字双入口
+        label: ""
+        notes:
+          - x: 0.5
+            y: 0.07
+            title: 文字入口
+            text: 与物件导航并行
+      - src: /shots/personal/cyberpunk.jpg
+        caption: Cyberpunk · 同构图
+        label: ""
+        notes: []
+      - src: /shots/personal/pixel.jpg
+        caption: Pixel · 同构图
+        label: ""
+        notes: []
+      - src: /shots/personal/blueprint.jpg
+        caption: Blueprint · 同构图
+        label: ""
+        notes: []
+      - src: /shots/personal/retro.jpg
+        caption: Retro Computer · 同构图
+        label: ""
+        notes: []
+      - src: /shots/personal/chat-empty.jpg
+        caption: AI 分身 · 公开资料与预设回答边界
+        label: ""
+        notes:
+          - x: 0.77
+            y: 0.85
+            title: 边界说明
+            text: 未连接时标明预设回答
+    nodes:
+      - title: 物件 / 文字入口
+        detail: ""
+        kind: default
+      - title: 打开共享面板
+        detail: ""
+        kind: default
+      - title: 返回桌面
+        detail: ""
+        kind: default
+    caption: 个人站截图；第三方角色与品牌权利归原权利人，非商业展示。角色与项目期待 K04 确认。
+    source: P01–14 · theme-provider.js / desk-chat.js；桌面为预渲染图 + DOM，非实时 3D。
   - id: workflow
-    type: statement
+    type: build-notes
     eyebrow: WORKFLOW / VIBE CODING
     title: 把方向、边界与验收条件留在实现过程里。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 以下工作方式由仓库任务文件与提交记录归纳，待本人确认。
+    draft: true
+    nodes:
+      - title: 明确目标
+        detail: 场景与约束
+        kind: default
+      - title: 比较小样
+        detail: 选择与反馈
+        kind: human
+      - title: 接入实现
+        detail: Codex 辅助
+        kind: default
+      - title: 对图与回归
+        detail: 检查再提交
+        kind: human
+    items:
+      - title: 先给可检查的目标
+        text: 理想之家浮岛任务同时提供布局与交互要求，明确不改室内场景；2026-10-18 改版提交可追溯。
+        label: H / 8c468d4
+      - title: 把选择过程留在文档
+        text: F1 先做入口与动效小样，再记录选择并接入；随后有页面刷新与磨砂组件迭代。
+        label: F / 460ef77 → f7c61d3
+      - title: 工具与职责分开说明
+        text: 已确认使用 Codex；设计工具、模型、手写比例和本人具体分工不从依赖或 author 字段推断。
+        label: B02 / TODO(Kai) K06
+    source: H-CODEX_TASK.md:18–23、64–75；F-UI_REFRESH 文档；P-AGENTS.md；不是工时或效果统计。
   - id: closing
-    type: statement
+    type: closing
     eyebrow: NEXT / THANK YOU
     title: 期待把这些交互判断，带进真实产品。
-    lead: 内容在 M4 整合。
-    source: 版式预留，不是最终页面。
+    lead: 王耀海 · AI 创新交互设计方向 · 2027 届
+    todo:
+      - K08 · TODO(Kai)：填写可公开的联系方式。
+      - K13 / K15 · TODO(Kai)：确认作品集域名、投递附件限制与国内网络实测。
+    source: 作品集未部署；二维码仅指向已有 Demo。Qloo 原型的公开权限与视频链接待确认。

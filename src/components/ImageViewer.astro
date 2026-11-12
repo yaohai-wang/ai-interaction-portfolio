@@ -1,0 +1,24 @@
+<dialog class="image-viewer" aria-labelledby="viewer-title">
+  <div class="viewer-toolbar"><h2 id="viewer-title">完整界面</h2><div><button type="button" data-viewer-zoom>原始尺寸</button><button type="button" data-viewer-close aria-label="关闭图片">关闭 ×</button></div></div>
+  <div class="viewer-stage"></div><p class="viewer-caption"></p>
+</dialog>
+<script>
+  const dialog=document.querySelector<HTMLDialogElement>('.image-viewer');
+  if(dialog){
+    const stage=dialog.querySelector<HTMLDivElement>('.viewer-stage')!;
+    const caption=dialog.querySelector<HTMLParagraphElement>('.viewer-caption')!;
+    const zoom=dialog.querySelector<HTMLButtonElement>('[data-viewer-zoom]')!;
+    let opener:HTMLAnchorElement|null=null;
+    document.querySelectorAll<HTMLAnchorElement>('[data-image-viewer]').forEach(link=>link.addEventListener('click',event=>{
+      if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+      event.preventDefault();opener=link;
+      const original=link.querySelector('img')!;const img=new Image();img.src=link.href;img.alt=original.alt;
+      stage.replaceChildren(img);caption.textContent=link.closest('figure')?.querySelector('[data-shot-caption]')?.textContent||original.alt;
+      stage.classList.remove('is-zoomed');zoom.textContent='原始尺寸';zoom.setAttribute('aria-pressed','false');dialog.showModal();
+    }));
+    zoom.addEventListener('click',()=>{const enlarged=stage.classList.toggle('is-zoomed');zoom.textContent=enlarged?'适应窗口':'原始尺寸';zoom.setAttribute('aria-pressed',String(enlarged));});
+    dialog.querySelector('[data-viewer-close]')?.addEventListener('click',()=>dialog.close());
+    dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+    dialog.addEventListener('close',()=>{stage.replaceChildren();opener?.focus();});
+  }
+</script>

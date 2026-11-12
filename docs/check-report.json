@@ -7,24 +7,11 @@
     "可公开联系方式与实习范围未确认",
     "设计假设和个人叙事需本人最终核对"
   ],
-  "todoEntries": 2,
-  "files": 385,
+  "todoEntries": 3,
+  "files": 386,
   "externalResources": [],
   "largestImageBytes": 397355,
-  "htmlCssJsGzipBytes": 64676,
-  "externalLinks": [
-    {
-      "url": "https://home.youkai-ou.com/",
-      "status": 200
-    },
-    {
-      "url": "https://f1.youkai-ou.com/zh/home",
-      "status": 200
-    },
-    {
-      "url": "https://youkai-ou.com/",
-      "status": 200
-    }
-  ],
+  "htmlCssJsGzipBytes": 66048,
+  "externalLinks": [],
   "errors": []
 }

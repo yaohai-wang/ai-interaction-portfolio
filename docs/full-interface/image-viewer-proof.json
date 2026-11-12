@@ -1,0 +1,636 @@
+{
+  "generatedAt": "2026-11-12T15:42:29.486Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "viewerTasks": [
+        {
+          "route": "/",
+          "href": "/revised/home/showroom-dining.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/home/showroom-dining.jpg",
+            "caption": "预设样板间 · 预设样板间的第一视角，体验家具与空间布局。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 1392,
+            "viewportWidth": 1440
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/ideal-home/",
+          "href": "/revised/home/showroom-dining.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/home/showroom-dining.jpg",
+            "caption": "预设样板间 · 预设样板间的第一视角，体验家具与空间布局。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 1392,
+            "viewportWidth": 1440
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/agent/",
+          "href": "/revised/tastetwin/04-recommendations-full.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/tastetwin/04-recommendations-full.jpg",
+            "caption": "示例菜品推荐；同一次任务继续加入计划。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 1392,
+            "viewportWidth": 1440
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/pitwall/",
+          "href": "/shots/f1/home.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/shots/f1/home.jpg",
+            "caption": "围场首页 · 实际产品界面；赛车与车队素材来自Formula 1，权利归原权利人，非商业展示。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 1392,
+            "viewportWidth": 1440
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/desktop/",
+          "href": "/revised/personal/desktop-comic.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/personal/desktop-comic.jpg",
+            "caption": "完整桌面 · 保留全局导航、物件入口与主题切换；此处展示Comic主题。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 1392,
+            "viewportWidth": 1440
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        }
+      ],
+      "overview": [
+        {
+          "src": "/revised/home/showroom-dining.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/revised/tastetwin/04-recommendations-full.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/shots/f1/home.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/revised/personal/desktop-comic.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        }
+      ],
+      "homepage": {
+        "nestedAnchors": 0,
+        "features": [
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          }
+        ]
+      },
+      "runtimeErrors": []
+    },
+    {
+      "width": 390,
+      "viewerTasks": [
+        {
+          "route": "/",
+          "href": "/revised/home/showroom-dining.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/home/showroom-dining.jpg",
+            "caption": "预设样板间 · 预设样板间的第一视角，体验家具与空间布局。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 390,
+            "viewportWidth": 390
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/ideal-home/",
+          "href": "/revised/home/showroom-dining.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/home/showroom-dining.jpg",
+            "caption": "预设样板间 · 预设样板间的第一视角，体验家具与空间布局。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 390,
+            "viewportWidth": 390
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/agent/",
+          "href": "/revised/tastetwin/04-recommendations-full.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/tastetwin/04-recommendations-full.jpg",
+            "caption": "示例菜品推荐；同一次任务继续加入计划。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 390,
+            "viewportWidth": 390
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/pitwall/",
+          "href": "/shots/f1/home.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/shots/f1/home.jpg",
+            "caption": "围场首页 · 实际产品界面；赛车与车队素材来自Formula 1，权利归原权利人，非商业展示。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 390,
+            "viewportWidth": 390
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        },
+        {
+          "route": "/cases/desktop/",
+          "href": "/revised/personal/desktop-comic.jpg",
+          "opened": {
+            "open": true,
+            "naturalWidth": 1920,
+            "naturalHeight": 1200,
+            "src": "/revised/personal/desktop-comic.jpg",
+            "caption": "完整桌面 · 保留全局导航、物件入口与主题切换；此处展示Comic主题。",
+            "zoomed": false,
+            "button": "原始尺寸",
+            "dialogWidth": 390,
+            "viewportWidth": 390
+          },
+          "zoomed": {
+            "classEnabled": true,
+            "pressed": "true",
+            "button": "适应窗口",
+            "imageWidth": 1920,
+            "naturalWidth": 1920
+          },
+          "fitted": {
+            "classDisabled": true,
+            "pressed": "false",
+            "button": "原始尺寸"
+          },
+          "closed": {
+            "focusReturned": true,
+            "open": false,
+            "imagesRemaining": 0
+          }
+        }
+      ],
+      "overview": [
+        {
+          "src": "/revised/home/showroom-dining.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/revised/tastetwin/04-recommendations-full.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/shots/f1/home.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        },
+        {
+          "src": "/revised/personal/desktop-comic.jpg",
+          "fit": "contain",
+          "naturalWidth": 1920
+        }
+      ],
+      "homepage": {
+        "nestedAnchors": 0,
+        "features": [
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          },
+          {
+            "imageContainer": "DIV",
+            "imageLinks": 1,
+            "allLinks": 2
+          }
+        ]
+      },
+      "runtimeErrors": []
+    }
+  ],
+  "print": {
+    "pages": 18,
+    "shots": [
+      {
+        "page": "about",
+        "src": "/revised/home/showroom-dining.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "about",
+        "src": "/revised/tastetwin/04-recommendations-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "about",
+        "src": "/shots/f1/home.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "about",
+        "src": "/revised/personal/desktop-comic.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "home-intro",
+        "src": "/revised/home/showroom-dining.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "home-journal",
+        "src": "/revised/home/09-journal-input.jpg",
+        "fit": "contain",
+        "width": 1720,
+        "height": 1472
+      },
+      {
+        "page": "home-journal",
+        "src": "/revised/home/12-selection-reviewed.jpg",
+        "fit": "contain",
+        "width": 1720,
+        "height": 1532
+      },
+      {
+        "page": "home-room",
+        "src": "/revised/home/16-purchased.jpg",
+        "fit": "contain",
+        "width": 1720,
+        "height": 1252
+      },
+      {
+        "page": "home-room",
+        "src": "/revised/home/showroom-dining.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "home-recovery",
+        "src": "/revised/home/22-after-query.jpg",
+        "fit": "contain",
+        "width": 1720,
+        "height": 1260
+      },
+      {
+        "page": "home-recovery",
+        "src": "/revised/home/23-abandoned-input.jpg",
+        "fit": "contain",
+        "width": 1720,
+        "height": 1472
+      },
+      {
+        "page": "home-iteration",
+        "src": "/shots/home/history-97bd65f-welcome.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "home-iteration",
+        "src": "/shots/home/welcome.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-intro",
+        "src": "/revised/tastetwin/04-recommendations-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-states",
+        "src": "/revised/tastetwin/06-planned-totals-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-states",
+        "src": "/revised/tastetwin/09-result-totals-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-conditions",
+        "src": "/revised/tastetwin/02-parsed-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-conditions",
+        "src": "/revised/tastetwin/03-corrected-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-confirm",
+        "src": "/revised/tastetwin/07-confirm-half-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "agent-confirm",
+        "src": "/revised/tastetwin/10-recorded-meal-full.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "f1-intro",
+        "src": "/shots/f1/home.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "f1-context",
+        "src": "/revised/f1/evidence-context.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "f1-context",
+        "src": "/revised/f1/web-only-context.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "f1-evidence",
+        "src": "/revised/f1/evidence-sources.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "f1-evidence",
+        "src": "/revised/f1/web-only-result.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "desktop",
+        "src": "/revised/personal/desktop-comic.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "desktop-continuity",
+        "src": "/revised/personal/project-comic.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      },
+      {
+        "page": "desktop-continuity",
+        "src": "/revised/personal/project-cyberpunk.jpg",
+        "fit": "contain",
+        "width": 1920,
+        "height": 1200
+      }
+    ],
+    "imageViewerCount": 0,
+    "interactiveImageLinks": 0
+  },
+  "failures": [],
+  "passed": true
+}

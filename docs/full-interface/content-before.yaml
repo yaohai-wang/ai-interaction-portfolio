@@ -1,0 +1,438 @@
+site:
+  title: 王耀海 · AI交互设计作品集 · 修订预览版
+  description: 2027届 AI 交互设计作品集：理想之家、TasteTwin、F1 围场智析与桌面平行宇宙。
+  name: 王耀海 / Kai Wang
+  year: "2027"
+  intro: 从自然语言到可操作的界面。
+  target: AI 创新交互设计师
+  draftLabel: 修订预览版
+cases:
+  - slug: ideal-home
+    number: "01"
+    title: 理想之家
+    tag: 行动与空间反馈
+    summary: 确认行动，兑换家具，布置自己的房间。
+    accent: "#617460"
+    demo: https://home.youkai-ou.com/
+    qr: /qr/ideal-home.svg
+    diagram:
+      - title: 表达愿景
+        detail: ""
+        kind: default
+      - title: 确认行动
+        detail: ""
+        kind: default
+      - title: 布置房间
+        detail: ""
+        kind: default
+    status: 个人生活产品 · 独立设计与开发
+  - slug: agent
+    number: "02"
+    title: TasteTwin
+    tag: 状态与确认
+    summary: 把餐食建议、计划与实际摄入分开。
+    accent: "#4d703b"
+    diagram:
+      - title: 理解意图
+        detail: ""
+        kind: default
+      - title: 核对建议
+        detail: ""
+        kind: default
+      - title: 确认记录
+        detail: ""
+        kind: default
+    status: 本地规则交互原型
+  - slug: pitwall
+    number: "03"
+    title: F1 · 围场智析
+    tag: 赛事信息与上下文
+    summary: 浏览围场信息，再按页面证据追问。
+    accent: "#39d3c1"
+    demo: https://f1.youkai-ou.com/zh/home
+    qr: /qr/pitwall.svg
+    diagram:
+      - title: 当前页面
+        detail: ""
+        kind: default
+      - title: 选择范围
+        detail: ""
+        kind: default
+      - title: 查看依据
+        detail: ""
+        kind: default
+    status: 可运行信息网站 / 上下文助手
+  - slug: desktop
+    number: "04"
+    title: 桌面平行宇宙
+    tag: 空间导航
+    summary: 从物件或文字进入内容，随时切换主题。
+    accent: "#bd2636"
+    demo: https://youkai-ou.com/
+    qr: /qr/desktop.svg
+    diagram:
+      - title: 物件入口
+        detail: ""
+        kind: default
+      - title: 共享面板
+        detail: ""
+        kind: default
+      - title: 切换主题
+        detail: ""
+        kind: default
+    status: 可运行个人网站
+pages:
+  - id: cover
+    type: cover
+    eyebrow: KAI WANG / PORTFOLIO
+    title: |-
+      AI 交互设计
+      与产品实践
+    lead: 王耀海 / Kai Wang
+    source: 2027 届 · AI 创新交互设计方向
+  - id: about
+    type: overview
+    eyebrow: PROFILE / SELECTED PROJECTS
+    title: 四个项目，四种交互问题
+    lead: 空间反馈、状态确认、上下文与主题导航。
+    items:
+      - title: 东京科学大学
+        text: 建筑结构工程硕士在读，预计2027年3月毕业；日本大学建筑工程本科。
+        label: 教育
+      - title: 中文 / 日语 / 英语
+        text: 中文母语 · 日语N1 · TOEIC 805。
+        label: 语言
+      - title: 在 Codex 中制作
+        text: 从概念到可运行界面，按项目说明完成范围。
+        label: 实践
+    source: 教育与语言资料来自公开个人介绍。
+  - id: home-intro
+    type: hero
+    case: ideal-home
+    eyebrow: 01 / 理想之家
+    title: 把日常行动接到自己的房间
+    lead: 愿景组织行动，确认后计分，再兑换和布置家具。
+    detail: 自然语言记录，怎样成为清楚、可控的行动反馈？
+    meta:
+      - label: 项目性质
+        value: 个人生活产品 / Web Demo
+      - label: 我的工作
+        value: 独立设计与开发
+      - label: 完成状态
+        value: AI整理、确认计分、兑换与摆放已串联
+    demo: https://home.youkai-ou.com/
+    qr: /qr/ideal-home.svg
+    shots:
+      - src: /revised/home/showroom-dining.jpg
+        label: 预设样板间
+        caption: 预设样板间的第一视角，体验家具与空间布局。
+    source: 2026-11-12独立测试：合成输入、真实模型，浏览器本地保存；线上未启用房间图片生成。
+  - id: home-hypotheses
+    type: decision
+    case: ideal-home
+    eyebrow: 01 / 问题与设计假设
+    title: 愿景、空间与确认
+    lead: 三个可检验的设计假设，尚无用户访谈或留存结论。
+    items:
+      - title: 用愿景给行动一个参照
+        text: 愿景帮助行动分类，也增加首次使用成本。先写手记、补充愿景再返回，原输入可保留。
+        label: 已验证草稿保留；前置要求是否易懂，仍需观察。
+      - title: 让反馈成为可布置的空间
+        text: 把积分换为可选择、可摆放的家具，让每次记录有可见反馈。
+        label: 观察任务：理解积分来源，兑换家具，找到房间变化。
+      - title: 由用户确认是否做过
+        text: 整理可能混淆计划与完成，或拆出多项行动。用户逐条保留或取消，再保存。
+        label: 假设：逐条核对比接受整段分析更易发现错误。
+    source: 问题定义为设计假设；现有功能支持逐条确认。
+  - id: home-journal
+    type: focus
+    case: ideal-home
+    eyebrow: 01 / 手记与核对
+    title: 核对候选，再保存行动
+    lead: 一段含已完成、未完成和生活小事的手记，生成三个候选。
+    shots:
+      - src: /revised/home/08-vision-saved-focus.jpg
+        label: 对应愿景
+        caption: 目标包含“完成交互设计作品集”。
+      - src: /revised/home/11-real-candidates-focus.jpg
+        label: 模型候选
+        caption: 流程图8点、截图6点、做饭3点；未完成的读书未被提取。
+      - src: /revised/home/12-selection-reviewed-focus.jpg
+        label: 人工选择
+        caption: 取消做饭，保留前两项；预览由17点变为14点。
+    items:
+      - title: 确认前可保留或取消
+        text: 勾选与积分预览对应，点击保存才计入行动。
+        label: ""
+      - title: 分类仍需检查
+        text: 面板不能直接编辑模型类别，需用更多样例检查分类。
+        label: ""
+    source: 同一愿景、同一测试存档；输入为合成文本。
+    supportShots:
+      - src: /revised/home/09-journal-input-focus.jpg
+        label: 本次输入
+        caption: 合成测试手记，不是本人经历。
+  - id: home-room
+    type: sequence
+    case: ideal-home
+    eyebrow: 01 / 积分与空间反馈
+    title: 从行动积分到空间反馈
+    lead: 300 初始点 + 14 行动点 − 20 兑换 = 294 点。
+    shots:
+      - src: /revised/home/13-confirmed-points-detail.jpg
+        label: 01 / 确认后保存
+        caption: 确认两项行动，累计成长新增14点，余额314点。
+      - src: /revised/home/16-purchased-focus.jpg
+        label: 02 / 兑换家具
+        caption: 20点兑换晴天仙人掌，余额294点；包含初始赠送点数。
+      - src: /revised/home/showroom-dining.jpg
+        label: 空间预览 / 预设样板间
+        caption: 预设房间布局，不是本次14点搭建的房间。
+    source: 前两图为同一测试任务；第三图为样板间，非本次积分兑换结果。
+    items:
+      - title: 兑换记录与空间预览分开
+        text: 同一存档已购买并摆放仙人掌；右图展示另一套预设布局。
+        label: ""
+  - id: home-recovery
+    type: sequence
+    case: ideal-home
+    eyebrow: 01 / 异常与恢复
+    title: 结果未知时，查询原任务
+    lead: 服务接收第二段手记后断网；恢复网络，再查询原请求。
+    shots:
+      - src: /revised/home/21-offline-unknown-detail.jpg
+        label: 01 / 结果未知
+        caption: 显示“结果还未确认”与查询入口，仍夹有英文错误。
+      - src: /revised/home/22-after-query-detail.jpg
+        label: 02 / 找回候选
+        caption: 查询原请求，找回6点候选；尚未保存，不计分。
+      - src: /revised/home/23-abandoned-input-focus.jpg
+        label: 03 / 主动放弃
+        caption: 放弃候选，回到保留原文的输入页；余额仍294点。
+    items:
+      - title: 保存与放弃各自结束本次整理
+        text: 实测覆盖未知→查询→放弃。已有迟到响应保护，尚未做并发乱序验证。
+        label: ""
+    source: 浏览器离线故障注入；恢复与放弃不计分已验证，错误文案仍需改进。
+  - id: home-iteration
+    type: before-after
+    case: ideal-home
+    eyebrow: 01 / 方案迭代与检查
+    title: 拆开文案与可操作场景
+    lead: 保留进入房间的方式，调整入口构图与视觉层级。
+    shots:
+      - src: /shots/home/history-97bd65f-welcome.jpg
+        label: 旧版
+        caption: 玻璃文案卡片覆盖全屏小屋。
+      - src: /shots/home/welcome.jpg
+        label: 新版
+        caption: 左侧文字，右侧可拖动浮岛。
+    items:
+      - title: 旧版观察
+        text: 玻璃卡片遮住部分小屋，文字与场景叠在一起。
+        label: ""
+      - title: 新版变化
+        text: 文字移至左侧，浮岛独立在右；保留语言、进入与跳过。
+        label: ""
+      - title: 改动范围
+        text: 任务稿限定入口构图，不改室内功能。
+        label: ""
+      - title: 检查结果
+        text: 历史与当前画面可对照，尚无转化或偏好测试。
+        label: ""
+    callout: AI 辅助：原型与目标图 → 保留功能 → 实现浮岛 → 检查拖动、语言与入口。
+    source: 历史版本、任务稿与运行界面对照；具体贡献不从提交作者推断。
+  - id: agent-intro
+    type: hero
+    case: agent
+    eyebrow: 02 / TASTETWIN
+    title: 建议、计划与记录各自清楚
+    lead: 推荐是候选，计划是打算吃，记录是确认吃过。
+    detail: 计划一份餐食，实际只吃半份，应怎样记录？
+    meta:
+      - label: 项目性质
+        value: 饮食管理交互原型
+      - label: 实现方式
+        value: 本地规则识别与示例菜品
+      - label: 本次展示
+        value: 条件核对、计划与实际记录
+    shots:
+      - src: /revised/tastetwin/04-recommendations-full.jpg
+        label: ""
+        caption: 示例菜品推荐；同一次任务继续加入计划。
+    source: 本地规则原型、示例数据，未调用真实模型；验证交互与账务，不作为健康建议。
+  - id: agent-states
+    type: flow
+    case: agent
+    eyebrow: 02 / 状态关系
+    title: 确认吃过，才计入摄入
+    lead: 把“打算吃”和“已经吃”分开，避免直接记录推荐值。
+    nodes:
+      - title: 餐食建议
+        detail: 可检查的候选
+        kind: default
+      - title: 加入计划
+        detail: 还没有计入已吃
+        kind: default
+      - title: 核对实际份量
+        detail: 餐次与数量
+        kind: human
+      - title: 确认记录
+        detail: 更新实际摄入
+        kind: human
+    shots:
+      - src: /revised/tastetwin/06-planned-totals-nutrition.jpg
+        label: 已加入计划
+        caption: 已吃1344、计划260、预计1604 kcal；实际摄入未增加。
+      - src: /revised/tastetwin/09-result-totals-nutrition.jpg
+        label: 确认半份后
+        caption: 已吃1474、未吃计划0、预计1474 kcal。
+    source: 计划行仍保留；确认记录后，不再计入未吃计划合计。
+  - id: agent-conditions
+    type: focus
+    case: agent
+    eyebrow: 02 / 条件理解与修正
+    title: 把识别条件摆出来
+    lead: 输入“清淡鸡肉，20分钟内”，再手动改为鱼虾、15分钟内。
+    shots:
+      - src: /revised/tastetwin/02-parsed-full.jpg
+        label: 定位图
+        caption: 右侧为条件操作区。
+      - src: /revised/tastetwin/02-parsed-focus.jpg
+        label: 规则识别后
+        caption: 识别清淡、鸡肉、20分钟；上海、过敏与忌口来自档案。
+      - src: /revised/tastetwin/03-corrected-focus.jpg
+        label: 手动修改后
+        caption: 改选鱼虾、15分钟；保留原输入气泡。
+    items:
+      - title: 档案与本次要求分开
+        text: 档案限制保持原样，本次要求可通过标签改选。
+      - title: 当前只验证交互
+        text: 规则能识别和改选条件；标签尚未驱动完整推荐匹配。
+    source: 完整画面定位操作区，局部来自同一截图。
+  - id: agent-confirm
+    type: sequence
+    case: agent
+    eyebrow: 02 / 实际份量与记录确认
+    title: 计划一份，记录实际半份
+    lead: 确认餐次与份量，再保存实际摄入。
+    shots:
+      - src: /revised/tastetwin/05-plan-one-focus.jpg
+        label: 01 / 计划一份
+        caption: 炒饭1份、260 kcal，尚未增加实际摄入。
+      - src: /revised/tastetwin/07-confirm-half-focus.jpg
+        label: 02 / 核对实际份量
+        caption: 选择晚餐、0.5份，再点击“确认记录”。
+      - src: /revised/tastetwin/10-recorded-food-focus.jpg
+        label: 03 / 已保存的晚餐
+        caption: 保存同一道炒饭：0.5份、130 kcal。
+      - src: /revised/tastetwin/09-result-kcal-focus.jpg
+        label: 03 / 合计随记录更新
+        caption: 已吃1474、计划0、预计1474 kcal。
+    source: 同一示例存档的连续操作，非真实用户健康记录。
+    variant: ledger
+    callout: 1344 + 260 × 0.5 = 1474 kcal。计划行仍显示1份，实际摄入按已保存的半份记账。
+  - id: f1-intro
+    type: hero
+    case: pitwall
+    eyebrow: 03 / F1 · 围场智析
+    title: 从车队与赛程，进入整个围场
+    lead: 浏览赛事信息，再用助手追问当前页面。
+    detail: 面向F1车迷的信息网站：车队、积分榜、新闻、升级、赛果与冠军预测。
+    meta:
+      - label: 项目性质
+        value: F1信息产品 / Web Demo
+      - label: 现有功能
+        value: 赛事浏览、预测与上下文助手
+      - label: 已确认状态
+        value: 页面可访问；两次真实问答有返回
+    demo: https://f1.youkai-ou.com/zh/home
+    qr: /qr/pitwall.svg
+    shots:
+      - src: /shots/f1/home.jpg
+        label: 围场首页
+        caption: 实际产品界面；赛车与车队素材来自Formula 1，权利归原权利人，非商业展示。
+    source: 2026-11-12截图与问答；保存快照与模拟预测，不代表实时赛况或确定结果。
+  - id: f1-context
+    type: sequence
+    case: pitwall
+    eyebrow: 03 / 回答范围
+    title: 页面线索，不等于页面证据
+    lead: 法拉利页可选本页、全站和联网；首页仅开放联网。
+    shots:
+      - src: /revised/f1/evidence-scope.jpg
+        label: 有页面证据
+        caption: 法拉利车队页：默认本页，可切换全站或联网。
+      - src: /revised/f1/web-only-scope.jpg
+        label: 仅有导航上下文
+        caption: 围场首页：仅联网，无本页证据。
+    source: 可选范围与页面返回的上下文一致。
+    variant: context
+    items:
+      - title: 有证据才开放本页
+        text: 法拉利页带入保存的车队资料，默认选中本页。
+      - title: 缺少证据时收窄入口
+        text: 首页名称用于定位，不意味着助手已经读取整页。
+  - id: f1-evidence
+    type: sequence
+    case: pitwall
+    eyebrow: 03 / 实际问答与能力边界
+    title: 给出回答，也说明依据
+    lead: 在车队页查询快照，在首页询问当前积分。
+    shots:
+      - src: /revised/f1/evidence-dialogue.jpg
+        label: 本页快照回答
+        caption: 第2、510分；数据时间为2026-11-08 17:00 UTC，保留非实时提示。
+      - src: /revised/f1/web-only-answer.jpg
+        label: 首页能力边界
+        caption: 先说明无法确认首页内容，再给联网依据；[1][2]为原站引用。
+    items:
+      - title: 快照与回答相符
+        text: 本次回答对应保存记录，只核对这一问题。
+      - title: 检索不等于发布
+        text: 联网来源列出检索时间，发布日期显示“未提供”。
+    source: 两个请求成功；来源原文未全面复核，服务失败与重试未复测。
+  - id: desktop
+    type: desktop
+    case: desktop
+    eyebrow: 04 / 桌面平行宇宙
+    title: 换主题，继续看同一内容
+    lead: 木屋与文字打开同一项目；主题切换后，面板与正文保留。
+    shots:
+      - src: /revised/personal/desktop-comic.jpg
+        label: 主要桌面
+        caption: Comic主题；物件与顶部文字均可导航。
+      - src: /shots/personal/cyberpunk.jpg
+        label: Cyberpunk
+        caption: ""
+      - src: /shots/personal/pixel.jpg
+        label: Pixel
+        caption: ""
+      - src: /shots/personal/blueprint.jpg
+        label: Blueprint
+        caption: ""
+      - src: /shots/personal/retro.jpg
+        label: Retro
+        caption: ""
+      - src: /revised/personal/task-content-comic.jpg
+        label: 01 / 物件打开
+        caption: 木屋进入项目，阅读产品介绍。
+      - src: /revised/personal/task-content-cyberpunk.jpg
+        label: 02 / 切换主题
+        caption: Cyberpunk外观下，同一段正文保留。
+      - src: /revised/personal/task-return.jpg
+        label: 03 / 返回桌面
+        caption: 主题保留，焦点回到原入口。
+    items:
+      - title: 双入口共享内容
+        text: 已检查换主题、返回与Escape；内容保留，不保证像素级阅读位置不变。
+    demo: https://youkai-ou.com/
+    qr: /qr/desktop.svg
+    source: 2026-11-12连续操作；预渲染图+DOM。人物与品牌素材权利归原权利人，非商业展示。
+  - id: closing
+    type: closing
+    eyebrow: NEXT / OPEN THE DEMOS
+    title: 打开作品，继续探索
+    lead: 王耀海 · 2027 届 AI 创新交互设计方向
+    detail: 三个公开Demo，一个本地交互原型。
+    source: 修订预览版 · TasteTwin仅本地展示。

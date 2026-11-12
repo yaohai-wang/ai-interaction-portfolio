@@ -1,0 +1,301 @@
+{
+  "checked": 24,
+  "pages": [
+    {
+      "width": 1440,
+      "route": "/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/about/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/cases/agent/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 4,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/cases/ideal-home/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 6,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/cases/pitwall/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 3,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/cases/desktop/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/specs/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1440,
+      "route": "/assets-review/",
+      "scroll": 1440,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [
+        "none"
+      ],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/about/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/cases/agent/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 4,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/cases/ideal-home/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 6,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/cases/pitwall/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 3,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/cases/desktop/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/specs/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 1280,
+      "route": "/assets-review/",
+      "scroll": 1280,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [
+        "none"
+      ],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/about/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/cases/agent/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 4,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/cases/ideal-home/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 6,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/cases/pitwall/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 3,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/cases/desktop/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 2,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/specs/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    },
+    {
+      "width": 390,
+      "route": "/assets-review/",
+      "scroll": 390,
+      "brokenImages": [],
+      "missingAlt": 0,
+      "autoplay": 0,
+      "videoPreload": [
+        "none"
+      ],
+      "h1": 1,
+      "reduced": "auto",
+      "placeholders": 0
+    }
+  ],
+  "externalRequests": [],
+  "failures": []
+}

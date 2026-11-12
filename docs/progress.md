@@ -78,3 +78,11 @@
 - 主PDF4,591,809字节、轻量2,158,212字节；17页逐页双引擎检查、24组网页检查、字体/链接/原稿SHA/正文一致性通过。修复Inter可变字体PDF兼容、手机标题孤字与跳转链接对比度。
 - 预览：`cd /Users/youkaiou/就职/portfolio && npm run dev`；主/轻量PDF仍在output/pdf/portfolio-ai-interaction-revised{,-light}.pdf。详细修改与验收在docs/visual-refresh/。
 - 无部署，原项目只读；公开许可、个人职责/周期/动机、联系方式和个人资料确认见docs/questions.md与portfolio-evidence-gaps.md。
+
+## 2026-11-13 · 完整界面截图优化
+
+- 按用户要求将碎片裁图改为完整面板/完整产品视窗；总览缩略图不再横裁。Home保持真实样板间，F1保留页面与助手，TasteTwin保留顶栏和整体场景。
+- 个人站拆为P16完整桌面与P17完整内容页对照，结语P18。旧裁图和证据文件保留，当前主稿不再引用。
+- 网页正文图片加入完整图查看、原始尺寸切换、Escape关闭与焦点返回；桌面/手机10次实际交互通过。
+- 18页主PDF5,163,975字节、轻量1,886,256字节。24组页面检查、18页边界、14项DNA核验、字体/链接/正文一致/原稿SHA检查通过；全部页面渲染和逐页记录见docs/full-interface/。
+- 预览命令仍为npm run dev；交付仍在output/pdf/portfolio-ai-interaction-revised{,-light}.pdf。不部署、不改原产品，本人事实缺口无新增。

@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-12T15:41:22.822Z",
+  "method": "Computed CSS and DOM inspection of locally built dist. This is not reference image measurement or perceptual similarity scoring.",
+  "reference": "docs/visual-refresh/DESIGN-reference.md",
+  "checks": {
+    "exactPalette": true,
+    "blackBackground": true,
+    "interAndNotoFallback": true,
+    "headingWeight400": true,
+    "bodyWeight200": true,
+    "violetAction": true,
+    "headerSecondaryAction": true,
+    "unboxedFeatureSections": true,
+    "coverConstellationOnly": true,
+    "noCanvas": true,
+    "reducedMotionStatic": true,
+    "printStatic": true,
+    "selfHostedResources": true,
+    "eighteenPrintPages": true
+  },
+  "passed": true,
+  "actual": {
+    "palette": {
+      "void": "#000",
+      "bone-white": "#fff",
+      "ash-gray": "#9a9a9a",
+      "silver-mist": "#bdbdbd",
+      "electric-iris": "#8052ff",
+      "saffron-spark": "#ffb829",
+      "deep-verdant": "#15846e"
+    },
+    "body": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "200",
+      "fontSize": "16px",
+      "lineHeight": "normal",
+      "background": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "animationName": "none"
+    },
+    "heading": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "93.6px",
+      "lineHeight": "106.704px",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "animationName": "none"
+    },
+    "paragraph": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "200",
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(189, 189, 189)",
+      "boxShadow": "none",
+      "animationName": "none"
+    },
+    "button": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "16.8px",
+      "background": "rgb(128, 82, 255)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "animationName": "none"
+    },
+    "headerDownload": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "normal",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "animationName": "none"
+    },
+    "cloud": {
+      "fontFamily": "Inter, Folio, sans-serif",
+      "fontWeight": "200",
+      "fontSize": "16px",
+      "lineHeight": "normal",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "animationName": "cloud-breathe"
+    },
+    "heroProductImages": 0,
+    "inlineSvgPathCount": 1120,
+    "canvasCount": 0,
+    "loadedFonts": [
+      {
+        "family": "Folio",
+        "weight": "100 500"
+      },
+      {
+        "family": "Folio",
+        "weight": "501 900"
+      },
+      {
+        "family": "Inter",
+        "weight": "100 300"
+      },
+      {
+        "family": "Inter",
+        "weight": "301 500"
+      },
+      {
+        "family": "Inter",
+        "weight": "501 900"
+      },
+      {
+        "family": "Folio",
+        "weight": "100 300"
+      }
+    ],
+    "featurePanels": [
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "border": "0px"
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "border": "0px"
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "border": "0px"
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "border": "0px"
+      }
+    ]
+  },
+  "reducedMotion": "none",
+  "print": {
+    "pages": 18,
+    "cloudAnimation": "none",
+    "background": "rgb(0, 0, 0)",
+    "headings": [
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400",
+      "400"
+    ],
+    "paragraphs": [
+      "400",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "400",
+      "200"
+    ]
+  },
+  "remoteResources": []
+}

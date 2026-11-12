@@ -1,6 +1,6 @@
 # TODO(Kai) · 本人问题汇总
 
-更新：2026-11-13。当前17页修订预览版不因以下缺口停工；正式投递前仍需本人确认。详细依据和影响页面见 [portfolio-evidence-gaps.md](portfolio-evidence-gaps.md)。
+更新：2026-11-13。当前18页修订预览版不因以下缺口停工；正式投递前仍需本人确认。详细依据和影响页面见 [portfolio-evidence-gaps.md](portfolio-evidence-gaps.md)。
 
 1. TODO(Kai)：TasteTwin、F1、个人站分别由你负责什么、与谁协作？四个项目实际起止月份是什么？
 2. TODO(Kai)：TasteTwin 视频与设计素材能否用于求职投递、能否公开？它与个人站营养应用是什么关系？

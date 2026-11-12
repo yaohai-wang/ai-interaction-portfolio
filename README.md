@@ -1,6 +1,6 @@
 # 王耀海 · AI 交互设计作品集（修订预览版）
 
-现有 Astro 工程的本地修订稿：**17 页、16:9 网页与 PDF**，面向 2027 届 AI 创新交互设计方向。原 22 页草稿和原始素材保留；本轮没有部署、公开发布或修改其他产品源码。
+现有 Astro 工程的本地修订稿：**18 页、16:9 网页与 PDF**，面向 2027 届 AI 创新交互设计方向。原 22 页草稿和原始素材保留；本轮没有部署、公开发布或修改其他产品源码。
 
 本版本仍是修订预览版。个人职责、实际项目周期、TasteTwin 素材公开许可及联系方式等缺口集中在 [docs/portfolio-evidence-gaps.md](docs/portfolio-evidence-gaps.md)。阅读页移除了内部 TODO，不代表这些事实已确认，也不代表已可正式投递。
 
@@ -15,10 +15,10 @@ npm run dev
 
 主要入口：
 
-- `/`：封面与项目导航；`/about/`：简介。完整17页主稿在 `/print/`，案例正文也可分别阅读。
+- `/`：封面与项目导航；`/about/`：简介。完整18页主稿在 `/print/`，案例正文也可分别阅读。
 - `/cases/ideal-home/`、`/cases/agent/`、`/cases/pitwall/`、`/cases/desktop/`：四个案例。
-- `/print/`：与 PDF 同序的 17 页打印稿。
-- `/specs/`、`/assets-review/`：源码规格与素材审阅补充，不计入 17 页主稿。
+- `/print/`：与 PDF 同序的 18 页打印稿。
+- `/specs/`、`/assets-review/`：源码规格与素材审阅补充，不计入 18 页主稿。
 
 查看构建产物：先 `npm run build`，再 `npm run preview`，使用终端显示的地址。
 
@@ -30,10 +30,10 @@ npm run dev
 | 3–8 | 理想之家：问题假设、同一任务、积分与房间、恢复、迭代 |
 | 9–12 | TasteTwin：规则边界、状态关系、条件修正、实际半份记录 |
 | 13–15 | F1 · 围场智析：完整产品首页、上下文范围、真实问答与来源边界 |
-| 16 | 桌面平行宇宙：主视觉、主题对比、打开—切换—返回任务 |
-| 17 | 现有演示入口 |
+| 16–17 | 桌面平行宇宙：完整桌面、完整内容页的主题切换对照 |
+| 18 | 现有演示入口 |
 
-AI 辅助过程并入理想之家迭代页，没有为凑页数新增未经证实的决策过程。本轮按用户提供的 DESIGN.md 与 Design-dna skill 重做黑色视觉系统：自托管 Inter/Noto 轻字重、紫色单主动作、琥珀色标记、大留白和真实大图。参考、完整三维 DNA、适配说明、修改记录与验证均在 [docs/visual-refresh/](docs/visual-refresh/)。上一版16页记录保留在 docs/revision/。
+AI 辅助过程并入理想之家迭代页，没有为凑页数新增未经证实的决策过程。本轮按用户提供的 DESIGN.md 与 Design-dna skill 重做黑色视觉系统：自托管 Inter/Noto 轻字重、紫色单主动作、琥珀色标记、大留白和真实大图。参考、完整三维 DNA、适配说明、修改记录与验证均在 [docs/visual-refresh/](docs/visual-refresh/)。上一版16页记录保留在 docs/revision/。当前截图优化记录见 [docs/full-interface/change-log.md](docs/full-interface/change-log.md)：原碎片裁图替换为完整界面或完整模块面板，图片按原比例展示、支持点击放大，个人站拆两页，合计18页。
 
 ## 编辑与构建
 
@@ -53,13 +53,13 @@ npm run pdf -- --light          # 导出低体积修订版
 npm run specs                  # 可选：导出补充规格图与 SVG
 ```
 
-修改内容后应先构建，再导出 PDF。PDF 脚本保留链接与嵌入字体；主版同步到本地网页下载入口。所有运行资源同域；本轮没有英文全文，英文入口只保留结构。
+修改内容后应先构建，再导出 PDF。PDF 脚本保留链接与嵌入字体；主版同步到本地网页下载入口。网页截图可点击查看完整图，支持切换原始尺寸、Escape关闭与焦点返回。所有运行资源同域；本轮没有英文全文，英文入口只保留结构。
 
 ## PDF 与原稿
 
 当前交付：
 
-- `output/pdf/portfolio-ai-interaction-revised.pdf`：17 页修订预览版。
+- `output/pdf/portfolio-ai-interaction-revised.pdf`：18 页修订预览版。
 - `output/pdf/portfolio-ai-interaction-revised-light.pdf`：同内容的低体积修订版，已正式导出供本地审阅。
 - `output/pdf/portfolio-ai-interaction-revised.pdf.json`：页数、文件大小、字体、内部跳转及外部链接记录。
 - `public/downloads/portfolio-ai-interaction-revised.pdf`：本地站点下载副本。
@@ -76,10 +76,10 @@ macOS 下将导出的 PDF 逐页渲染为检查图：
 
 ```sh
 osascript -l JavaScript scripts/render-native.js \
-  output/pdf/portfolio-ai-interaction-revised.pdf tmp/visual-refresh/native
+  output/pdf/portfolio-ai-interaction-revised.pdf tmp/full-interface/native
 ```
 
-该命令只读 PDF，图片写入 `tmp/visual-refresh/native/`。检查结果分别见 `docs/visual-refresh/print-proof.json`、`docs/visual-refresh/pdf-layout-check.json`、`docs/visual-refresh/qa-report.json`（执行对应检查后生成），以及 PDF 同名 JSON。链接存在、链接可访问和业务功能可用是三项不同验证。
+该命令只读 PDF，图片写入 `tmp/full-interface/native/`。检查结果分别见 `docs/full-interface/print-proof.json`、`docs/full-interface/pdf-layout-check.json`、`docs/full-interface/qa-report.json`（执行对应检查后生成），以及 PDF 同名 JSON。链接存在、链接可访问和业务功能可用是三项不同验证。
 
 ## 证据与复测边界
 

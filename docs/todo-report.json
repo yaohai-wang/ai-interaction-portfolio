@@ -1,7 +1,8 @@
 {
   "mode": "draft",
-  "count": 2,
+  "count": 3,
   "entries": [
+    "        caption: 原计划1份；完整推荐页内选择晚餐、0.5份，等待确认。",
     "    boundary: 当前源码名称为“理想生活”，统一名称待确认。线上为浏览器本地存档；“未来的家”图像生成未启用。",
     "      - {id: received, x: 560, y: 16, code: received, label: 候选待确认, kind: default}"
   ]

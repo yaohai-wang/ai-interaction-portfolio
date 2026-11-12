@@ -145,33 +145,23 @@ pages:
         label: 假设：逐条核对比接受整段分析更易发现错误。
     source: 问题定义为设计假设；现有功能支持逐条确认。
   - id: home-journal
-    type: focus
+    type: sequence
     case: ideal-home
     eyebrow: 01 / 手记与核对
     title: 核对候选，再保存行动
     lead: 一段含已完成、未完成和生活小事的手记，生成三个候选。
     shots:
-      - src: /revised/home/08-vision-saved-focus.jpg
-        label: 对应愿景
-        caption: 目标包含“完成交互设计作品集”。
-      - src: /revised/home/11-real-candidates-focus.jpg
-        label: 模型候选
-        caption: 流程图8点、截图6点、做饭3点；未完成的读书未被提取。
-      - src: /revised/home/12-selection-reviewed-focus.jpg
-        label: 人工选择
-        caption: 取消做饭，保留前两项；预览由17点变为14点。
+      - src: /revised/home/09-journal-input.jpg
+        label: 01 / 写下手记
+        caption: 完整今日手记面板；合成输入包含已完成、未完成和生活小事。
+      - src: /revised/home/12-selection-reviewed.jpg
+        label: 02 / 核对后保存
+        caption: 完整候选面板；取消做饭，保留8点与6点两项，保存前预览14点。
     items:
-      - title: 确认前可保留或取消
-        text: 勾选与积分预览对应，点击保存才计入行动。
-        label: ""
-      - title: 分类仍需检查
-        text: 面板不能直接编辑模型类别，需用更多样例检查分类。
-        label: ""
-    source: 同一愿景、同一测试存档；输入为合成文本。
-    supportShots:
-      - src: /revised/home/09-journal-input-focus.jpg
-        label: 本次输入
-        caption: 合成测试手记，不是本人经历。
+      - title: 从记录到人工核对
+        text: 同一任务识别出8、6、3点三个候选；逐条保留或取消，再点击保存。
+    source: 同一愿景、同一测试存档；输入为合成文本。图中保留完整模块边界和操作按钮。
+    variant: full-interface
   - id: home-room
     type: sequence
     case: ideal-home
@@ -179,41 +169,33 @@ pages:
     title: 从行动积分到空间反馈
     lead: 300 初始点 + 14 行动点 − 20 兑换 = 294 点。
     shots:
-      - src: /revised/home/13-confirmed-points-detail.jpg
-        label: 01 / 确认后保存
-        caption: 确认两项行动，累计成长新增14点，余额314点。
-      - src: /revised/home/16-purchased-focus.jpg
-        label: 02 / 兑换家具
-        caption: 20点兑换晴天仙人掌，余额294点；包含初始赠送点数。
+      - src: /revised/home/16-purchased.jpg
+        label: 01 / 兑换完成
+        caption: 完整家具商店成功面板：仙人掌进入家具库，可立即摆放或继续挑选。
       - src: /revised/home/showroom-dining.jpg
-        label: 空间预览 / 预设样板间
-        caption: 预设房间布局，不是本次14点搭建的房间。
-    source: 前两图为同一测试任务；第三图为样板间，非本次积分兑换结果。
-    items:
-      - title: 兑换记录与空间预览分开
-        text: 同一存档已购买并摆放仙人掌；右图展示另一套预设布局。
-        label: ""
+        label: 02 / 参观预设样板间
+        caption: 完整产品视窗；已布置的样板间用于体验空间，不是本次14点搭建的房间。
+    source: 左图为同一任务的兑换结果；右图为独立预设样板间。300+14−20=294来自该次账务记录。
+    items: []
+    variant: full-interface
   - id: home-recovery
     type: sequence
     case: ideal-home
     eyebrow: 01 / 异常与恢复
-    title: 结果未知时，查询原任务
-    lead: 服务接收第二段手记后断网；恢复网络，再查询原请求。
+    title: 找回结果后，也能主动放弃
+    lead: 网络恢复后查询原请求，找回候选；仍可放弃本次整理。
     shots:
-      - src: /revised/home/21-offline-unknown-detail.jpg
-        label: 01 / 结果未知
-        caption: 显示“结果还未确认”与查询入口，仍夹有英文错误。
-      - src: /revised/home/22-after-query-detail.jpg
-        label: 02 / 找回候选
-        caption: 查询原请求，找回6点候选；尚未保存，不计分。
-      - src: /revised/home/23-abandoned-input-focus.jpg
-        label: 03 / 主动放弃
-        caption: 放弃候选，回到保留原文的输入页；余额仍294点。
+      - src: /revised/home/22-after-query.jpg
+        label: 01 / 查询找回候选
+        caption: 完整候选面板；找回6点行动，尚未保存，不计分。
+      - src: /revised/home/23-abandoned-input.jpg
+        label: 02 / 放弃后保留输入
+        caption: 完整手记输入面板；原文仍在，可继续编辑，余额仍294点。
     items:
-      - title: 保存与放弃各自结束本次整理
-        text: 实测覆盖未知→查询→放弃。已有迟到响应保护，尚未做并发乱序验证。
-        label: ""
-    source: 浏览器离线故障注入；恢复与放弃不计分已验证，错误文案仍需改进。
+      - title: 保留编辑起点
+        text: 这次实测覆盖断网、查询、放弃；放弃没有新增积分，原手记没有丢失。
+    source: 同一次离线故障测试的恢复与放弃状态；迟到响应保护仅检查代码，未做并发乱序验证。
+    variant: full-interface
   - id: home-iteration
     type: before-after
     case: ideal-home
@@ -281,35 +263,32 @@ pages:
         detail: 更新实际摄入
         kind: human
     shots:
-      - src: /revised/tastetwin/06-planned-totals-nutrition.jpg
-        label: 已加入计划
-        caption: 已吃1344、计划260、预计1604 kcal；实际摄入未增加。
-      - src: /revised/tastetwin/09-result-totals-nutrition.jpg
-        label: 确认半份后
-        caption: 已吃1474、未吃计划0、预计1474 kcal。
+      - src: /revised/tastetwin/06-planned-totals-full.jpg
+        label: 01 / 已加入计划
+        caption: 完整推荐页：已吃1344、计划260、预计1604 kcal，实际摄入尚未增加。
+      - src: /revised/tastetwin/09-result-totals-full.jpg
+        label: 02 / 确认半份后
+        caption: 完整推荐页：已吃1474、未吃计划0、预计1474 kcal。
     source: 计划行仍保留；确认记录后，不再计入未吃计划合计。
+    variant: full-interface
   - id: agent-conditions
-    type: focus
+    type: sequence
     case: agent
     eyebrow: 02 / 条件理解与修正
     title: 把识别条件摆出来
     lead: 输入“清淡鸡肉，20分钟内”，再手动改为鱼虾、15分钟内。
     shots:
       - src: /revised/tastetwin/02-parsed-full.jpg
-        label: 定位图
-        caption: 右侧为条件操作区。
-      - src: /revised/tastetwin/02-parsed-focus.jpg
-        label: 规则识别后
-        caption: 识别清淡、鸡肉、20分钟；上海、过敏与忌口来自档案。
-      - src: /revised/tastetwin/03-corrected-focus.jpg
-        label: 手动修改后
-        caption: 改选鱼虾、15分钟；保留原输入气泡。
+        label: 01 / 规则识别
+        caption: 完整条件页：清淡、鸡肉、20分钟；档案带入上海、过敏与忌口。
+      - src: /revised/tastetwin/03-corrected-full.jpg
+        label: 02 / 手动修改
+        caption: 完整条件页：改选鱼虾、15分钟，保留原输入气泡；档案限制不变。
     items:
       - title: 档案与本次要求分开
-        text: 档案限制保持原样，本次要求可通过标签改选。
-      - title: 当前只验证交互
-        text: 规则能识别和改选条件；标签尚未驱动完整推荐匹配。
-    source: 完整画面定位操作区，局部来自同一截图。
+        text: 右侧条件可改选；这些标签尚未驱动完整的推荐匹配。
+    source: 同一规则示例任务的连续完整界面；本地规则原型，未调用真实模型。
+    variant: full-interface
   - id: agent-confirm
     type: sequence
     case: agent
@@ -317,20 +296,14 @@ pages:
     title: 计划一份，记录实际半份
     lead: 确认餐次与份量，再保存实际摄入。
     shots:
-      - src: /revised/tastetwin/05-plan-one-focus.jpg
-        label: 01 / 计划一份
-        caption: 炒饭1份、260 kcal，尚未增加实际摄入。
-      - src: /revised/tastetwin/07-confirm-half-focus.jpg
-        label: 02 / 核对实际份量
-        caption: 选择晚餐、0.5份，再点击“确认记录”。
-      - src: /revised/tastetwin/10-recorded-food-focus.jpg
-        label: 03 / 已保存的晚餐
-        caption: 保存同一道炒饭：0.5份、130 kcal。
-      - src: /revised/tastetwin/09-result-kcal-focus.jpg
-        label: 03 / 合计随记录更新
-        caption: 已吃1474、计划0、预计1474 kcal。
+      - src: /revised/tastetwin/07-confirm-half-full.jpg
+        label: 01 / 核对实际份量
+        caption: 原计划1份；完整推荐页内选择晚餐、0.5份，等待确认。
+      - src: /revised/tastetwin/10-recorded-meal-full.jpg
+        label: 02 / 查看已记录晚餐
+        caption: 完整摄入详情页：同一道炒饭0.5份、130 kcal，总摄入已更新为1474。
     source: 同一示例存档的连续操作，非真实用户健康记录。
-    variant: ledger
+    variant: full-interface
     callout: 1344 + 260 × 0.5 = 1474 kcal。计划行仍显示1份，实际摄入按已保存的半份记账。
   - id: f1-intro
     type: hero
@@ -360,14 +333,14 @@ pages:
     title: 页面线索，不等于页面证据
     lead: 法拉利页可选本页、全站和联网；首页仅开放联网。
     shots:
-      - src: /revised/f1/evidence-scope.jpg
-        label: 有页面证据
-        caption: 法拉利车队页：默认本页，可切换全站或联网。
-      - src: /revised/f1/web-only-scope.jpg
-        label: 仅有导航上下文
-        caption: 围场首页：仅联网，无本页证据。
+      - src: /revised/f1/evidence-context.jpg
+        label: 01 / 有页面证据
+        caption: 完整法拉利页与助手：本页、全站、联网三种范围。
+      - src: /revised/f1/web-only-context.jpg
+        label: 02 / 仅有导航上下文
+        caption: 完整围场首页与助手：仅开放联网，没有本页证据。
     source: 可选范围与页面返回的上下文一致。
-    variant: context
+    variant: full-interface
     items:
       - title: 有证据才开放本页
         text: 法拉利页带入保存的车队资料，默认选中本页。
@@ -380,55 +353,59 @@ pages:
     title: 给出回答，也说明依据
     lead: 在车队页查询快照，在首页询问当前积分。
     shots:
-      - src: /revised/f1/evidence-dialogue.jpg
-        label: 本页快照回答
-        caption: 第2、510分；数据时间为2026-11-08 17:00 UTC，保留非实时提示。
-      - src: /revised/f1/web-only-answer.jpg
-        label: 首页能力边界
-        caption: 先说明无法确认首页内容，再给联网依据；[1][2]为原站引用。
+      - src: /revised/f1/evidence-sources.jpg
+        label: 01 / 本页快照回答
+        caption: 完整车队页与助手，提问、回答、展开来源均保留；第2、510分。
+      - src: /revised/f1/web-only-result.jpg
+        label: 02 / 首页能力边界
+        caption: 完整首页与助手，保留问题、回答和引用；先说明无法读取首页内容。
     items:
       - title: 快照与回答相符
-        text: 本次回答对应保存记录，只核对这一问题。
-      - title: 检索不等于发布
-        text: 联网来源列出检索时间，发布日期显示“未提供”。
-    source: 两个请求成功；来源原文未全面复核，服务失败与重试未复测。
+        text: 本次数据时间为2026-11-08 17:00 UTC；只核对这一问题。
+      - title: 范围限制直接说明
+        text: 首页回答明确无法确认本页内容，再给出联网依据。
+    source: 两个请求成功；图中[1][2]为原站引用。来源原文未全面复核，服务失败与重试未复测。
+    variant: full-interface
   - id: desktop
-    type: desktop
+    type: hero
     case: desktop
     eyebrow: 04 / 桌面平行宇宙
-    title: 换主题，继续看同一内容
-    lead: 木屋与文字打开同一项目；主题切换后，面板与正文保留。
+    title: 把个人网站做成一张桌面
+    lead: 物件与文字都是入口，五套主题共用同一套内容。
     shots:
       - src: /revised/personal/desktop-comic.jpg
-        label: 主要桌面
-        caption: Comic主题；物件与顶部文字均可导航。
-      - src: /shots/personal/cyberpunk.jpg
-        label: Cyberpunk
-        caption: ""
-      - src: /shots/personal/pixel.jpg
-        label: Pixel
-        caption: ""
-      - src: /shots/personal/blueprint.jpg
-        label: Blueprint
-        caption: ""
-      - src: /shots/personal/retro.jpg
-        label: Retro
-        caption: ""
-      - src: /revised/personal/task-content-comic.jpg
-        label: 01 / 物件打开
-        caption: 木屋进入项目，阅读产品介绍。
-      - src: /revised/personal/task-content-cyberpunk.jpg
-        label: 02 / 切换主题
-        caption: Cyberpunk外观下，同一段正文保留。
-      - src: /revised/personal/task-return.jpg
-        label: 03 / 返回桌面
-        caption: 主题保留，焦点回到原入口。
-    items:
-      - title: 双入口共享内容
-        text: 已检查换主题、返回与Escape；内容保留，不保证像素级阅读位置不变。
+        label: 完整桌面
+        caption: 保留全局导航、物件入口与主题切换；此处展示Comic主题。
+    items: []
     demo: https://youkai-ou.com/
     qr: /qr/desktop.svg
-    source: 2026-11-12连续操作；预渲染图+DOM。人物与品牌素材权利归原权利人，非商业展示。
+    source: 预渲染图+DOM；人物与品牌素材权利归原权利人，非商业展示。
+    detail: 桌面里的木屋、赛车和键盘，分别通向项目与对话。
+    meta:
+      - label: 项目性质
+        value: 可运行个人网站
+      - label: 视觉系统
+        value: Comic / Cyberpunk / Pixel / Blueprint / Retro
+      - label: 导航方式
+        value: 物件入口与顶部文字入口
+  - id: desktop-continuity
+    type: sequence
+    variant: full-interface
+    case: desktop
+    eyebrow: 04 / 主题与内容保持
+    title: 换主题，继续看同一内容
+    lead: 从Comic切换到Cyberpunk，项目面板与正文保留。
+    shots:
+      - src: /revised/personal/project-comic.jpg
+        label: 01 / 打开项目
+        caption: 完整内容界面：物件与文字入口到达同一项目面板。
+      - src: /revised/personal/project-cyberpunk.jpg
+        label: 02 / 切换主题
+        caption: 完整内容界面：外观改变，正文与链接保留。
+    items:
+      - title: 返回仍有起点
+        text: 已检查返回与Escape的焦点恢复；不保证像素级阅读位置完全不变。
+    source: 原站文案作为界面展示，不作为用户研究或成效证明；原始完整截图未改字。
   - id: closing
     type: closing
     eyebrow: NEXT / OPEN THE DEMOS

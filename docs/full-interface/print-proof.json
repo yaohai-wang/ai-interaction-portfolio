@@ -1,0 +1,190 @@
+{
+  "sourceIds": [
+    "cover",
+    "about",
+    "home-intro",
+    "home-hypotheses",
+    "home-journal",
+    "home-room",
+    "home-recovery",
+    "home-iteration",
+    "agent-intro",
+    "agent-states",
+    "agent-conditions",
+    "agent-confirm",
+    "f1-intro",
+    "f1-context",
+    "f1-evidence",
+    "desktop",
+    "desktop-continuity",
+    "closing"
+  ],
+  "renderedIds": [
+    "cover",
+    "about",
+    "home-intro",
+    "home-hypotheses",
+    "home-journal",
+    "home-room",
+    "home-recovery",
+    "home-iteration",
+    "agent-intro",
+    "agent-states",
+    "agent-conditions",
+    "agent-confirm",
+    "f1-intro",
+    "f1-context",
+    "f1-evidence",
+    "desktop",
+    "desktop-continuity",
+    "closing"
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "page": 1,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "about",
+      "page": 2,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-intro",
+      "page": 3,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-hypotheses",
+      "page": 4,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-journal",
+      "page": 5,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-room",
+      "page": 6,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-recovery",
+      "page": 7,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "home-iteration",
+      "page": 8,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "agent-intro",
+      "page": 9,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "agent-states",
+      "page": 10,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "agent-conditions",
+      "page": 11,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "agent-confirm",
+      "page": 12,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "f1-intro",
+      "page": 13,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "f1-context",
+      "page": 14,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "f1-evidence",
+      "page": 15,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "desktop",
+      "page": 16,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "desktop-continuity",
+      "page": 17,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    },
+    {
+      "id": "closing",
+      "page": 18,
+      "width": 1920,
+      "height": 1080,
+      "contentOverflow": [],
+      "horizontalOverflow": []
+    }
+  ],
+  "internalMarkers": [],
+  "orderMatches": true
+}

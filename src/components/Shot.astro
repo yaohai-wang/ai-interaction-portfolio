@@ -2,13 +2,14 @@
 import fs from 'node:fs';
 import sharp from 'sharp';
 const {shot,notes=[],print=false}=Astro.props;const exists=shot?.src&&fs.existsSync('public'+shot.src);const webp=shot?.src?.replace(/\.jpg$/,'.webp');
+const Frame=print?'div':'a';
 const dimensions=exists?await sharp('public'+shot.src).metadata():{width:1440,height:900};
 ---
-<figure class="shot-figure">
-  <div class="shot-wrap">
+<figure class="shot-figure" style={`--shot-ratio:${(dimensions.width||1440)/(dimensions.height||900)}`}>
+  <Frame class="shot-wrap" href={!print?shot?.src:undefined} data-image-viewer={!print?true:undefined} aria-label={!print?`放大查看：${shot?.label||shot?.alt||shot?.caption}`:undefined}>
     {exists?<picture>{!print&&fs.existsSync('public'+webp)&&<source srcset={webp} type="image/webp"/>}<img src={shot.src} alt={shot.alt||shot.caption} loading={print?'eager':'lazy'} width={dimensions.width} height={dimensions.height}/></picture>:<div class="asset-placeholder">素材采集中<span>{shot?.label||shot?.src||'TODO(Kai)'}</span></div>}
     <svg class="annotation-lines" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">{notes.filter((n:any)=>n.labelX!==undefined||n.labelY!==undefined).map((n:any)=><line x1={n.x*1000} y1={n.y*1000} x2={(n.labelX??n.x)*1000} y2={(n.labelY??n.y)*1000}/>)}</svg>
     {notes.map((n:any,i:number)=><span class="shot-pin" style={`left:${(n.labelX??n.x)*100}%;top:${(n.labelY??n.y)*100}%`} aria-label={`标注 ${i+1}：${n.title}`}>{i+1}</span>)}
-  </div>
-  <figcaption>{shot?.label&&<b>{shot.label} · </b>}{shot?.caption}</figcaption>
+  </Frame>
+  <figcaption><span data-shot-caption>{shot?.label&&<b>{shot.label} · </b>}{shot?.caption}</span>{!print&&<span class="shot-enlarge" aria-hidden="true">点击放大 ↗</span>}</figcaption>
 </figure>

@@ -1,0 +1,359 @@
+{
+  "date": "2026-11-12T15:42:47.997105+00:00",
+  "checks": {
+    "eighteenPages": true,
+    "sameExtractedText": true,
+    "originalPDFsUnchanged": true,
+    "downloadCopyMatches": true,
+    "headerFooterPixelsMatch": true,
+    "portfolio-ai-interaction-revisedFonts": true,
+    "portfolio-ai-interaction-revisedLinks": true,
+    "portfolio-ai-interaction-revised-lightFonts": true,
+    "portfolio-ai-interaction-revised-lightLinks": true,
+    "allThreeRenderSets": true
+  },
+  "passed": true,
+  "files": [
+    {
+      "path": "output/pdf/portfolio-ai-interaction-revised.pdf",
+      "bytes": 5163975,
+      "sha256": "e02c48e07e4de5bf8be6b7cdfb93b5435d653bf68f8f97a93468b0f45e2a4df4",
+      "pages": 18,
+      "links": 11
+    },
+    {
+      "path": "output/pdf/portfolio-ai-interaction-revised-light.pdf",
+      "bytes": 1886256,
+      "sha256": "26e939df1804d3802dcdd523303db245db5bff86c1d71f5f7807988fbfb8980e",
+      "pages": 18,
+      "links": 11
+    }
+  ],
+  "originalPDFs": [
+    {
+      "path": "output/pdf/M1-中文与链接-三页样张.pdf",
+      "sha256": "fc5b7a2810137d2a33880484c64ba4696168b355070dee913d7a09f554e06046",
+      "unchanged": true
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿.pdf",
+      "sha256": "9a8640d989224fd1709efa64d93cf8f848c2ce850b085d638a77ea2055a0216b",
+      "unchanged": true
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿-精简版.pdf",
+      "sha256": "a73bc64cc87c225b13d420198501d60ccc0320d176894022fc6ea337c9471492",
+      "unchanged": true
+    }
+  ],
+  "textRegionComparison": [
+    {
+      "page": 1,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 2,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 3,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 4,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 5,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 6,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 7,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 8,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 9,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 10,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 11,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 12,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 13,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 14,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 15,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 16,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 17,
+      "headerIdentical": true,
+      "footerIdentical": true
+    },
+    {
+      "page": 18,
+      "headerIdentical": true,
+      "footerIdentical": true
+    }
+  ],
+  "renderedPages": [
+    {
+      "path": "tmp/full-interface/main-01.png",
+      "sha256": "c7ef91fead7ae748b71a27b60b5c3472eb21a0581d18be94d4dccfd2b3f9604f"
+    },
+    {
+      "path": "tmp/full-interface/main-02.png",
+      "sha256": "d8101e952181872644d575799cd099c1b4ea7d579c1146b19d2014b51672d8d3"
+    },
+    {
+      "path": "tmp/full-interface/main-03.png",
+      "sha256": "d48faf8a1ad83b4249d4ed062f58a2dbe5f733238995c484f4532e1cc9985786"
+    },
+    {
+      "path": "tmp/full-interface/main-04.png",
+      "sha256": "f71b2562d47a9e164ea1ead4e0df8bfa34b9eaa5c9f08491f12ddcb438b187dc"
+    },
+    {
+      "path": "tmp/full-interface/main-05.png",
+      "sha256": "a46867c9beda4f6d620162c6677781f8d3243df348e7da956fdeed3358d3f5ac"
+    },
+    {
+      "path": "tmp/full-interface/main-06.png",
+      "sha256": "3a5c92b0d0ee42ce687916c87ba724946e9b43d9d496068647f3ab488d1320f2"
+    },
+    {
+      "path": "tmp/full-interface/main-07.png",
+      "sha256": "d71cad3af1860541dfd093fb83a2b08f0858513fc71dc7d34abfb5e6f6144291"
+    },
+    {
+      "path": "tmp/full-interface/main-08.png",
+      "sha256": "9e46e9af42419999a88630a78b515d4083ac40172d79b3962df4676cf12f193e"
+    },
+    {
+      "path": "tmp/full-interface/main-09.png",
+      "sha256": "d084d037acfd53cd77810fe80c2568f79eff5fa09323db16e7acfd23a6f4629d"
+    },
+    {
+      "path": "tmp/full-interface/main-10.png",
+      "sha256": "ace3b4da25bb6059c2842fa6cb050fd4715aac675b2688d60601a0c66b0cf88a"
+    },
+    {
+      "path": "tmp/full-interface/main-11.png",
+      "sha256": "ac240d3e3598e6d10e84f42b156a92d7d206813b8f8610fb9d3704f810e10b65"
+    },
+    {
+      "path": "tmp/full-interface/main-12.png",
+      "sha256": "1d1af3da6effff4ce7d5477f48ba903329805385284cb473a2a272c16a345927"
+    },
+    {
+      "path": "tmp/full-interface/main-13.png",
+      "sha256": "c278ac902b035752ac30a0ed516d012d17f367aef5e31dcd99e9484fcee4f8e8"
+    },
+    {
+      "path": "tmp/full-interface/main-14.png",
+      "sha256": "b0d32713c07cc0142ce52a14d1dba9e30b997e5d7ab78538954c615068dd7237"
+    },
+    {
+      "path": "tmp/full-interface/main-15.png",
+      "sha256": "fee1cb6f746a28d5d411040ac00a075d65434cf5f52c5b1905b23695cf516907"
+    },
+    {
+      "path": "tmp/full-interface/main-16.png",
+      "sha256": "0c6c5093683e10f5a25041a658925e4a1c21c8bbe41baac9d6dce6cadbb5335a"
+    },
+    {
+      "path": "tmp/full-interface/main-17.png",
+      "sha256": "8233a66afee05c24aaba0e3675e587080dd11d8a106e71aa0d5e403268cead1a"
+    },
+    {
+      "path": "tmp/full-interface/main-18.png",
+      "sha256": "83747e2c05bc910c7f4b81a9baee1cbc5ac8ab8be38469899a98325ac3e7a8cb"
+    },
+    {
+      "path": "tmp/full-interface/light-01.png",
+      "sha256": "c7ef91fead7ae748b71a27b60b5c3472eb21a0581d18be94d4dccfd2b3f9604f"
+    },
+    {
+      "path": "tmp/full-interface/light-02.png",
+      "sha256": "c6f77f4c6cd98618f8b31e30365fcb5957259f2011b83aad6ce3919f31e05f9c"
+    },
+    {
+      "path": "tmp/full-interface/light-03.png",
+      "sha256": "3b213f78fa5ce9382aa3e51c8840b6e8e709a9d3a5b206a37542d888c2a28dcc"
+    },
+    {
+      "path": "tmp/full-interface/light-04.png",
+      "sha256": "f71b2562d47a9e164ea1ead4e0df8bfa34b9eaa5c9f08491f12ddcb438b187dc"
+    },
+    {
+      "path": "tmp/full-interface/light-05.png",
+      "sha256": "04446d6becacfca700300eb18978aa82dc00cf8331814bab85d8a9458cd82c49"
+    },
+    {
+      "path": "tmp/full-interface/light-06.png",
+      "sha256": "c2b813f6e42a46017181029f9b8ab760803c6c0a0d4b9fe1ed5a81b3cf3a25e1"
+    },
+    {
+      "path": "tmp/full-interface/light-07.png",
+      "sha256": "05849cb0e45d9e682d0f907f527853f19175de1beb460ffc1dac9db83a2a5d35"
+    },
+    {
+      "path": "tmp/full-interface/light-08.png",
+      "sha256": "61a5354ed63007f5ad1493a2723e404c46aeb72ff5318ed0f0ccfe34a3febe2e"
+    },
+    {
+      "path": "tmp/full-interface/light-09.png",
+      "sha256": "4296b9b1375273adbee7d6f2a64ed009d2715762225e21b6995f4a541825183e"
+    },
+    {
+      "path": "tmp/full-interface/light-10.png",
+      "sha256": "5ecb581bb2d62702e233ab314fd793301ab08a6654c7b216b880e731ba757d59"
+    },
+    {
+      "path": "tmp/full-interface/light-11.png",
+      "sha256": "8b7259cf036255ab98950216ecf21f762055bcfc111525d3c07e681dbee8e606"
+    },
+    {
+      "path": "tmp/full-interface/light-12.png",
+      "sha256": "f1b7765caa7684c4b00866809d2bad567852f89fa10686d09ab7f09fe3bf0193"
+    },
+    {
+      "path": "tmp/full-interface/light-13.png",
+      "sha256": "1a0a9d49a8b1d93a51c2a53cec27350090b3f2f2d64037570a8db2563837b695"
+    },
+    {
+      "path": "tmp/full-interface/light-14.png",
+      "sha256": "85f2321dab8cd7dd4ccceb02c3a196c31318a4fcdc0df56e4d0fa5488e409c38"
+    },
+    {
+      "path": "tmp/full-interface/light-15.png",
+      "sha256": "ed25c777ec4318a58dadb54ce06f5fbf929c0438c7e26a8caafb1bd31a76bcc5"
+    },
+    {
+      "path": "tmp/full-interface/light-16.png",
+      "sha256": "6b7e3725d0c20adf7bff0577b63a2a570b03b3fea241b969ed8f94216c52cbdc"
+    },
+    {
+      "path": "tmp/full-interface/light-17.png",
+      "sha256": "0bd94282d4ee795215edc4c8c92c50cba4093eb29e3e1c4f1f0f14c1cc2ff735"
+    },
+    {
+      "path": "tmp/full-interface/light-18.png",
+      "sha256": "83747e2c05bc910c7f4b81a9baee1cbc5ac8ab8be38469899a98325ac3e7a8cb"
+    },
+    {
+      "path": "tmp/full-interface/native/page-01.png",
+      "sha256": "0bec80960e8dbb8847d87d8f6c224b99ad83cfa85f19b214bfd4216331a962a4"
+    },
+    {
+      "path": "tmp/full-interface/native/page-02.png",
+      "sha256": "5a0c59af6b43b7f990bcff582adf187bcd56e6a173d7da7da56a52c488d244f3"
+    },
+    {
+      "path": "tmp/full-interface/native/page-03.png",
+      "sha256": "e044245ad0bb98e9f444a5b2fcb21b502527d94dcd5d106d41177179c9e08b3a"
+    },
+    {
+      "path": "tmp/full-interface/native/page-04.png",
+      "sha256": "8755db29e7a73b38f1cfcf9ff1c017aef31f5de7f66e6018bc191e5cd70f6218"
+    },
+    {
+      "path": "tmp/full-interface/native/page-05.png",
+      "sha256": "1b09125087bd0bf062c053d3a7b67591fda17ec374ba13dbe604df1a5ceb02f8"
+    },
+    {
+      "path": "tmp/full-interface/native/page-06.png",
+      "sha256": "9a2740a090b7dbdf0cb22217f25ffba2d81f9392f6350d3a7d3f7e86f03286eb"
+    },
+    {
+      "path": "tmp/full-interface/native/page-07.png",
+      "sha256": "08a9fe6a96d26297ef5308af5ab0b9758fbfdf8e237bdd8d8196fa11d5208888"
+    },
+    {
+      "path": "tmp/full-interface/native/page-08.png",
+      "sha256": "7815ce5ff7cebd336912c41876a52c0629a684cd8d3696dd41099fec2da426ac"
+    },
+    {
+      "path": "tmp/full-interface/native/page-09.png",
+      "sha256": "eff18ff610505c163a21fd3ac41cc30ac7a55b4b99407838eb5015340cbdd66e"
+    },
+    {
+      "path": "tmp/full-interface/native/page-10.png",
+      "sha256": "3192d40817586d300748ecdcc5a1c4b0a13a3654d88353c969841ea15c99c80a"
+    },
+    {
+      "path": "tmp/full-interface/native/page-11.png",
+      "sha256": "270769331880550f82766b379607fdbe3695c540b145295ab38c21d315027a44"
+    },
+    {
+      "path": "tmp/full-interface/native/page-12.png",
+      "sha256": "b2e1f176c60238509db9f29a445541f3c95796113c3d2516886e32c64a32c3dc"
+    },
+    {
+      "path": "tmp/full-interface/native/page-13.png",
+      "sha256": "9250bed3a2ecec45049441d7c751c399332e23378450f697ff32d5bbbb616a50"
+    },
+    {
+      "path": "tmp/full-interface/native/page-14.png",
+      "sha256": "1a257248899ad691b3f9847fe1e1e494ccbccdcda64a85e25a8b121eec81a8bc"
+    },
+    {
+      "path": "tmp/full-interface/native/page-15.png",
+      "sha256": "6ba4c28348ca793324b160735bea1fe0434272ba527750bc5df3c981fca794de"
+    },
+    {
+      "path": "tmp/full-interface/native/page-16.png",
+      "sha256": "06b11470eb74feb58cc030c48427a180f86ff53d67239a50ba63ee5bd94e3409"
+    },
+    {
+      "path": "tmp/full-interface/native/page-17.png",
+      "sha256": "102291104fb68d45bd8df5f1df81434970c8b9414c4d784db9da7fefb3d8e597"
+    },
+    {
+      "path": "tmp/full-interface/native/page-18.png",
+      "sha256": "63cd57f8ef3c6a2e3f553df0441dc2dad3d3834a5b70f3950f25808161ca8c85"
+    }
+  ]
+}

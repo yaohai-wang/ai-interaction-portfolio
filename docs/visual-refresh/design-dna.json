@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "name": "Kai Wang · AI 交互设计作品集 / Dala-derived Design DNA",
+    "description": "依据用户提供的 DESIGN.md 规格建立三维设计 DNA，并适配真实项目案例、中文阅读与 1920 × 1080 PDF。此文件描述作品集外层设计，不重绘或改色原产品界面。",
+    "source_references": [
+      {
+        "path": "/Users/youkaiou/Downloads/DESIGN.md",
+        "local_copy": "docs/visual-refresh/DESIGN-reference.md",
+        "kind": "user-provided Markdown style specification",
+        "method": "直接采用文档中明确给出的 token；没有访问到原始 Variant 页面，也没有执行参考图像取色。"
+      },
+      {
+        "path": "/Users/youkaiou/.codex/skills/design-dna/SKILL.md",
+        "kind": "workflow and schema",
+        "schema": "references/schema.md",
+        "guide": "references/generation-guide.md"
+      },
+      {
+        "path": "src/styles/revision.css",
+        "kind": "implementation"
+      },
+      {
+        "path": "src/components/Constellation.astro",
+        "kind": "deterministic decorative SVG implementation"
+      }
+    ],
+    "created_at": "2026-11-13",
+    "source_integrity": "measured_palette 和 measurement 是可选字段，因未对参考图取色而省略。文档里两处/多处不合法的 #15846 均依据同一文档有效 token 统一为 #15846e；不复制源品牌名称或产品文案。",
+    "scope": "网页首页、四个案例、关于页、17 页主 PDF 与轻量 PDF。素材索引、历史证据、设计规格辅助页及截图内部 UI 保留来源语义。",
+    "adaptations": {
+      "fonts": "使用文档允许的 Inter 替代 PPNeueMontreal；中文使用本地 Noto Sans SC 子集（CSS 名 Folio），正文 200，标题 400。Inter 从保留的 variable 源生成同字形 static 200/400/600 woff2，以使 Chrome PDF 输出嵌入 TrueType 而非 Type3；不依赖远程字体。",
+      "display": "参考 display 113px / heading 78px；网页封面用 clamp(56px,6.5vw,96px)，打印封面 104px、案例首屏 78px、证据页 58px。中文增加行高以防重叠。",
+      "layout": "参考网页 max-width 1280px；实际外框 1472px 包含内边距以给产品截图留足空间，打印外框 1920px、左右 96px；移动端 800px 以下单列。",
+      "content": "参考禁止 hero 产品图应用于作品集总封面；具体案例必须展示真实产品界面。截图不添加假设备、渐变、合成装饰或虚构结果。",
+      "rounding": "保留 24px 主按钮；截图主视觉采用 12px、首页 18px，证据裁图 0px，避免裁掉界面内容。",
+      "effects": "用确定性 SVG 三角形代替未经获取的源站粒子资产；不宣称复刻源实现。仅整组慢速 transform，无 WebGL 和指针物理。打印和 reduced motion 静止。",
+      "evidence": "案例证据使用二至四列以便同屏比较；首页保持交替两栏、无卡片面板。"
+    }
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "neutral monochrome foundation with violet, amber and teal accents",
+      "primary": {
+        "hex": "#ffffff",
+        "role": "正文主层级、标题、主按钮文字"
+      },
+      "secondary": {
+        "hex": "#ffb829",
+        "role": "章节眉题、关键人类决策、次级文本链接"
+      },
+      "accent": {
+        "hex": "#8052ff",
+        "role": "唯一实心主按钮颜色、标记和装饰粒子"
+      },
+      "neutral": {
+        "scale": [
+          "#ffffff",
+          "#bdbdbd",
+          "#9a9a9a",
+          "#000000"
+        ],
+        "usage": "从浅到深排列。白色主文字，#bdbdbd 支持文字和说明，#9a9a9a 元信息，#000000 页面底色。"
+      },
+      "semantic": {
+        "success": "#15846e",
+        "warning": "#ffb829",
+        "error": "#ffffff",
+        "info": "#8052ff"
+      },
+      "surface": {
+        "background": "#000000",
+        "card": "#000000",
+        "elevated": "#000000"
+      },
+      "contrast_strategy": "纯黑底保证白/灰文本对比。紫色按钮白字。语义 success/error 是预留映射，参考未提供错误态；作品集不新增状态控件，错误必须用文字解释，不能仅靠颜色。青绿只作装饰，不作小字。"
+    },
+    "typography": {
+      "font_families": {
+        "heading": "Inter, Folio (Noto Sans SC), sans-serif",
+        "body": "Inter, Folio (Noto Sans SC), sans-serif",
+        "mono": "ui-monospace, monospace (reserved; not used in portfolio narrative)"
+      },
+      "type_scale": {
+        "display": {
+          "size": "web clamp(56px,6.5vw,96px); PDF 104px; mobile 52px",
+          "weight": 400,
+          "line_height": "web 1.14; PDF 1.16",
+          "tracking": "-0.04em"
+        },
+        "heading_1": {
+          "size": "web clamp(34px,4.1vw,64px); PDF hero 78px / evidence 58px",
+          "weight": 400,
+          "line_height": 1.2,
+          "tracking": "-0.04em"
+        },
+        "heading_2": {
+          "size": "web 24–48px; PDF 30–36px",
+          "weight": 400,
+          "line_height": "1.2–1.3",
+          "tracking": "-0.04em"
+        },
+        "heading_3": {
+          "size": "web 20–24px; PDF 27–30px",
+          "weight": 400,
+          "line_height": 1.3,
+          "tracking": "-0.04em"
+        },
+        "body": {
+          "size": "web 18px; PDF 26px; mobile 16px",
+          "weight": 200,
+          "line_height": "web 1.6; PDF 1.5",
+          "tracking": "normal"
+        },
+        "body_small": {
+          "size": "web 15–17px; PDF 22–23px",
+          "weight": 200,
+          "line_height": 1.5,
+          "tracking": "normal"
+        },
+        "caption": {
+          "size": "web 12–13px; PDF 18–19px",
+          "weight": 200,
+          "line_height": "web 1.55; PDF 1.45",
+          "tracking": "normal"
+        },
+        "overline": {
+          "size": "web 12px; PDF 18px",
+          "weight": 400,
+          "line_height": 1.4,
+          "tracking": "0.025em"
+        }
+      },
+      "font_style_notes": "几何无衬线，标题 400 与正文 200，通过尺度与留白形成层级。Inter 从本地 variable 源生成真实 200/400/600 静态字重 woff2；中文 Noto Sans SC 真实 200/400 子集。静态实例保留同字形并改善 PDF 字体嵌入。英文采用简洁常规大小写，中文不强制 uppercase。源文档导航允许 400 或 600；实际导航 400，字标 600。"
+    },
+    "spacing": {
+      "base_unit": "6px",
+      "scale": [
+        "6px",
+        "12px",
+        "18px",
+        "24px",
+        "30px",
+        "36px",
+        "42px",
+        "48px",
+        "60px",
+        "72px",
+        "84px",
+        "96px",
+        "120px",
+        "144px"
+      ],
+      "content_density": "spacious website; comfortable comparison pages",
+      "section_rhythm": "首页大段之间 144px，段内 24–36px；案例页顶部 72px / 底部 60px；PDF 顶部 72px / 左右 96px / 底部 48px。少量 8/10/14/16px 为字号和图注光学适配。"
+    },
+    "layout": {
+      "grid_system": "CSS Grid asymmetric two-column editorial layout; flex vertical reading groups",
+      "max_content_width": "1472px including web gutters; PDF canvas 1920px with 1728px content width",
+      "columns": "首页 2 栏交替；封面 .95fr:1.35fr；证据对比 2–4 栏；移动端主要 1 栏",
+      "gutter": "clamp(24px,5vw,96px); section gaps 36–72px",
+      "breakpoints": {
+        "mobile": "max-width:800px",
+        "print": "1920 × 1080px fixed page"
+      },
+      "alignment_tendency": "asymmetric, left-aligned type, consistent outer grid"
+    },
+    "shape": {
+      "border_radius": {
+        "small": "0px evidence screenshots",
+        "medium": "12px case hero screenshots",
+        "large": "18px home project images; 24px reference component token",
+        "pill": "24px main action; 30px PDF action"
+      },
+      "border_usage": "none on cards, sections, screenshots and navigation; visible keyboard focus retained",
+      "divider_style": "none; spacing and typographic hierarchy separate groups"
+    },
+    "elevation": {
+      "shadow_style": "none",
+      "levels": {
+        "low": "none",
+        "medium": "none",
+        "high": "none"
+      },
+      "depth_cues": "scale, opacity and chromatic density in decorative constellation only"
+    },
+    "iconography": {
+      "style": "small outlined triangle brand mark plus text arrow links; no generic AI icon library",
+      "stroke_weight": "constellation paths 0.8px, ambient 0.7px in SVG viewBox",
+      "size_scale": [
+        "12px",
+        "18px",
+        "24px"
+      ],
+      "preferred_set": "inline SVG and simple Unicode arrows; no external icon set"
+    },
+    "motion": {
+      "easing": "ease for hover; ease-in-out for constellation",
+      "duration_scale": {
+        "micro": "180ms",
+        "normal": "180ms",
+        "macro": "14s alternate ambient loop"
+      },
+      "entrance_pattern": "none; content immediately visible",
+      "exit_pattern": "none; normal navigation",
+      "philosophy": "minimal functional plus one quiet decorative loop; static in print and reduced-motion"
+    },
+    "components": {
+      "button_style": "One filled #8052ff action per view, white 400 text, 24px rounded pill; secondary actions plain white/amber/gray text. No gradient or drop shadow.",
+      "input_style": "No portfolio form. Original app inputs remain inside authentic screenshots and keep source styling.",
+      "card_style": "No background panel, border or shadow. Images and captions separated by whitespace.",
+      "navigation_pattern": "Transparent horizontal header on black; identity left, short text navigation right; case jump links use quiet gray. Mobile wraps compactly.",
+      "modal_style": "No portfolio modal or lightbox introduced. Original product dialog UI is documented in screenshots only.",
+      "list_style": "Unboxed numbered decisions and horizontal state axis; amber identifies deliberate human action.",
+      "component_notes": "Project overview uses a small image index. Case pages may use parallel evidence columns; this is an intentional adaptation from the reference landing page to an interview portfolio. Screenshot content is preserved as evidence."
+    }
+  },
+  "design_style": {
+    "aesthetic": {
+      "mood": [
+        "quiet",
+        "precise",
+        "spacious",
+        "confident"
+      ],
+      "visual_metaphor": "Colored triangles suspended on a black stage; projects presented as clear visual evidence.",
+      "era_influence": "Contemporary geometric web editorial, based on the supplied Dala style description.",
+      "genre": "personal AI interaction design portfolio",
+      "personality_traits": [
+        "restrained",
+        "thoughtful",
+        "direct"
+      ],
+      "adjectives": [
+        "weightless typography",
+        "clear hierarchy",
+        "large imagery",
+        "open composition"
+      ]
+    },
+    "visual_language": {
+      "complexity": "minimal outer UI, real product complexity inside screenshots",
+      "ornamentation": "single decorative constellation on cover",
+      "whitespace_usage": "generous negative space; no filler cards or decorative tags",
+      "visual_weight_distribution": "large left-aligned headings balanced by one broad product image or constellation",
+      "focal_strategy": "single main visual per section; evidence progressively elaborates decisions",
+      "contrast_level": "high contrast monochrome with small saturated accents",
+      "texture_usage": "none; no grain, glass, or artificial material"
+    },
+    "composition": {
+      "hierarchy_method": "scale, weight contrast 400/200, spatial isolation and restrained color",
+      "balance_type": "asymmetric",
+      "flow_direction": "left-to-right desktop; top-to-bottom mobile; alternating feature alignment on homepage",
+      "grouping_strategy": "semantic proximity and repeated outer grid, not boxed containers",
+      "negative_space_role": "separates claims and evidence, gives screenshots breathing room"
+    },
+    "imagery": {
+      "photo_treatment": "No invented lifestyle photo. Actual product screenshots use natural proportions and purposeful crops; no recoloring.",
+      "illustration_style": "Deterministic vector triangle constellation on cover only.",
+      "graphic_elements": [
+        "outlined triangles",
+        "small arrows",
+        "plain step numbers",
+        "QR codes for working local deliverable links"
+      ],
+      "pattern_usage": "sparse ambient triangles around the cover cluster; no page-wide repeated texture",
+      "image_shape": "natural screenshot proportions; small rounded main views, square-corner evidence crops"
+    },
+    "interaction_feel": {
+      "feedback_style": "visible focus ring, text color change, modest button opacity change",
+      "hover_behavior": "primary action opacity .85; navigation white; project title amber",
+      "transition_personality": "subtle and immediate",
+      "loading_style": "native image loading and locally hosted font swap; no animated skeleton",
+      "microinteraction_density": "low"
+    },
+    "brand_voice_in_ui": {
+      "tone": "direct, first-person where supported, evidence-based Chinese",
+      "formality": "professional and conversational; no exaggerated capability claims",
+      "cta_style": "short concrete actions: 看作品、查看案例、下载作品集",
+      "empty_state_approach": "Do not substitute blank app screens for featured product imagery; unresolved personal facts remain TODO(Kai) in supporting questions documentation.",
+      "error_tone": "Name the observed state and next available action; distinguish actual observed failure from untested edge case."
+    }
+  },
+  "visual_effects": {
+    "overview": {
+      "effect_intensity": "subtle-accent",
+      "performance_tier": "lightweight",
+      "fallback_strategy": "Static SVG with no extra runtime dependency; group animation disabled in print and prefers-reduced-motion. The same vectors remain as static art.",
+      "primary_technology": "server-rendered SVG paths plus CSS transform animation"
+    },
+    "background_effects": {
+      "type": "none",
+      "description": "Solid #000000 canvas; ambient outlined triangles are part of the cover SVG, not an animated background surface.",
+      "technology": "CSS background",
+      "params": {
+        "color_palette": [
+          "#000000"
+        ],
+        "speed": "0",
+        "density": "0 background particles outside cover SVG",
+        "opacity": 1,
+        "blend_mode": "normal"
+      }
+    },
+    "particle_systems": {
+      "enabled": true,
+      "type": "custom",
+      "description": "Organic cloud of 1050 deterministic outlined triangles plus 70 sparse ambient triangles. Positions created at build time from a fixed seed; whole group rotates and scales gently.",
+      "technology": "SVG + CSS",
+      "params": {
+        "count": 1120,
+        "shape": "outlined triangle",
+        "size_range": "cloud half-width 1.7–5.3 SVG units; ambient 2–5 units",
+        "movement_pattern": "cloud rotate(-3deg) scale(.97) to rotate(3deg) scale(1.02), 14s alternate; ambient static",
+        "color_behavior": "fixed seeded selection from violet, amber, teal, silver and white; no animated color shifts",
+        "interaction": "none",
+        "spawn_area": "1040 × 740 SVG viewBox; cloud centered near (520,370), ambient throughout viewBox"
+      }
+    },
+    "3d_elements": {
+      "enabled": false,
+      "type": "none",
+      "description": "No live 3D or synthetic product render in the portfolio. Home case may show authentic screenshots of its own 3D room.",
+      "technology": "none",
+      "params": {
+        "renderer": "none",
+        "lighting": "none",
+        "camera": "none",
+        "materials": "none",
+        "geometry": "none",
+        "post_processing": [],
+        "interaction_model": "none"
+      }
+    },
+    "shader_effects": {
+      "enabled": false,
+      "type": "none",
+      "description": "No custom shader pipeline.",
+      "technology": "none",
+      "params": {
+        "uniforms": {},
+        "vertex_manipulation": "none",
+        "fragment_output": "none",
+        "noise_type": "none",
+        "distortion": "none"
+      }
+    },
+    "scroll_effects": {
+      "parallax": {
+        "enabled": false,
+        "layers": 0,
+        "depth_range": "0",
+        "speed_curve": "none"
+      },
+      "scroll_triggered_animations": {
+        "enabled": false,
+        "trigger_points": [],
+        "animation_type": "none",
+        "scrub_behavior": "none"
+      },
+      "scroll_morphing": {
+        "enabled": false,
+        "description": "No scroll-driven shape changes; standard document scroll."
+      }
+    },
+    "text_effects": {
+      "type": "none",
+      "description": "Text remains selectable and readable; no split-character or animated text.",
+      "technology": "HTML + CSS",
+      "params": {
+        "split_strategy": "none",
+        "animation_per_unit": "none",
+        "stagger": "0ms",
+        "effect_style": "none"
+      }
+    },
+    "cursor_effects": {
+      "enabled": false,
+      "type": "none",
+      "description": "Keep platform cursor and normal link affordance.",
+      "params": {
+        "shape": "platform default",
+        "size": "platform default",
+        "blend_mode": "normal",
+        "trail": "none",
+        "interaction_zone": "none"
+      }
+    },
+    "image_effects": {
+      "type": "none",
+      "description": "Preserve actual screenshot pixels and proportions. Basic fit/crop only; no generative replacement, perspective warp, glow or hover distortion.",
+      "technology": "HTML picture + CSS object-fit",
+      "params": {
+        "filter_pipeline": [],
+        "hover_transform": "none",
+        "reveal_animation": "none",
+        "distortion_type": "none"
+      }
+    },
+    "glassmorphism_neumorphism": {
+      "enabled": false,
+      "style": "none",
+      "params": {
+        "blur_radius": "0px",
+        "transparency": 0,
+        "border_treatment": "none",
+        "shadow_type": "none",
+        "light_source_angle": "not applicable"
+      }
+    },
+    "canvas_drawings": {
+      "enabled": false,
+      "type": "none",
+      "description": "Cover illustration uses SVG; no Canvas rendering context.",
+      "technology": "none",
+      "params": {
+        "draw_method": "none",
+        "animation_loop": "none",
+        "color_scheme": "not applicable",
+        "responsiveness": "not applicable",
+        "interaction": "none"
+      }
+    },
+    "svg_animations": {
+      "enabled": true,
+      "type": "decorative-loop",
+      "description": "One CSS transform loop on the constellation group; paths do not morph or individually update.",
+      "params": {
+        "animation_method": "CSS keyframes cloud-breathe 14s ease-in-out infinite alternate",
+        "path_morphing": "none",
+        "stroke_animation": "none",
+        "filter_effects": "none"
+      }
+    },
+    "composite_notes": "Source describes a brain-shaped multicolor particle cloud but provides no source asset or executable effect. This portfolio uses an original deterministic SVG interpretation in the same palette, not a claimed extraction of the source animation. SVG avoids added WebGL libraries and remains vector-sharp in PDF. Product screenshot colors are evidence and intentionally excluded from the outer-shell palette restriction. Disabled effect categories are retained in JSON for complete schema traceability."
+  }
+}

@@ -282,5 +282,49 @@
     "width": 400,
     "height": 180,
     "caption": "真实交互截图像素裁切，未改动界面。第三方素材权利归原权利人，非商业展示。"
+  },
+  {
+    "id": "task-content-comic",
+    "title": "01 Comic · 理想之家项目正文",
+    "kind": "derived-crop",
+    "sourceImage": "/revised/personal/project-comic.jpg",
+    "sourceURL": "https://youkai-ou.com/",
+    "sourceCapturedAt": "2026-11-12T13:57:41.767Z",
+    "date": "2026-11-12T15:20:16.854Z",
+    "cropPixels": {
+      "left": 980,
+      "top": 364,
+      "width": 700,
+      "height": 130
+    },
+    "image": "/revised/personal/task-content-comic.jpg",
+    "webp": "/revised/personal/task-content-comic.webp",
+    "bytes": 25733,
+    "webpBytes": 23526,
+    "width": 700,
+    "height": 130,
+    "caption": "真实交互截图像素裁切，未改动界面。第三方素材权利归原权利人，非商业展示。"
+  },
+  {
+    "id": "task-content-cyberpunk",
+    "title": "02 Cyberpunk · 保留同一段项目正文",
+    "kind": "derived-crop",
+    "sourceImage": "/revised/personal/project-cyberpunk.jpg",
+    "sourceURL": "https://youkai-ou.com/",
+    "sourceCapturedAt": "2026-11-12T13:57:43.390Z",
+    "date": "2026-11-12T15:20:16.909Z",
+    "cropPixels": {
+      "left": 980,
+      "top": 350,
+      "width": 700,
+      "height": 130
+    },
+    "image": "/revised/personal/task-content-cyberpunk.jpg",
+    "webp": "/revised/personal/task-content-cyberpunk.webp",
+    "bytes": 26468,
+    "webpBytes": 23852,
+    "width": 700,
+    "height": 130,
+    "caption": "真实交互截图像素裁切，未改动界面。第三方素材权利归原权利人，非商业展示。"
   }
 ]

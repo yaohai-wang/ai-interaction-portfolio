@@ -1,6 +1,6 @@
 # 王耀海 · AI 交互设计作品集（修订预览版）
 
-现有 Astro 工程的本地修订稿：**16 页、16:9 网页与 PDF**，面向 2027 届 AI 创新交互设计方向。原 22 页草稿和原始素材保留；本轮没有部署、公开发布或修改其他产品源码。
+现有 Astro 工程的本地修订稿：**17 页、16:9 网页与 PDF**，面向 2027 届 AI 创新交互设计方向。原 22 页草稿和原始素材保留；本轮没有部署、公开发布或修改其他产品源码。
 
 本版本仍是修订预览版。个人职责、实际项目周期、TasteTwin 素材公开许可及联系方式等缺口集中在 [docs/portfolio-evidence-gaps.md](docs/portfolio-evidence-gaps.md)。阅读页移除了内部 TODO，不代表这些事实已确认，也不代表已可正式投递。
 
@@ -15,10 +15,10 @@ npm run dev
 
 主要入口：
 
-- `/`：封面与项目导航；`/about/`：简介。完整16页主稿在 `/print/`，案例正文也可分别阅读。
+- `/`：封面与项目导航；`/about/`：简介。完整17页主稿在 `/print/`，案例正文也可分别阅读。
 - `/cases/ideal-home/`、`/cases/agent/`、`/cases/pitwall/`、`/cases/desktop/`：四个案例。
-- `/print/`：与 PDF 同序的 16 页打印稿。
-- `/specs/`、`/assets-review/`：源码规格与素材审阅补充，不计入 16 页主稿。
+- `/print/`：与 PDF 同序的 17 页打印稿。
+- `/specs/`、`/assets-review/`：源码规格与素材审阅补充，不计入 17 页主稿。
 
 查看构建产物：先 `npm run build`，再 `npm run preview`，使用终端显示的地址。
 
@@ -29,11 +29,11 @@ npm run dev
 | 1–2 | 封面、简介与项目导航 |
 | 3–8 | 理想之家：问题假设、同一任务、积分与房间、恢复、迭代 |
 | 9–12 | TasteTwin：规则边界、状态关系、条件修正、实际半份记录 |
-| 13–14 | 围场智析：上下文范围、两次真实问答与来源边界 |
-| 15 | 桌面平行宇宙：主视觉、主题对比、打开—切换—返回任务 |
-| 16 | 现有演示入口 |
+| 13–15 | F1 · 围场智析：完整产品首页、上下文范围、真实问答与来源边界 |
+| 16 | 桌面平行宇宙：主视觉、主题对比、打开—切换—返回任务 |
+| 17 | 现有演示入口 |
 
-AI 辅助过程并入理想之家迭代页，没有为凑页数新增未经证实的决策过程。详细修改记录见 [docs/revision/change-log.md](docs/revision/change-log.md)，实际验证与逐页检查见 [docs/revision/validation.md](docs/revision/validation.md)。
+AI 辅助过程并入理想之家迭代页，没有为凑页数新增未经证实的决策过程。本轮按用户提供的 DESIGN.md 与 Design-dna skill 重做黑色视觉系统：自托管 Inter/Noto 轻字重、紫色单主动作、琥珀色标记、大留白和真实大图。参考、完整三维 DNA、适配说明、修改记录与验证均在 [docs/visual-refresh/](docs/visual-refresh/)。上一版16页记录保留在 docs/revision/。
 
 ## 编辑与构建
 
@@ -59,7 +59,7 @@ npm run specs                  # 可选：导出补充规格图与 SVG
 
 当前交付：
 
-- `output/pdf/portfolio-ai-interaction-revised.pdf`：16 页修订预览版。
+- `output/pdf/portfolio-ai-interaction-revised.pdf`：17 页修订预览版。
 - `output/pdf/portfolio-ai-interaction-revised-light.pdf`：同内容的低体积修订版，已正式导出供本地审阅。
 - `output/pdf/portfolio-ai-interaction-revised.pdf.json`：页数、文件大小、字体、内部跳转及外部链接记录。
 - `public/downloads/portfolio-ai-interaction-revised.pdf`：本地站点下载副本。
@@ -76,10 +76,10 @@ macOS 下将导出的 PDF 逐页渲染为检查图：
 
 ```sh
 osascript -l JavaScript scripts/render-native.js \
-  output/pdf/portfolio-ai-interaction-revised.pdf tmp/revision/native
+  output/pdf/portfolio-ai-interaction-revised.pdf tmp/visual-refresh/native
 ```
 
-该命令只读 PDF，图片写入 `tmp/revision/native/`。检查结果分别见 `docs/revision/print-proof.json`、`pdf-layout-check.json`、`qa-report.json`（执行对应检查后生成），以及 PDF 同名 JSON。链接存在、链接可访问和业务功能可用是三项不同验证。
+该命令只读 PDF，图片写入 `tmp/visual-refresh/native/`。检查结果分别见 `docs/visual-refresh/print-proof.json`、`docs/visual-refresh/pdf-layout-check.json`、`docs/visual-refresh/qa-report.json`（执行对应检查后生成），以及 PDF 同名 JSON。链接存在、链接可访问和业务功能可用是三项不同验证。
 
 ## 证据与复测边界
 
@@ -102,6 +102,6 @@ npm run setup
 npm run build
 ```
 
-`setup` 会下载官方 Noto 字体并创建本地 `.venv`；字体许可证在 `public/fonts/OFL.txt`。使用已纳入工程的素材进行预览、构建和 PDF 导出，不依赖原产品仓库；重新采集历史版本才需要原仓库。
+`setup` 会下载官方 Noto 字体并创建本地 `.venv`；字体许可证在 `public/fonts/OFL.txt` 与 `public/fonts/Inter-LICENSE.txt`。使用已纳入工程的素材进行预览、构建和 PDF 导出，不依赖原产品仓库；重新采集历史版本才需要原仓库。
 
-本轮**不部署**。`npm run build:release` 还会检查 `docs/revision/release-gate.json` 中的实质缺口；移除页面上的 TODO 不能解除发布限制。原 `docs/progress.md`、`docs/questions.md` 和 `docs/release-checklist.md` 保留为上一轮 M0–M5 记录，当前缺口以 `docs/portfolio-evidence-gaps.md` 为准。
+本轮**不部署**。`npm run build:release` 还会检查 `docs/revision/release-gate.json` 中的实质缺口；移除页面上的 TODO 不能解除发布限制。`docs/progress.md` 追加本轮记录；`docs/questions.md` 汇总当前本人问题并保留历史索引，完整缺口以 `docs/portfolio-evidence-gaps.md` 为准。

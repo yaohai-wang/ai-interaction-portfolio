@@ -1,0 +1,53 @@
+{
+  "13": {
+    "dimensions": [
+      1600,
+      900
+    ],
+    "titleMatches": true,
+    "footerMatches": true,
+    "fullDiffBounds": [
+      602,
+      262,
+      1430,
+      780
+    ]
+  },
+  "14": {
+    "dimensions": [
+      1600,
+      900
+    ],
+    "titleMatches": true,
+    "footerMatches": true,
+    "fullDiffBounds": [
+      182,
+      242,
+      1418,
+      356
+    ]
+  },
+  "15": {
+    "dimensions": [
+      1600,
+      900
+    ],
+    "titleMatches": true,
+    "footerMatches": true,
+    "fullDiffBounds": [
+      219,
+      242,
+      1413,
+      539
+    ]
+  },
+  "17": {
+    "dimensions": [
+      1600,
+      900
+    ],
+    "titleMatches": true,
+    "footerMatches": true,
+    "fullDiffBounds": null
+  }
+}

@@ -248,5 +248,49 @@
     "bytes": 96324,
     "webpBytes": 87664,
     "caption": "真实复测截图的像素裁切；未更改文字或界面内容。"
+  },
+  {
+    "id": "evidence-dialogue",
+    "title": "法拉利页真实提问与回答",
+    "kind": "derived-crop",
+    "sourceImage": "/revised/f1/evidence-detail.jpg",
+    "sourceURL": "https://f1.youkai-ou.com/zh/teams/ferrari",
+    "sourceCapturedAt": "2026-11-12T13:52:15.407Z",
+    "date": "2026-11-12T14:51:58.819Z",
+    "cropPixels": {
+      "left": 60,
+      "top": 455,
+      "width": 890,
+      "height": 620
+    },
+    "image": "/revised/f1/evidence-dialogue.jpg",
+    "webp": "/revised/f1/evidence-dialogue.webp",
+    "width": 890,
+    "height": 620,
+    "bytes": 53392,
+    "webpBytes": 43990,
+    "caption": "从同一帧真实问答截图裁切，保留完整提问、回答、数据时间、来源数量与“快照资料，非实时”提示；上方范围控件未包含在裁切内。"
+  },
+  {
+    "id": "web-boundary-dialogue",
+    "title": "首页联网问答 · 无法确认本页的边界",
+    "kind": "derived-crop",
+    "sourceImage": "/revised/f1/web-only-detail.jpg",
+    "sourceURL": "https://f1.youkai-ou.com/zh/home",
+    "sourceCapturedAt": "2026-11-12T13:52:41.842Z",
+    "date": "2026-11-12T14:51:58.920Z",
+    "cropPixels": {
+      "left": 60,
+      "top": 455,
+      "width": 890,
+      "height": 390
+    },
+    "image": "/revised/f1/web-boundary-dialogue.jpg",
+    "webp": "/revised/f1/web-boundary-dialogue.webp",
+    "width": 890,
+    "height": 390,
+    "bytes": 49850,
+    "webpBytes": 41746,
+    "caption": "从同一帧真实问答截图裁切，保留完整提问与回答首段。回答后续联网来源说明和引用未包含在本局部；这不是服务报错或完整回答。"
   }
 ]

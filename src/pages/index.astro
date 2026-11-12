@@ -1,5 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';import Block from '../components/Block.astro';import {content} from '../content/schema';
-const pages=content.pages.filter(p=>['cover','overview'].includes(p.type));
+import Layout from '../layouts/Layout.astro';
+import Block from '../components/Block.astro';
+import Shot from '../components/Shot.astro';
+import {content} from '../content/schema';
+const cover=content.pages.find(p=>p.type==='cover');
+const hero=(slug:string)=>content.pages.find(p=>p.case===slug);
 ---
-<Layout>{pages.map(b=><div id={b.type==='overview'?'works':undefined}><Block block={b} index={content.pages.indexOf(b)}/></div>)}</Layout>
+<Layout>
+  <Block block={cover} index={0}/>
+  <section class="work-list" id="works" aria-labelledby="selected-title">
+    <header><span class="r-kicker">SELECTED WORK / 01—04</span><h2 id="selected-title"><span>四个项目，</span><span>四种交互探索。</span></h2></header>
+    {content.cases.map((c,i)=><article class:list={['work-feature',i%2===1&&'is-reversed']}>
+      <div class="work-feature-copy"><span class="r-kicker">{c.number} / {c.tag}</span><h2>{c.title}</h2><p>{c.summary}</p><span class="work-status">{c.status}</span><a class="text-link" href={`/cases/${c.slug}/`}>查看案例 ↗</a></div>
+      <a class="work-feature-image" href={`/cases/${c.slug}/`} aria-label={`查看${c.title}案例`}><Shot shot={hero(c.slug)?.shots[0]}/></a>
+    </article>)}
+  </section>
+</Layout>

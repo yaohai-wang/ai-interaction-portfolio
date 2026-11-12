@@ -70,3 +70,11 @@
 - 新主PDF3,838,931字节、轻量版1,605,338字节，均16页，字体嵌入与10个链接校验通过。全部页面双引擎渲染并逐页复核，P7/P15可读性问题已修正。24组网页检查通过，原3份PDF SHA不变。
 - 预览：`npm run dev`；完整打印稿`/print/`，新文件`output/pdf/portfolio-ai-interaction-revised.pdf`及`-light.pdf`。
 - 修改记录与验证见`docs/revision/change-log.md`、`validation.md`。本人职责/周期、动机/研究、公开许可、联系信息等仍见`docs/portfolio-evidence-gaps.md`；发布检查继续受实质缺口拦截。
+
+## 2026-11-13 · Design-dna 黑色视觉改版
+
+- 按用户新提供DESIGN.md与本机Design-dna skill重做实际源码，形成完整三维DNA与14项实际样式核验。黑底、轻字重、大留白、紫色主动作与三角星云；首页交替两栏，不再以重复框体包裹截图。
+- F1恢复完整产品首页，扩展为P13–15；总稿17页。理想之家首页/空间页改用真实预设样板间第一视角，保留与14点任务的区别。桌面比较改为同一正文的真实主题裁切。
+- 主PDF4,591,809字节、轻量2,158,212字节；17页逐页双引擎检查、24组网页检查、字体/链接/原稿SHA/正文一致性通过。修复Inter可变字体PDF兼容、手机标题孤字与跳转链接对比度。
+- 预览：`cd /Users/youkaiou/就职/portfolio && npm run dev`；主/轻量PDF仍在output/pdf/portfolio-ai-interaction-revised{,-light}.pdf。详细修改与验收在docs/visual-refresh/。
+- 无部署，原项目只读；公开许可、个人职责/周期/动机、联系方式和个人资料确认见docs/questions.md与portfolio-evidence-gaps.md。

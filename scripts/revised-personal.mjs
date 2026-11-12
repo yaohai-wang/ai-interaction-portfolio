@@ -6,7 +6,7 @@ import {chromium} from 'playwright';
 import sharp from 'sharp';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),output=path.join(root,'public/revised/personal'),url='https://youkai-ou.com/';
 await fs.mkdir(output,{recursive:true});
-if(process.argv.includes('--derive')){await deriveCrops();process.exit(0);}
+if(process.argv.includes('--derive')||process.argv.includes('--derive-content')){await deriveCrops();process.exit(0);}
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox']});
 const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:2,locale:'zh-CN',timezoneId:'Asia/Tokyo',reducedMotion:'reduce'});
 const manifest=[],blocked=[],errors=[],report={startedAt:new Date().toISOString(),sourceURL:url,viewport:{width:1440,height:900},deviceScaleFactor:2,steps:[],checks:{}};
@@ -57,9 +57,12 @@ async function deriveCrops(){
  {id:'task-themed',source:'project-cyberpunk',title:'02 切换主题 · 同一项目标题与返回入口',crop:{left:200,top:0,width:1720,height:360}},
  {id:'task-return',source:'desktop-return',title:'03 返回桌面 · 原木屋入口所在区域',crop:{left:380,top:800,width:1340,height:300}},
  {id:'task-open-controls',source:'project-comic',title:'01 Comic · 已选项目标题与返回桌面按钮',crop:{left:1300,top:20,width:400,height:180}},
- {id:'task-themed-controls',source:'project-cyberpunk',title:'02 Cyberpunk · 同一已选项目与返回桌面按钮',crop:{left:1300,top:20,width:400,height:180}}
+ {id:'task-themed-controls',source:'project-cyberpunk',title:'02 Cyberpunk · 同一已选项目与返回桌面按钮',crop:{left:1300,top:20,width:400,height:180}},
+ {id:'task-content-comic',source:'project-comic',title:'01 Comic · 理想之家项目正文',crop:{left:980,top:364,width:700,height:130}},
+ {id:'task-content-cyberpunk',source:'project-cyberpunk',title:'02 Cyberpunk · 保留同一段项目正文',crop:{left:980,top:350,width:700,height:130}}
  ];
- for(const item of crops){const source=entries.find(e=>e.id===item.source);if(!source)continue;
+ const selected=process.argv.includes('--derive-content')?crops.filter(item=>item.id.startsWith('task-content-')):crops;
+ for(const item of selected){const source=entries.find(e=>e.id===item.source);if(!source)continue;
  const pipeline=sharp(await fs.readFile(path.join(root,'public',source.image))).extract(item.crop),jpg=await pipeline.clone().jpeg({quality:94,mozjpeg:true}).toBuffer(),webp=await pipeline.clone().webp({quality:94}).toBuffer();
  if(jpg.length>400000||webp.length>400000)throw Error('Crop budget exceeded');
  await fs.writeFile(path.join(output,item.id+'.jpg'),jpg);await fs.writeFile(path.join(output,item.id+'.webp'),webp);

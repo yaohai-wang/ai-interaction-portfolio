@@ -723,5 +723,335 @@
     "caption": "独立测试存档 · 合成输入 · 浏览器离线故障注入；真实原帧矩形裁切。",
     "sourceURL": "https://home.youkai-ou.com/#/goals",
     "capturedAt": "2026-11-12T13:59:53.865Z"
+  },
+  {
+    "id": "showroom-angled-a",
+    "title": "样板间：完整公寓顶视A",
+    "image": "/revised/home/showroom-angled-a.jpg",
+    "webp": "/revised/home/showroom-angled-a.webp",
+    "kind": "真实产品预设样板间截图；非用户行动结果；无AI请求",
+    "caption": "预设样板间 · 真实运行截图",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "capturedAt": "2026-11-12T14:51:22.936Z",
+    "width": 1920,
+    "height": 1200,
+    "bytes": 107980,
+    "webpBytes": 57376,
+    "uiActions": [
+      {
+        "type": "navigate",
+        "hash": "#/showroom",
+        "isolatedContext": true
+      },
+      {
+        "type": "keyboard",
+        "key": "ArrowDown",
+        "durationMs": 900
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          210,
+          -160
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -240
+      }
+    ],
+    "personalSaveUnchanged": true,
+    "captureNote": "原文件名沿用 angled；实际截图为顶视，不是斜俯视，已据实际像素纠正标题。"
+  },
+  {
+    "id": "showroom-angled-b",
+    "title": "样板间：完整公寓顶视B",
+    "image": "/revised/home/showroom-angled-b.jpg",
+    "webp": "/revised/home/showroom-angled-b.webp",
+    "kind": "真实产品预设样板间截图；非用户行动结果；无AI请求",
+    "caption": "预设样板间 · 真实运行截图",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "capturedAt": "2026-11-12T14:51:31.662Z",
+    "width": 1920,
+    "height": 1200,
+    "bytes": 107980,
+    "webpBytes": 57376,
+    "uiActions": [
+      {
+        "type": "navigate",
+        "hash": "#/showroom",
+        "isolatedContext": true
+      },
+      {
+        "type": "keyboard",
+        "key": "ArrowDown",
+        "durationMs": 900
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          210,
+          -160
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -240
+      },
+      {
+        "type": "reset-camera"
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          290,
+          -195
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -150
+      }
+    ],
+    "personalSaveUnchanged": true,
+    "captureNote": "原文件名沿用 angled；实际截图为顶视，不是斜俯视，已据实际像素纠正标题。"
+  },
+  {
+    "id": "showroom-angled-c",
+    "title": "样板间：完整公寓顶视C",
+    "image": "/revised/home/showroom-angled-c.jpg",
+    "webp": "/revised/home/showroom-angled-c.webp",
+    "kind": "真实产品预设样板间截图；非用户行动结果；无AI请求",
+    "caption": "预设样板间 · 真实运行截图",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "capturedAt": "2026-11-12T14:51:46.414Z",
+    "width": 1920,
+    "height": 1200,
+    "bytes": 108119,
+    "webpBytes": 57314,
+    "uiActions": [
+      {
+        "type": "navigate",
+        "hash": "#/showroom",
+        "isolatedContext": true
+      },
+      {
+        "type": "keyboard",
+        "key": "ArrowDown",
+        "durationMs": 900
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          210,
+          -160
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -240
+      },
+      {
+        "type": "reset-camera"
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          290,
+          -195
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -150
+      },
+      {
+        "type": "reset-camera"
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          155,
+          -145
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -360
+      }
+    ],
+    "personalSaveUnchanged": true,
+    "captureNote": "原文件名沿用 angled；实际截图为顶视，不是斜俯视，已据实际像素纠正标题。"
+  },
+  {
+    "id": "showroom-first-person",
+    "title": "样板间：真实第一视角",
+    "image": "/revised/home/showroom-first-person.jpg",
+    "webp": "/revised/home/showroom-first-person.webp",
+    "kind": "真实产品预设样板间截图；非用户行动结果；无AI请求",
+    "caption": "预设样板间 · 真实运行截图",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "capturedAt": "2026-11-12T14:51:52.480Z",
+    "width": 1920,
+    "height": 1200,
+    "bytes": 84667,
+    "webpBytes": 39244,
+    "uiActions": [
+      {
+        "type": "navigate",
+        "hash": "#/showroom",
+        "isolatedContext": true
+      },
+      {
+        "type": "keyboard",
+        "key": "ArrowDown",
+        "durationMs": 900
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          210,
+          -160
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -240
+      },
+      {
+        "type": "reset-camera"
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          290,
+          -195
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -150
+      },
+      {
+        "type": "reset-camera"
+      },
+      {
+        "type": "drag",
+        "from": [
+          750,
+          500
+        ],
+        "delta": [
+          155,
+          -145
+        ]
+      },
+      {
+        "type": "wheel",
+        "deltaY": -360
+      },
+      {
+        "type": "click",
+        "label": "第一视角"
+      }
+    ],
+    "personalSaveUnchanged": true
+  },
+  {
+    "id": "showroom-dining",
+    "title": "样板间：餐桌、沙发与生活墙的真实第一视角",
+    "image": "/revised/home/showroom-dining.jpg",
+    "webp": "/revised/home/showroom-dining.webp",
+    "kind": "真实产品预设样板间截图；非用户行动结果；无AI请求",
+    "caption": "预设样板间 · 内置第一视角与行走取景 · 不代表行动积分获得的房间",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "capturedAt": "2026-11-12T15:23:15.165Z",
+    "width": 1920,
+    "height": 1200,
+    "bytes": 166451,
+    "webpBytes": 79464,
+    "uiActions": [
+      {
+        "action": "drag",
+        "x": 700,
+        "y": 400,
+        "dx": 260,
+        "dy": 200
+      },
+      {
+        "action": "button",
+        "name": "第一视角"
+      },
+      {
+        "action": "drag",
+        "x": 700,
+        "y": 400,
+        "dx": 590,
+        "dy": 0
+      },
+      {
+        "action": "key",
+        "key": "w",
+        "ms": 2200
+      },
+      {
+        "action": "drag",
+        "x": 800,
+        "y": 400,
+        "dx": -290,
+        "dy": 30
+      },
+      {
+        "action": "drag",
+        "x": 1100,
+        "y": 400,
+        "dx": -628,
+        "dy": 0
+      },
+      {
+        "action": "key",
+        "key": "w",
+        "ms": 15000
+      }
+    ],
+    "sourceCode": "src/features/home/Showroom.tsx:9–28; src/config/furnished-apartment.ts; src/features/home/RoomWorld.tsx:866–870",
+    "isolatedContext": true,
+    "personalSaveUnchanged": true,
+    "sourceRepository": "/Users/youkaiou/Desktop/生活成长app",
+    "readOnlySource": true,
+    "pixelEdits": "仅按比例缩小到1920px、JPEG/WebP压缩；无合成、补绘、调色或UI改写。",
+    "reproduceScript": "scripts/capture-showroom-dining.mjs"
   }
 ]

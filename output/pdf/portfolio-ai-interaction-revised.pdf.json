@@ -1,11 +1,13 @@
 {
   "file": "output/pdf/portfolio-ai-interaction-revised.pdf",
-  "pages": 16,
-  "bytes": 3838931,
-  "links": 10,
+  "pages": 17,
+  "bytes": 4591809,
+  "links": 11,
   "fonts": [
-    "/AAAAAA+NotoSansSC-Thin",
-    "/BAAAAA+NotoSansSC-Thin"
+    "/AAAAAA+Inter-Regular",
+    "/BAAAAA+NotoSansSC-Thin",
+    "/CAAAAA+NotoSansSC-Thin",
+    "/DAAAAA+Inter-ExtraLight"
   ],
   "allFontsEmbedded": true,
   "ratio": 1.7777777777777777,
@@ -18,6 +20,10 @@
     "https://youkai-ou.com/"
   ],
   "internalLinks": [
+    {
+      "destination": "/about",
+      "page": 2
+    },
     {
       "destination": "/home-intro",
       "page": 3
@@ -32,7 +38,7 @@
     },
     {
       "destination": "/desktop",
-      "page": 15
+      "page": 16
     }
   ],
   "invalidInternalLinks": [],

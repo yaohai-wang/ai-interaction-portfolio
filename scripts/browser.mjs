@@ -1,0 +1,8 @@
+import { chromium } from 'playwright';
+import sharp from 'sharp';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+export async function launch(){return chromium.launch({executablePath: process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless:process.env.HEADED!=='1',args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--no-sandbox']});}
+export async function context(browser){const ctx=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:2,locale:'zh-CN',timezoneId:'Asia/Shanghai',reducedMotion:'reduce'});await ctx.route('**/*',async route=>{const req=route.request(); if(!['GET','HEAD','OPTIONS'].includes(req.method())||/\/api\/(chat|assistant\/chat|analyze|generate|future-homes|desk-chat)(\/|\?|$)/i.test(req.url()))return route.abort();return route.continue();});return ctx;}
+export async function capture(page, relative, options={}){const stem=path.join('public/shots',relative);await fs.mkdir(path.dirname(stem),{recursive:true});await page.evaluate(()=>document.fonts.ready);const png=await page.screenshot({animations:'disabled',fullPage:false,...options});let quality=84;let jpeg;do{jpeg=await sharp(png).resize({width:1920,withoutEnlargement:true}).jpeg({quality,mozjpeg:true}).toBuffer();quality-=7;}while(jpeg.length>400000&&quality>35);await fs.writeFile(stem+'.jpg',jpeg);let wq=82,wb;do{wb=await sharp(jpeg).webp({quality:wq}).toBuffer();wq-=7;}while(wb.length>400000&&wq>30);await fs.writeFile(stem+'.webp',wb);return {image:'/shots/'+relative+'.jpg',bytes:jpeg.length};}
+export async function settle(page){await page.waitForTimeout(1800);await page.locator('canvas').evaluateAll(xs=>xs.map(x=>({width:x.width,height:x.height})));}

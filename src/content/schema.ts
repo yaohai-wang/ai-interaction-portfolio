@@ -1,0 +1,12 @@
+import { z } from 'zod';
+import fs from 'node:fs';
+import YAML from 'yaml';
+const Note=z.object({x:z.number().min(0).max(1),y:z.number().min(0).max(1),title:z.string(),text:z.string()});
+const Shot=z.object({src:z.string(),caption:z.string(),alt:z.string().optional(),label:z.string().optional()});
+const Node=z.object({title:z.string(),detail:z.string().optional(),kind:z.enum(['ai','human','default']).default('default')});
+const Item=z.object({title:z.string(),text:z.string(),label:z.string().optional(),href:z.string().optional()});
+export const BlockSchema=z.object({id:z.string(),type:z.enum(['cover','about','overview','principles','closing','hero','statement','flow','annotated-shot','gallery','before-after','decision','video','build-notes','reflection']),case:z.string().optional(),eyebrow:z.string(),title:z.string(),lead:z.string().default(''),source:z.string().default(''),draft:z.boolean().default(false),todo:z.array(z.string()).default([]),nodes:z.array(Node).default([]),items:z.array(Item).default([]),shots:z.array(Shot).default([]),notes:z.array(Note).max(4).default([]),video:z.string().optional(),poster:z.string().optional(),demo:z.string().optional(),qr:z.string().optional(),role:z.string().optional(),period:z.string().optional(),tools:z.string().optional(),caption:z.string().optional(),detail:z.string().optional()});
+const Case=z.object({slug:z.string(),number:z.string(),title:z.string(),tag:z.string(),summary:z.string(),accent:z.string(),demo:z.string().optional(),qr:z.string().optional(),diagram:z.array(Node),status:z.string()});
+const schema=z.object({site:z.object({title:z.string(),description:z.string(),name:z.string(),year:z.string(),intro:z.string(),target:z.string(),draftLabel:z.string()}),cases:z.array(Case),pages:z.array(BlockSchema)});
+export const content=schema.parse(YAML.parse(fs.readFileSync('src/content/portfolio.yaml','utf8')));
+export type Block=z.infer<typeof BlockSchema>;

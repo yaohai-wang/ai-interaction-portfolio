@@ -1,0 +1,25 @@
+---
+import {content} from '../content/schema';
+import Flow from './Flow.astro';
+import Shot from './Shot.astro';
+const {block:b,index=0,print=false}=Astro.props;
+const c=content.cases.find(x=>x.slug===b.case);const accent=c?.accent||'#393e35';
+---
+<section class:list={['folio-page',`type-${b.type}`,{'has-shots':b.shots?.length>0}]} id={b.id} style={`--accent:${accent}`} data-page={index+1}>
+  <div class="page-meta"><span>{b.eyebrow}</span><span class="draft-label">{b.draft?'分析草稿 · 待确认':content.site.draftLabel}</span></div>
+  <div class="block-heading"><h1>{b.title}</h1>{b.lead&&<p class="lead">{b.lead}</p>}</div>
+  <div class="block-content">
+    {b.type==='cover'&&<div class="cover-bottom"><div class="cover-name"><b>王耀海</b><span>KAI WANG</span><p>AI INTERACTION DESIGN<br/>PORTFOLIO / 2027</p></div><div class="cover-art" aria-label="从意图到行动再到反馈的自制示意"><span>INTENT</span><i></i><span>HUMAN × AI</span><i></i><span>FEEDBACK</span><small>概念 → 流程 → 界面 → 可运行 Demo</small></div></div>}
+    {b.type==='overview'&&<div class="case-grid">{content.cases.map(c=><a class="case-entry" href={`/cases/${c.slug}/`} style={`--accent:${c.accent}`}><div class="case-top"><span>{c.number} / {c.tag}</span><span>↗</span></div><Flow nodes={c.diagram} compact/><h2>{c.title}</h2><p>{c.summary}</p><small>{c.status}</small></a>)}</div>}
+    {b.type==='hero'&&<div class="hero-layout"><div class="hero-info"><dl><div><dt>角色</dt><dd>{b.role||'TODO(Kai)：确认角色'}</dd></div><div><dt>时间</dt><dd>{b.period||'TODO(Kai)：实际起止时间'}</dd></div><div><dt>工具 / 实现</dt><dd>{b.tools||'Codex；其他工具待确认'}</dd></div></dl><div class="demo-link">{b.demo?<><a href={b.demo} target="_blank" rel="noopener noreferrer">打开 Demo ↗</a>{b.qr&&<img src={b.qr} width="100" height="100" alt="Demo 链接二维码"/>}</>:<span class="todo-inline">TODO(Kai)：可公开 Demo / 视频链接</span>}</div></div><div class="hero-concept"><Flow nodes={b.nodes.length?b.nodes:(c?.diagram||[])} /><p>{b.detail}</p>{b.video&&!print&&<video controls preload="none" poster={b.poster}><source src={b.video} type="video/mp4"/></video>}{b.poster&&print&&<Shot shot={{src:b.poster,caption:b.caption}} print={true}/>}</div></div>}
+    {(b.type==='flow')&&<div class="flow-layout"><Flow nodes={b.nodes}/>{b.items.length>0&&<div class="item-grid">{b.items.map((item:any)=><article><span>{item.label}</span><h2>{item.title}</h2><p>{item.text}</p></article>)}</div>}</div>}
+    {(b.type==='annotated-shot')&&<div class="annotated-layout"><div><Shot shot={b.shots[0]} notes={b.notes} print={print}/>{b.shots.length>1&&<div class="mini-shots">{b.shots.slice(1).map((shot:any)=><Shot shot={shot} print={print}/>)}</div>}</div><ol class="annotations">{b.notes.map((n:any,i:number)=><li><span>{i+1}</span><div><h2>{n.title}</h2><p>{n.text}</p></div></li>)}</ol></div>}
+    {b.type==='before-after'&&<><div class="comparison">{b.shots.map((s:any)=><Shot shot={s} print={print}/>)}</div><div class="item-grid">{b.items.map((item:any)=><article><h2>{item.title}</h2><p>{item.text}</p></article>)}</div></>}
+    {b.type==='gallery'&&<div class="gallery-layout"><div class="gallery-shots">{b.shots.map((s:any)=><Shot shot={s} print={print}/>)}</div>{b.nodes.length>0&&<Flow nodes={b.nodes} compact/>}{b.items.length>0&&<div class="item-grid">{b.items.map((item:any)=><article><h2>{item.title}</h2><p>{item.text}</p></article>)}</div>}</div>}
+    {b.type==='video'&&<div class="video-layout">{!print&&b.video?<video controls preload="none" poster={b.poster}><source src={b.video} type="video/mp4"/></video>:<div class="gallery-shots">{b.shots.map((s:any)=><Shot shot={s} print={print}/>)}</div>}<div><p>{b.caption}</p>{b.demo&&<a href={b.demo}>查看视频 ↗</a>}{b.qr&&<img class="qr" src={b.qr} alt="视频入口二维码"/>}</div></div>}
+    {['about','principles','statement','decision','reflection','build-notes'].includes(b.type)&&<>{b.nodes.length>0&&<Flow nodes={b.nodes}/>}<div class:list={['item-grid',{'timeline':b.type==='build-notes','principle-grid':b.type==='principles'}]}>{b.items.map((item:any,i:number)=><article><span class="item-label">{item.label||String(i+1).padStart(2,'0')}</span><h2>{item.title}</h2><p>{item.text}</p>{item.href&&<a href={item.href}>查看案例 ↗</a>}</article>)}</div>{b.shots.length>0&&<div class="comparison">{b.shots.map((s:any)=><Shot shot={s} print={print}/>)}</div>}</>}
+    {b.type==='closing'&&<div class="closing-content"><p class="closing-name">Kai Wang<br/><span>王耀海</span></p><div class="closing-links">{content.cases.filter(c=>c.demo).map(c=><div><span>{c.title}</span><a href={c.demo}>{new URL(c.demo!).hostname} ↗</a><img src={c.qr} width="92" height="92" alt={`${c.title} Demo 二维码`}/></div>)}</div></div>}
+  </div>
+  {b.todo.length>0&&<aside class="todo-box">{b.todo.map((t:string)=><p>{t}</p>)}</aside>}
+  <footer class="page-foot"><span>{b.source}</span><span>{String(index+1).padStart(2,'0')} / {String(content.pages.length).padStart(2,'0')}</span></footer>
+</section>

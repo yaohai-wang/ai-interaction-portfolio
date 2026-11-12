@@ -1,0 +1,13 @@
+{
+  "file": "output/pdf/M1-中文与链接-三页样张.pdf",
+  "pages": 3,
+  "bytes": 56585,
+  "links": 1,
+  "fonts": [
+    "/AAAAAA+NotoSansSC-Thin",
+    "/BAAAAA+NotoSansSC-Thin"
+  ],
+  "allFontsEmbedded": true,
+  "ratio": 1.7777777777777777,
+  "textExtractable": true
+}

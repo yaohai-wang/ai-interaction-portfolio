@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';import Shot from '../components/Shot.astro';import fs from 'node:fs';
+const groups=['home','f1','personal','agent'];const shots=groups.flatMap(g=>{try{const m=JSON.parse(fs.readFileSync(`public/shots/${g}/manifest.json`,'utf8'));return Array.isArray(m)?m:(m.shots||m.assets||[]);}catch{return[];}});
+---
+<Layout title="素材审阅 · 王耀海"><div class="review-intro"><h1>每张画面，都保留来源。</h1><p>线上、提交归档与视频关键帧分别标注。截图不触发 AI，不将原型示例当作真实结果。</p></div><div class="review-grid">{shots.map(s=><div><Shot shot={{src:s.image||s.src,caption:s.caption||s.title,label:s.title}}/><p><small>{s.kind} · {s.commit||s.sourceURL||s.source||''}</small></p></div>)}</div></Layout>

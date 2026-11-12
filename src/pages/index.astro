@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';import Block from '../components/Block.astro';import {content} from '../content/schema';
+const pages=content.pages.filter(p=>['cover','overview','principles'].includes(p.type));
+---
+<Layout>{pages.map(b=><div id={b.type==='overview'?'works':undefined}><Block block={b} index={content.pages.indexOf(b)}/></div>)}</Layout>

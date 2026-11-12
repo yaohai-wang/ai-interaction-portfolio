@@ -1,0 +1,42 @@
+site:
+  title: 王耀海 · AI 交互设计作品集 2027
+  description: 从交互概念到可以演示的作品。王耀海的 AI 交互设计作品集，本地审阅草稿。
+  name: 王耀海 / Kai Wang
+  year: '2027'
+  intro: 建筑训练带来的结构感，加上把概念做成 Demo 的能力。
+  target: AI 创新交互设计师
+  draftLabel: 审阅草稿 · 有待确认内容
+cases: []
+pages:
+  - id: cover
+    type: cover
+    eyebrow: KAI WANG / PORTFOLIO 2027
+    title: 把 AI 的能力，变成可理解的体验。
+    lead: 王耀海 · AI 交互设计作品集
+    draft: true
+    source: B01；定位与标题待 K01 确认。
+    todo: ['K01 · TODO(Kai)：确认封面定位句。']
+  - id: sample-flow
+    type: flow
+    eyebrow: 02 / IDEAL HOME
+    title: 先有愿景，再让日常行动留下痕迹。
+    lead: 由真实代码重建的核心循环；AI 提议，用户确认，业务规则计分。
+    nodes:
+      - {title: 保存愿景, detail: 摘要与目标}
+      - {title: 记录今天, detail: 自然语言输入}
+      - {title: 整理行动, detail: 模型候选, kind: ai}
+      - {title: 勾选确认, detail: 人决定保留项, kind: human}
+      - {title: 规则计分, detail: 确定性公式}
+      - {title: 兑换家具, detail: 用户选择}
+      - {title: 布置房间, detail: 空间留下变化}
+    source: H / JournalPanel.tsx:137–174；economy.ts:15–31。
+  - id: sample-notes
+    type: reflection
+    eyebrow: DESIGN / EVIDENCE
+    title: 说明实现边界，也是交互的一部分。
+    lead: 草稿显式区分代码事实、设计分析和待本人确认的内容。
+    items:
+      - {title: 已实现, text: 自然语言行动整理、人工选择确认、确定性规则计分。}
+      - {title: 部署边界, text: 线上未来房间图片生成未启用；不把实现中的功能当作已上线成果。}
+      - {title: 待补证据, text: 原始用户反馈与设计动机由 Kai 补充。, href: https://home.youkai-ou.com/}
+    source: H / cloudflare/index.ts:49–51,86。

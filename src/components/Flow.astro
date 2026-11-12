@@ -1,0 +1,16 @@
+---
+const {nodes=[],compact=false}=Astro.props;
+const cols=Math.max(1,Math.min(nodes.length,4)), rows=Math.ceil(nodes.length/4),w=1500,gap=38,cell=(w-(cols-1)*gap)/cols,h=rows===1?210:440;
+const positions=nodes.map((n:any,i:number)=>({...n,i,row:Math.floor(i/4),col:i%4,x:(i%4)*(cell+gap),y:Math.floor(i/4)*230+20}));
+---
+<svg class:list={['flow-diagram',{compact}]} viewBox={`0 0 ${w} ${h}`} role="img" aria-label={nodes.map((n:any)=>n.title).join(' → ')}>
+  <defs><marker id={`arrow-${nodes.length}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" /></marker></defs>
+  {positions.map((n:any)=><g class={`node node-${n.kind||'default'}`}>
+    {n.i>0&&n.col>0&&<path class="flow-edge" d={`M ${n.x-gap+6} ${n.y+82} H ${n.x-10}`} marker-end={`url(#arrow-${nodes.length})`}/>}
+    {n.i===4&&<path class="flow-edge" d={`M ${w-cell/2} 184 V 222 H ${cell/2} V 242`} marker-end={`url(#arrow-${nodes.length})`}/>}
+    <rect x={n.x+1} y={n.y} width={cell-2} height="164" rx="12"/>
+    <text class="node-label" x={n.x+24} y={n.y+37}>{n.kind==='ai'?'AI':n.kind==='human'?'HUMAN':String(n.i+1).padStart(2,'0')}</text>
+    <text class="node-title" x={n.x+24} y={n.y+85}>{n.title}</text>
+    <text class="node-detail" x={n.x+24} y={n.y+126}>{n.detail||''}</text>
+  </g>)}
+</svg>

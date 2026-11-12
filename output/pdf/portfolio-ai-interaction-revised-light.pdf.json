@@ -1,0 +1,42 @@
+{
+  "file": "output/pdf/portfolio-ai-interaction-revised-light.pdf",
+  "pages": 16,
+  "bytes": 1605338,
+  "links": 10,
+  "fonts": [
+    "/AAAAAA+NotoSansSC-Thin",
+    "/BAAAAA+NotoSansSC-Thin"
+  ],
+  "allFontsEmbedded": true,
+  "ratio": 1.7777777777777777,
+  "uriLinks": [
+    "https://home.youkai-ou.com/",
+    "https://f1.youkai-ou.com/zh/home",
+    "https://youkai-ou.com/",
+    "https://home.youkai-ou.com/",
+    "https://f1.youkai-ou.com/zh/home",
+    "https://youkai-ou.com/"
+  ],
+  "internalLinks": [
+    {
+      "destination": "/home-intro",
+      "page": 3
+    },
+    {
+      "destination": "/agent-intro",
+      "page": 9
+    },
+    {
+      "destination": "/f1-intro",
+      "page": 13
+    },
+    {
+      "destination": "/desktop",
+      "page": 15
+    }
+  ],
+  "invalidInternalLinks": [],
+  "localServerLinks": false,
+  "internalReviewMarkers": false,
+  "textExtractable": true
+}

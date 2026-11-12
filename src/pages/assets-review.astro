@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';import Shot from '../components/Shot.astro';import fs from 'node:fs';
 const groups=[['agent','TasteTwin · 视频与关键帧'],['home','理想之家 · 线上与历史'],['f1','围场智析 · 线上与历史'],['personal','桌面平行宇宙 · 主题与历史']];
-const data=groups.map(([id,title])=>{let shots=[];try{const m=JSON.parse(fs.readFileSync(`public/shots/${id}/manifest.json`,'utf8'));shots=Array.isArray(m)?m:(m.shots||m.assets||[]);}catch{}return{id,title,shots};});
+const revisionGroups=[['home','理想之家 · 连续任务'],['tastetwin','TasteTwin · 半份任务'],['f1','围场智析 · 真实问答'],['personal','桌面 · 连续任务']];
+const revision=revisionGroups.map(([id,title])=>{let shots=[];try{shots=JSON.parse(fs.readFileSync(`public/revised/${id}/manifest.json`,'utf8'));}catch{}return{id:'revised-'+id,title,shots};});
+const archived=groups.map(([id,title])=>{let shots=[];try{const m=JSON.parse(fs.readFileSync(`public/shots/${id}/manifest.json`,'utf8'));shots=Array.isArray(m)?m:(m.shots||m.assets||[]);}catch{}return{id,title,shots};});
+const data=[...revision,...archived];
 ---
-<Layout title="素材审阅 · 王耀海"><div class="review-intro"><h1>每张画面，都保留来源。</h1><p>线上、提交归档与视频关键帧分别标注。截图不触发 AI，不将原型示例当作真实结果。</p><nav class="asset-nav" aria-label="素材分组">{data.map(g=><a href={`#review-${g.id}`}>{g.title}</a>)}</nav></div>
-<section class="review-video"><h2>80 秒候选精华 · 公开与最终剪辑待确认</h2><video controls preload="none" poster="/video/agent/poster.jpg"><source src="/video/agent/tastetwin-recommend-candidate.mp4" type="video/mp4"/></video><p>03-recommend.mp4 00:00.000–01:20.208；本地交互原型，示例数据。下方全片联系表每 5 秒一帧。</p></section>
+<Layout title="素材审阅 · 王耀海"><div class="review-intro"><h1>每张画面，都保留来源。</h1><p>本轮复测、历史归档与视频关键帧分别标注。真实模型请求、规则模拟和故障注入分别说明，不互相替代。</p><nav class="asset-nav" aria-label="素材分组">{data.map(g=><a href={`#review-${g.id}`}>{g.title}</a>)}</nav></div>
+<section class="review-video"><h2>早期录屏 · 80秒候选片段（本地预览）</h2><video controls preload="none" poster="/video/agent/poster.jpg"><source src="/video/agent/tastetwin-recommend-candidate.mp4" type="video/mp4"/></video><p>03-recommend.mp4 00:00.000–01:20.208；原2026-10-29流程录屏，非本轮半份测试；本地交互原型，示例数据。下方全片联系表每5秒一帧。</p></section>
 {data.map(g=><section id={`review-${g.id}`}><h2 class="review-heading">{g.title}<span>{g.shots.length} 项素材</span></h2><div class="review-grid">{g.shots.map((s:any)=><div><Shot shot={{src:s.image||s.src,caption:s.caption||s.title,label:s.title}}/><p><small>{s.kind} · {s.commit||s.sourceURL||s.source||''}{s.sourceSeconds!==undefined?` · ${s.sourceSeconds} 秒`:''}</small></p></div>)}</div></section>)}
 </Layout>
 <style>.asset-nav{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;font-size:14px}.review-video{margin:0 var(--gutter) 50px;padding:28px;background:#eeeee7;border-radius:12px}.review-video h2{font-size:22px;margin-bottom:20px}.review-video video{max-width:900px;width:100%;display:block}.review-video p{font-size:14px;color:var(--muted);margin-top:16px}.review-heading{margin:40px var(--gutter) 24px;font-size:30px}.review-heading span{font-size:13px;font-weight:400;color:var(--muted);margin-left:25px}</style>

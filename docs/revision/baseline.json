@@ -1,0 +1,21 @@
+{
+  "revision": "2026-11-12",
+  "sourceCommit": "62ffe38",
+  "originalPDFs": [
+    {
+      "path": "output/pdf/M1-中文与链接-三页样张.pdf",
+      "bytes": 56585,
+      "sha256": "fc5b7a2810137d2a33880484c64ba4696168b355070dee913d7a09f554e06046"
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿.pdf",
+      "bytes": 3833268,
+      "sha256": "9a8640d989224fd1709efa64d93cf8f848c2ce850b085d638a77ea2055a0216b"
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿-精简版.pdf",
+      "bytes": 1563345,
+      "sha256": "a73bc64cc87c225b13d420198501d60ccc0320d176894022fc6ea337c9471492"
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-# 事实与来源账本
+# 初版事实与来源账本
+
+> 本文记录原22页初版。2026-11-12后续修订及最新真实复测，以 `portfolio-evidence-gaps.md` 和 `revision-*-evidence.md` 为准；旧“不发送AI请求”和403结论不代表新一轮状态。
 
 核对日期：2026-11-12（Asia/Tokyo）。本文件连同 `audit-home.md`、`audit-f1.md`、`audit-personal.md` 构成逐项来源账本。页面内的来源编号指向这些文件。没有将示例简历或课程资料当作 Kai 的经历。
 

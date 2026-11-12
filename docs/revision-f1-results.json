@@ -1,0 +1,207 @@
+{
+  "startedAt": "2026-11-12T13:52:03.210Z",
+  "finishedAt": "2026-11-12T13:53:05.184Z",
+  "cases": [
+    {
+      "id": "evidence",
+      "title": "车队证据页 · 当前真实问答",
+      "pageURL": "https://f1.youkai-ou.com/zh/teams/ferrari",
+      "question": "仅依据本页资料，法拉利在当前保存的 2026 赛季快照中排名第几、多少积分？请给出数据时间并引用来源；没有资料就直说。",
+      "startedAt": "2026-11-12T13:52:05.435Z",
+      "contextResponses": [
+        {
+          "url": "https://f1.youkai-ou.com/api/assistant/context?pageId=%2Fzh%2Fteams%2Fferrari&version=862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf&scope=page_only",
+          "httpStatus": 200,
+          "receivedAt": "2026-11-12T13:52:07.449Z",
+          "body": {
+            "pageId": "/zh/teams/ferrari",
+            "title": "法拉利 · 车队概览",
+            "locale": "zh",
+            "version": "862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf",
+            "snapshotId": "8c81f265c7bfaf19530f0b71308f4c6fb34ce21d128412eb4127f617f45543ab",
+            "dataAsOf": "2026-11-08T17:00:00Z",
+            "fetchedAt": "2026-11-11T07:19:13.385Z",
+            "scopes": [
+              "page_only",
+              "site_only",
+              "web"
+            ],
+            "configured": true,
+            "webConfigured": true,
+            "live": false
+          }
+        }
+      ],
+      "calls": 1,
+      "beforeText": "AI 助手\n本页：法拉利 · 车队概览\n本页\n全站\n联网\n✧\n与围场对话。\n\n从本页开始，沿着证据追问。\n\n总结本页\n比较积分\n数据是哪天的",
+      "pageText": "已保存 · 第 20 站\n· 11-11\n解读本页\n全部车队\n/\n2026\n法拉利\n马拉内罗\n法拉利\n法拉利\n概览\n赛车升级\n新闻\n赛果\n车手\n法拉利 / 2026\n为每一分而战。\n官方赛车 · 当季涂装\n一级方程式 · 2026\n车队排名\nP2\n\n距领跑者 142 分\n\n赛季积分\n510\n分站冠军\n2\n\n20 站正赛已完成\n\n模型冠军概率\n0%\n预测与区间\n01 / 车手\n驾驶舱内。\n16\n法拉利\n勒克莱尔\n排名\n5\n积分\n249\n胜场\n1\n领奖台\n6\n正赛完赛名次\n3\n4\n3\n8\n4\n退赛\n15\n8\n1\n2\n4\n5\n退赛\n4\n4\n4\n2\n2\n4\n8\n车手档案\n一级方程式 · 2026 照片\n44\n法拉利\n汉密尔顿\n排名\n4\n积分\n261\n胜场\n1\n领奖台\n7\n正赛完赛名次\n4\n3\n6\n6\n2\n2\n1\n5\n3\n4\n5\n4\n6\n退赛\n6\n3\n6\n4\n2\n9\n车手档案\n一级方程式 · 2026 照片\n02 / 队内比较\n车库两侧。\n勒克莱尔\n9\n正赛分类领先次数\n仅比较双方都有正式数字名次的比赛；未列名次、取消资格等不计入。\n汉密尔顿\n8\n03 / 赛季积分\n每一站，积少成多。\n27\n1\n40\n2\n23\n3\n20\n4\n37\n5\n18\n6\n25\n7\n14\n8\n51\n9\n30\n10\n22\n11\n31\n12\n8\n13\n12\n14\n20\n15\n27\n16\n39\n17\n30\n18\n30\n19\n6\n20\n\n实色：正赛 · 浅色：冲刺 · 积分均来自正式分类\n\nLATEST STORIES\n车队动态\n全部新闻\nFERRARI\n法拉利 / 技术与研发\n瓦塞尔解释法拉利轮胎困境，承认换干胎可能过于激进\n\n瓦塞尔将法拉利在圣保罗的困难主要归因于轮胎难以保持适宜工作温度，并指出直道速度不足与发车处罚让超车更难。他也承认，汉密尔顿提前改用干胎的策略可能过于激进。\n\n2026-11-09 · Formula 1\nFERRARI\n法拉利 / 技术与研发\n汉密尔顿把雨中排位当作更换动力单元后的检查\n\n法拉利在第三次练习后更换了汉密尔顿的整套动力单元，使他需要从后排起步。汉密尔顿说，排位赛主要用来确认引擎工作正常和赛车感觉，同时减少跑圈，为可能下雨的正赛保留轮胎。他希望向前追赶，但认为比赛条件会很棘手。\n\n2026-11-07 · Formula 1\nFERRARI / CADILLAC / MERCEDES\n法拉利 · 凯迪拉克 · 梅赛德斯 / 技术与研发\n勒克莱尔与佩雷兹因更换动力部件接受发车处罚\n\n官方报道确认，勒克莱尔更换的内燃机超过赛季配额，将退后十位发车。凯迪拉克为佩雷兹更换内燃机、涡轮增压器和动能回收电机，他也需要从后排起步；拉塞尔此前已确认承担五位处罚。这些是动力部件使用配额带来的处罚，报道未证明换件能提升性能。\n\n2026-11-07 · Formula 1",
+      "visibleScopeButtons": [
+        {
+          "text": "本页",
+          "selected": "true"
+        },
+        {
+          "text": "全站",
+          "selected": "false"
+        },
+        {
+          "text": "联网",
+          "selected": "false"
+        }
+      ],
+      "httpStatus": 200,
+      "responseReceivedAt": "2026-11-12T13:52:12.145Z",
+      "response": {
+        "status": "supported",
+        "answer": "法拉利在保存的 2026 赛季快照中排名第 2，积 510 分。数据时间：2026-11-08 17:00 UTC。",
+        "effectiveScope": "page_only",
+        "context": {
+          "pageId": "/zh/teams/ferrari",
+          "title": "法拉利 · 车队概览",
+          "locale": "zh",
+          "version": "862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf",
+          "snapshotId": "8c81f265c7bfaf19530f0b71308f4c6fb34ce21d128412eb4127f617f45543ab",
+          "dataAsOf": "2026-11-08T17:00:00Z",
+          "fetchedAt": "2026-11-11T07:19:13.385Z"
+        },
+        "sources": [
+          {
+            "id": "team-ferrari",
+            "title": "法拉利",
+            "text": "{\"season\":2026,\"position\":\"2\",\"points\":\"510\",\"wins\":\"2\",\"experimentalForecast\":0,\"forecastUnit\":\"percent\",\"forecastIsLocal\":true}",
+            "url": "https://www.formula1.com/en/results/2026/team",
+            "dataAsOf": "2026-11-08T17:00:00Z",
+            "version": "add6e75832c72301f43f23baa87962f4c66a94917de1460848cf5178568e7600"
+          }
+        ],
+        "dataAsOf": "2026-11-08T17:00:00Z",
+        "warnings": [
+          "参考已保存快照，不能确认实时状态。"
+        ]
+      },
+      "afterText": "AI 助手\n本页：法拉利 · 车队概览\n本页\n全站\n联网\n\n仅依据本页资料，法拉利在当前保存的 2026 赛季快照中排名第几、多少积分？请给出数据时间并引用来源；没有资料就直说。\n\n法拉利在保存的 2026 赛季快照中排名第 2，积 510 分。数据时间：2026-11-08 17:00 UTC。\n\n来源 · 1\n\n快照资料，非实时",
+      "visibleStatus": "",
+      "expandedSourcesText": "来源 · 1\n法拉利\n2026年11月8日 17:00 UTC\n\n{\"season\":2026,\"position\":\"2\",\"points\":\"510\",\"wins\":\"2\",\"experimentalForecast\":0,\"forecastUnit\":\"percent\",\"forecastIsLocal\":true}",
+      "finishedAt": "2026-11-12T13:52:17.128Z"
+    },
+    {
+      "id": "web-only",
+      "title": "仅导航上下文 · 当前真实问答",
+      "pageURL": "https://f1.youkai-ou.com/zh/home",
+      "question": "当前围场首页的 2026 赛季法拉利积分是多少？请说明你实际依据的是联网来源还是本页证据，给出来源与数据时间；若无法核实请直接说明。",
+      "startedAt": "2026-11-12T13:52:20.161Z",
+      "contextResponses": [
+        {
+          "url": "https://f1.youkai-ou.com/api/assistant/context?pageId=%2Fzh%2Fhome&version=862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf&scope=web",
+          "httpStatus": 200,
+          "receivedAt": "2026-11-12T13:52:21.974Z",
+          "body": {
+            "pageId": "/zh/home",
+            "title": "围场首页",
+            "locale": "zh",
+            "version": "862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf",
+            "snapshotId": "8c81f265c7bfaf19530f0b71308f4c6fb34ce21d128412eb4127f617f45543ab",
+            "dataAsOf": "2026-11-08T17:00:00Z",
+            "fetchedAt": "2026-11-11T07:19:13.385Z",
+            "webOnly": true,
+            "scopes": [
+              "web"
+            ],
+            "configured": true,
+            "webConfigured": true,
+            "live": false
+          }
+        }
+      ],
+      "calls": 1,
+      "beforeText": "AI 助手\n本页：围场首页\n联网\n✧\n与围场对话。\n\n从本页开始，沿着证据追问。\n\n最新升级消息\n近期围场新闻\n技术规则解读",
+      "pageText": "已保存 · 第 20 站\n· 11-11\n解读本页\n2026 / 发车阵容\n众队同场。\n各有篇章。\n\n11 支车队，千万个细节。找到你的主场。\n\n下一站 · R21\n拉斯维加斯大奖赛\n\n2026 / 11 / 22\n\n完整赛历\n10\n天后发车\n分站冠军\nⅡ\nR20巴西 · 诺里斯\nR19墨西哥城 · 维斯塔潘\nR18美国 · 安东内利\nR17新加坡 · 维斯塔潘\nR16巴林（马来西亚） · 维斯塔潘\nR15阿塞拜疆 · 拉塞尔\nR14西班牙 · 安东内利\nR13意大利 · 安东内利\nR12荷兰 · 诺里斯\nR11匈牙利 · 诺里斯\nR10比利时 · 安东内利\nR9英国 · 勒克莱尔\nR8奥地利 · 拉塞尔\nR7巴塞罗那 · 汉密尔顿\nR6摩纳哥 · 安东内利\nR5加拿大 · 安东内利\nR4迈阿密 · 安东内利\nR3日本 · 安东内利\nR2中国 · 安东内利\nR1澳大利亚 · 拉塞尔\nR20巴西 · 诺里斯\nR19墨西哥城 · 维斯塔潘\nR18美国 · 安东内利\nR17新加坡 · 维斯塔潘\nR16巴林（马来西亚） · 维斯塔潘\nR15阿塞拜疆 · 拉塞尔\nR14西班牙 · 安东内利\nR13意大利 · 安东内利\nR12荷兰 · 诺里斯\nR11匈牙利 · 诺里斯\nR10比利时 · 安东内利\nR9英国 · 勒克莱尔\nR8奥地利 · 拉塞尔\nR7巴塞罗那 · 汉密尔顿\nR6摩纳哥 · 安东内利\nR5加拿大 · 安东内利\nR4迈阿密 · 安东内利\nR3日本 · 安东内利\nR2中国 · 安东内利\nR1澳大利亚 · 拉塞尔\n01\n梅赛德斯\n梅赛德斯\n布拉克利\n探索车队\n02\n法拉利\n法拉利\n马拉内罗\n探索车队\n03\n红牛\n红牛\n米尔顿凯恩斯\n探索车队\n04\n迈凯伦\n迈凯伦\n沃金\n探索车队\n05\n红牛二队\n红牛二队\n法恩扎\n探索车队\n06\n阿尔派\n阿尔派\n恩斯通\n探索车队\n07\n哈斯\n哈斯\n坎纳波利斯\n探索车队\n08\n奥迪\n奥迪\n欣维尔\n探索车队\n09\n威廉姆斯\n威廉姆斯\n格罗夫\n探索车队\n10\n阿斯顿\n阿斯顿·马丁\n银石\n探索车队\n11\n凯迪拉克\n凯迪拉克\n银石\n探索车队\n一级方程式 · 官方赛车素材\n选择你的车队，走进速度的幕后\n01 / R20\n赛季速览\n车手积分榜\n1\n安东内利\n390\n2\n维斯塔潘\n279\n3\n拉塞尔\n262\n4\n汉密尔顿\n261\n车队积分榜\n梅赛德斯\n652\n法拉利\n510\n红牛\n415\n冠军预测\n100%\n\n安东内利\n\n256 次模拟 · 频率不等于确定性\n最新赛果\nR20 · 巴西大奖赛\n\nP1\n诺里斯\n1:35:23.504\n\nP2\n维斯塔潘\n+14.602s\n\nP3\n哈贾尔\n+24.485s\n\n赛车升级\nR20 · 国际汽联\n4项改动\n迈凯伦 4\n正赛积分\n前十得分 · 无最快圈奖励\n25\n18\n15\n12\n10\n8\n6\n4\n2\n1\nLATEST STORIES\n围场速递\n全部新闻\nRED BULL / MCLAREN\n红牛 · 迈凯伦 / 车手动态\n里卡多回顾信心起伏，也希望围场多一点乐趣\n\n里卡多在最新访谈中回顾为红牛和迈凯伦效力时的高低起伏，谈到失去信心后重新赢得比赛带来的释然。他表示，自己的庆祝方式是想让严肃的围场更轻松，而与全队共同分享胜利同样令他珍惜。\n\n2026-11-11 · Formula 1\nMERCEDES\n梅赛德斯 / 车手动态\n布鲁诺·塞纳分享安东内利造访家族庄园的经历\n\n布鲁诺·塞纳回忆，安东内利来到塞纳家族庄园时，体验了艾尔顿设计的卡丁车赛道，并坐进一九八六年的莲花赛车。他称赞安东内利在满是碎石的赛道上始终沿着自己跑出的线路驾驶，以及夺冠后仍保持的谦逊态度。\n\n2026-11-11 · Formula 1\nHAAS\n哈斯 / 车手动态\n比尔曼希望调整状态，哈斯需要改善进站执行\n\n比尔曼表示，圣保罗站的缓慢进站让他难以继续争取积分。在此前两站接连因碰撞和赛车损伤退赛后，他希望利用间歇期调整状态，并与哈斯改善接下来比赛的表现。\n\n2026-11-11 · Formula 1",
+      "visibleScopeButtons": [
+        {
+          "text": "联网",
+          "selected": "true"
+        }
+      ],
+      "httpStatus": 200,
+      "responseReceivedAt": "2026-11-12T13:52:33.196Z",
+      "response": {
+        "status": "supported",
+        "answer": "· 我无法查看“围场首页”的实时页面内容，因此不能确认本页显示的积分。\n\n· 我依据的是联网来源，不是本页证据。F1 官方积分榜当前列出法拉利 510 分、车队排名第 2；页面标注为今日抓取（2026年11月12日）。([formula1.com](https://www.formula1.com/en/results/2026/team))\n\n· FIA 的圣保罗大奖赛官方媒体资料列出法拉利 504 分，数据对应 2026年11月6日至8日的圣保罗站资料。它早于上述官方积分榜，不能当作当前数字。([fia.com](https://www.fia.com/sites/default/files/2026_gp_sao_paulo_media_kit_eng_1.pdf))",
+        "effectiveScope": "web",
+        "context": {
+          "pageId": "/zh/home",
+          "title": "围场首页",
+          "locale": "zh",
+          "version": "862037ade39bc36fc0cbcd46cc7b94b5aad433acd58ce946befd39b329bfe5cf",
+          "snapshotId": "8c81f265c7bfaf19530f0b71308f4c6fb34ce21d128412eb4127f617f45543ab",
+          "dataAsOf": "2026-11-08T17:00:00Z",
+          "fetchedAt": "2026-11-11T07:19:13.385Z",
+          "webOnly": true
+        },
+        "sources": [
+          {
+            "id": "web-76f8d1612a66f1c2",
+            "title": "2026 TEAMS' STANDINGS",
+            "url": "https://www.formula1.com/en/results/2026/team",
+            "text": "",
+            "dataAsOf": "",
+            "version": "ae3b78fc91e9dbdf937f5e07cf6e38c32c7669522bf5533ab2a29c4c6b64fa33",
+            "kind": "web",
+            "retrievedAt": "2026-11-12T13:52:33.156Z",
+            "publisher": "www.formula1.com"
+          },
+          {
+            "id": "web-d920065325bee7d9",
+            "title": "Formula 1 MSC Cruises São Paulo Grand Prix 2026 – Official Media Kit",
+            "url": "https://www.fia.com/sites/default/files/2026_gp_sao_paulo_media_kit_eng_1.pdf",
+            "text": "",
+            "dataAsOf": "",
+            "version": "e5fb2a97c51fb73ac8b7aa2d7c631906a0092656d7143cb34e1bd3d3b34c6840",
+            "kind": "web",
+            "retrievedAt": "2026-11-12T13:52:33.156Z",
+            "publisher": "www.fia.com"
+          }
+        ],
+        "dataAsOf": "2026-11-12T13:52:33.156Z",
+        "warnings": [
+          "依据本次公开网页检索生成。检索时间不代表报道时间；传闻、观点和预测请结合引用来源判断。"
+        ],
+        "citations": [
+          {
+            "start": 109,
+            "end": 172,
+            "sourceId": "web-76f8d1612a66f1c2"
+          },
+          {
+            "start": 251,
+            "end": 341,
+            "sourceId": "web-d920065325bee7d9"
+          }
+        ],
+        "search": {
+          "provider": "OpenAI",
+          "query": "当前围场首页的 2026 赛季法拉利积分是多少？请说明你实际依据的是联网来源还是本页证据，给出来源与数据时间；若无法核实请直接说明。",
+          "searchedAt": "2026-11-12T13:52:33.156Z"
+        }
+      },
+      "afterText": "AI 助手\n本页：围场首页\n联网\n\n当前围场首页的 2026 赛季法拉利积分是多少？请说明你实际依据的是联网来源还是本页证据，给出来源与数据时间；若无法核实请直接说明。\n\n我无法查看“围场首页”的实时页面内容，因此不能确认本页显示的积分。\n我依据的是联网来源，不是本页证据。F1 官方积分榜当前列出法拉利 510 分、车队排名第 2；页面标注为今日抓取（2026年11月12日）。[1]\nFIA 的圣保罗大奖赛官方媒体资料列出法拉利 504 分，数据对应 2026年11月6日至8日的圣保罗站资料。它早于上述官方积分榜，不能当作当前数字。[2]\n来源 · 2\n\n联网资料，请核对来源",
+      "visibleStatus": "",
+      "expandedSourcesText": "来源 · 2\n\n检索于：2026年11月12日 13:52 UTC\n\n2026 TEAMS' STANDINGS\nwww.formula1.com · 未提供发布日期\n\nFormula 1 MSC Cruises São Paulo Grand Prix 2026 – Official Media Kit\nwww.fia.com · 未提供发布日期",
+      "finishedAt": "2026-11-12T13:53:04.526Z"
+    }
+  ],
+  "blocked": [
+    {
+      "case": "evidence",
+      "method": "POST",
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum"
+    },
+    {
+      "case": "web-only",
+      "method": "POST",
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum"
+    }
+  ],
+  "totalChatRequests": 2,
+  "scope": "One intentional UI submission per case; no retries, fabricated response, deployment or source-repository write."
+}

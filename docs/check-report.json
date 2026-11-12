@@ -1,10 +1,17 @@
 {
-  "mode": "draft",
-  "todoEntries": 27,
-  "files": 147,
+  "mode": "revised-preview",
+  "publicationStatus": "revised-preview",
+  "publicationBlockers": [
+    "TasteTwin、F1及个人站的本人职责、协作关系和实际项目周期需确认",
+    "TasteTwin素材公开权限及正式视频入口未确认",
+    "可公开联系方式与实习范围未确认",
+    "设计假设和个人叙事需本人最终核对"
+  ],
+  "todoEntries": 2,
+  "files": 361,
   "externalResources": [],
   "largestImageBytes": 397355,
-  "htmlCssJsGzipBytes": 12462,
+  "htmlCssJsGzipBytes": 13048,
   "externalLinks": [
     {
       "url": "https://home.youkai-ou.com/",

@@ -1,0 +1,657 @@
+{
+  "date": "2026-11-12T23:19:32.440575+09:00",
+  "status": "revised-preview",
+  "sourcePages": 16,
+  "pdfs": [
+    {
+      "file": "output/pdf/portfolio-ai-interaction-revised.pdf",
+      "pages": 16,
+      "bytes": 3838931,
+      "links": 10,
+      "fonts": [
+        "/AAAAAA+NotoSansSC-Thin",
+        "/BAAAAA+NotoSansSC-Thin"
+      ],
+      "allFontsEmbedded": true,
+      "ratio": 1.7777777777777777,
+      "uriLinks": [
+        "https://home.youkai-ou.com/",
+        "https://f1.youkai-ou.com/zh/home",
+        "https://youkai-ou.com/",
+        "https://home.youkai-ou.com/",
+        "https://f1.youkai-ou.com/zh/home",
+        "https://youkai-ou.com/"
+      ],
+      "internalLinks": [
+        {
+          "destination": "/home-intro",
+          "page": 3
+        },
+        {
+          "destination": "/agent-intro",
+          "page": 9
+        },
+        {
+          "destination": "/f1-intro",
+          "page": 13
+        },
+        {
+          "destination": "/desktop",
+          "page": 15
+        }
+      ],
+      "invalidInternalLinks": [],
+      "localServerLinks": false,
+      "internalReviewMarkers": false,
+      "textExtractable": true,
+      "sha256": "210b721a4f684fbcdff0ef508e98093e61db32a7afd7fa9e33ae48099ea70dbb",
+      "strictReadPass": true
+    },
+    {
+      "file": "output/pdf/portfolio-ai-interaction-revised-light.pdf",
+      "pages": 16,
+      "bytes": 1605338,
+      "links": 10,
+      "fonts": [
+        "/AAAAAA+NotoSansSC-Thin",
+        "/BAAAAA+NotoSansSC-Thin"
+      ],
+      "allFontsEmbedded": true,
+      "ratio": 1.7777777777777777,
+      "uriLinks": [
+        "https://home.youkai-ou.com/",
+        "https://f1.youkai-ou.com/zh/home",
+        "https://youkai-ou.com/",
+        "https://home.youkai-ou.com/",
+        "https://f1.youkai-ou.com/zh/home",
+        "https://youkai-ou.com/"
+      ],
+      "internalLinks": [
+        {
+          "destination": "/home-intro",
+          "page": 3
+        },
+        {
+          "destination": "/agent-intro",
+          "page": 9
+        },
+        {
+          "destination": "/f1-intro",
+          "page": 13
+        },
+        {
+          "destination": "/desktop",
+          "page": 15
+        }
+      ],
+      "invalidInternalLinks": [],
+      "localServerLinks": false,
+      "internalReviewMarkers": false,
+      "textExtractable": true,
+      "sha256": "9b28a4238cfa92daf607e769ae64922b5ab64ea0d11c593f2972bd776bd1ec60",
+      "strictReadPass": true
+    }
+  ],
+  "sameExtractedText": true,
+  "downloadCopiesMatch": true,
+  "originalPDFs": [
+    {
+      "path": "output/pdf/M1-中文与链接-三页样张.pdf",
+      "bytes": 56585,
+      "sha256": "fc5b7a2810137d2a33880484c64ba4696168b355070dee913d7a09f554e06046",
+      "preserved": true
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿.pdf",
+      "bytes": 3833268,
+      "sha256": "9a8640d989224fd1709efa64d93cf8f848c2ce850b085d638a77ea2055a0216b",
+      "preserved": true
+    },
+    {
+      "path": "output/pdf/王耀海-AI创新交互设计师-作品集-草稿-精简版.pdf",
+      "bytes": 1563345,
+      "sha256": "a73bc64cc87c225b13d420198501d60ccc0320d176894022fc6ea337c9471492",
+      "preserved": true
+    }
+  ],
+  "renders": {
+    "native": [
+      {
+        "path": "tmp/revision/native/page-01.png",
+        "sha256": "597dd34f57ce2192a5cc7db82d8f5eb31970c79652d080807eba1387fe96f44d"
+      },
+      {
+        "path": "tmp/revision/native/page-02.png",
+        "sha256": "a00888e7207c379e4352dc63fa2367bb3230b7bcd4e8c2c98c6669c0fdf93a78"
+      },
+      {
+        "path": "tmp/revision/native/page-03.png",
+        "sha256": "3a614d780b05e6fac77d00701ce1df10098d2f66fa32438f06bf1e09054e063b"
+      },
+      {
+        "path": "tmp/revision/native/page-04.png",
+        "sha256": "6f233ef64639c7cdf84649f970f6ec333c4b5720989c09081524662b04f14ad8"
+      },
+      {
+        "path": "tmp/revision/native/page-05.png",
+        "sha256": "9ac025e87687c508a6357fa9dafc7a3ccf82d89b4be21562b8994cd7d1ffa768"
+      },
+      {
+        "path": "tmp/revision/native/page-06.png",
+        "sha256": "2532dff44e833b3e06d34ed8142c40570754c7991eb1d37264bd1e47226b63c9"
+      },
+      {
+        "path": "tmp/revision/native/page-07.png",
+        "sha256": "6abd8cb68181b66c64fb968544ddbc384483e4cd098c55578ed0b87bb8b8e2d6"
+      },
+      {
+        "path": "tmp/revision/native/page-08.png",
+        "sha256": "8b16774596d150e7f362b170e43674f92e3b1eb5837bdf97e2f053c5142b9f6b"
+      },
+      {
+        "path": "tmp/revision/native/page-09.png",
+        "sha256": "c3adb1324480b779a5aaf4da84ae651553362160e3e41cc64b9cb4d523070b47"
+      },
+      {
+        "path": "tmp/revision/native/page-10.png",
+        "sha256": "de117342177cb2a0a2b04866fb11cc928c977d2898d2f254461d411e79e07599"
+      },
+      {
+        "path": "tmp/revision/native/page-11.png",
+        "sha256": "b054592fbb877d4c7724c753ab79cac209e6e8dba7b784662e9653dcc7ce8678"
+      },
+      {
+        "path": "tmp/revision/native/page-12.png",
+        "sha256": "27ddc2a1f3576fe57e1baa560ef407c92374d00b610fe01588b813618725aeee"
+      },
+      {
+        "path": "tmp/revision/native/page-13.png",
+        "sha256": "fff2dcb94bd600523b2438bf0e0e7228a13ffea32956407a51cbe31904d4d7ad"
+      },
+      {
+        "path": "tmp/revision/native/page-14.png",
+        "sha256": "4c739a734d9dda71c8caa2a39568481711c97560dac2c002d2c9d4feb78319d4"
+      },
+      {
+        "path": "tmp/revision/native/page-15.png",
+        "sha256": "b3675c1b9eb8489796ee578c9de7a7579c0b47f4d924cea1ed623e29c7af8ca6"
+      },
+      {
+        "path": "tmp/revision/native/page-16.png",
+        "sha256": "7fb40c3d5859d7eb1bd5a680637eed6d009bf1f95ddfe1b4528dc134bdcae1e1"
+      }
+    ],
+    "poppler": [
+      {
+        "path": "tmp/revision/pdf-page-01.png",
+        "sha256": "e22b73d1860986a13c8a2eb183239bcc16b31f2c312346a256afb9098110b066"
+      },
+      {
+        "path": "tmp/revision/pdf-page-02.png",
+        "sha256": "cb92ad0b090da692deecc537d7fb84f44c89982f1e8b036365a2cd3e85736c24"
+      },
+      {
+        "path": "tmp/revision/pdf-page-03.png",
+        "sha256": "9932520913d4647c748ff5eeff09a358aa1273af58379c66d8f281d64ef14aca"
+      },
+      {
+        "path": "tmp/revision/pdf-page-04.png",
+        "sha256": "48c38369bfef48e89ca108186004637d02f9f3bfb88d6584991cfc2648aa7eff"
+      },
+      {
+        "path": "tmp/revision/pdf-page-05.png",
+        "sha256": "1b67bb02700d258a37f0758686048aea6aa6a27a193e8fb3940d394fc77bc771"
+      },
+      {
+        "path": "tmp/revision/pdf-page-06.png",
+        "sha256": "7b0023e1d3e454de9547b24b93defcac22a63d137e96bf5e028283c9e480dd4b"
+      },
+      {
+        "path": "tmp/revision/pdf-page-07.png",
+        "sha256": "777954f7876d9cb0c2eef735a139dc127c92307dfbf6cfbd60adffa4774dc575"
+      },
+      {
+        "path": "tmp/revision/pdf-page-08.png",
+        "sha256": "b1e027ad9e3723f53ccf50c6ee6932f625a0e5bef5a6bc54c8ac930bb3fd9072"
+      },
+      {
+        "path": "tmp/revision/pdf-page-09.png",
+        "sha256": "a60d7b5ac1167b0e2dd1952856a6bf9460865b434080564091557bf93a55c25e"
+      },
+      {
+        "path": "tmp/revision/pdf-page-10.png",
+        "sha256": "97d3c5f869ed68cff13d37cfd2150c5c17ab5d1f0f10c99652fc937e2af85f4f"
+      },
+      {
+        "path": "tmp/revision/pdf-page-11.png",
+        "sha256": "0ff95da1119a7441096abafad8dceed8d0fa7effcb564c1e8570e387d590a660"
+      },
+      {
+        "path": "tmp/revision/pdf-page-12.png",
+        "sha256": "f56788394767b0fe9aa6596df80c5ae1421881e3cfc34803f792fb05b3563e01"
+      },
+      {
+        "path": "tmp/revision/pdf-page-13.png",
+        "sha256": "ad00892a21aceb4a21267f40935adcaa3d832481f58068552dde87293008b33c"
+      },
+      {
+        "path": "tmp/revision/pdf-page-14.png",
+        "sha256": "30de3f84f306a491489d208797b37a5e329a3e450b0f4c38bec61e6700eb12de"
+      },
+      {
+        "path": "tmp/revision/pdf-page-15.png",
+        "sha256": "99f94759ff1f8726508c8aa6cfa0f41e0087fb39aa5015c55142e93284ace0d3"
+      },
+      {
+        "path": "tmp/revision/pdf-page-16.png",
+        "sha256": "137ee82a75f0d3692f147f8b8bde75cb420e1ec95a2768cf7d5d1535317ee269"
+      }
+    ],
+    "light": [
+      {
+        "path": "tmp/revision/light-page-01.png",
+        "sha256": "7e59f31003801c0de43f18e92527609305f96562d53bb8ebee2848e168b88c01"
+      },
+      {
+        "path": "tmp/revision/light-page-02.png",
+        "sha256": "7627062cb9c11c044a89352b848e31b979e6a551d9944f0241ca3811c3c68e63"
+      },
+      {
+        "path": "tmp/revision/light-page-03.png",
+        "sha256": "a71df2e6358f0ba4a7e38d75b6a1b854d5693cf254eba36f701717565d1459d5"
+      },
+      {
+        "path": "tmp/revision/light-page-04.png",
+        "sha256": "b3c7a474e17dc8c6e4f7a9e48429113a844215224f6f2e501c208d854f60ad45"
+      },
+      {
+        "path": "tmp/revision/light-page-05.png",
+        "sha256": "041b17c6851de9b8a68d17a57ab60085b853fa13be9d75b29de4ec8e49d6c63d"
+      },
+      {
+        "path": "tmp/revision/light-page-06.png",
+        "sha256": "d484ba6d475176bde8df8ea8a120c4569f204e85a786fdc5d3a2534cddf89a99"
+      },
+      {
+        "path": "tmp/revision/light-page-07.png",
+        "sha256": "77f1a2beecaa55f69c2661d4cff4cfdf5fd53b183cd74c7db3fbb7f599494963"
+      },
+      {
+        "path": "tmp/revision/light-page-08.png",
+        "sha256": "c46bda552f79837a2f21041f3019e0d9bc799f798dd681eed5735a3edb6b44b6"
+      },
+      {
+        "path": "tmp/revision/light-page-09.png",
+        "sha256": "c2a81c21bbbba3126581c25d2cc1962ffec2be5a939ff1ba6073d8c5f848128b"
+      },
+      {
+        "path": "tmp/revision/light-page-10.png",
+        "sha256": "d5f5a345758a00bd2b6d4c6c512261d40cc95a2015942a7c034e1ab37459dd59"
+      },
+      {
+        "path": "tmp/revision/light-page-11.png",
+        "sha256": "ddeeeaae7b7e054fe0697717d35811b66e2e769f2a54fe3dbce682d4cc4f4a66"
+      },
+      {
+        "path": "tmp/revision/light-page-12.png",
+        "sha256": "1e6beb9d100645cc8e7ad445a3a0f333341868c01f1a866441475a05bc93c1b9"
+      },
+      {
+        "path": "tmp/revision/light-page-13.png",
+        "sha256": "ff284837577d420e7cac5e6d4473a0a53b803c9c345a0ba723a4d6ebcd7807a0"
+      },
+      {
+        "path": "tmp/revision/light-page-14.png",
+        "sha256": "a9c7ad15c4afbe44e4b3c4c1cadef705115b7bfd39831c4182aa627bd183ba1e"
+      },
+      {
+        "path": "tmp/revision/light-page-15.png",
+        "sha256": "1936c6ebc098a54eb031407747f50d0cbfd384871b41305e9b78fcc1711ea2e8"
+      },
+      {
+        "path": "tmp/revision/light-page-16.png",
+        "sha256": "c536a2cbdaafa60d20bf8a2debf13b061e03c76b113d39bede028e35a15b7dc6"
+      }
+    ]
+  },
+  "visualReview": {
+    "pagesReviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "correctedAndRechecked": [
+      7,
+      15
+    ],
+    "issuesRemaining": []
+  },
+  "webQA": {
+    "checked": 24,
+    "pages": [
+      {
+        "width": 1440,
+        "route": "/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/about/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/cases/agent/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 4,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/cases/ideal-home/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 6,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/cases/pitwall/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/cases/desktop/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/specs/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1440,
+        "route": "/assets-review/",
+        "scroll": 1440,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [
+          "none"
+        ],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/about/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/cases/agent/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 4,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/cases/ideal-home/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 6,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/cases/pitwall/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/cases/desktop/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/specs/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 1280,
+        "route": "/assets-review/",
+        "scroll": 1280,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [
+          "none"
+        ],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/about/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/cases/agent/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 4,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/cases/ideal-home/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 6,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/cases/pitwall/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 2,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/cases/desktop/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/specs/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      },
+      {
+        "width": 390,
+        "route": "/assets-review/",
+        "scroll": 390,
+        "brokenImages": [],
+        "missingAlt": 0,
+        "autoplay": 0,
+        "videoPreload": [
+          "none"
+        ],
+        "h1": 1,
+        "reduced": "auto",
+        "placeholders": 0
+      }
+    ],
+    "externalRequests": [],
+    "failures": []
+  },
+  "linkChecks": [
+    {
+      "url": "https://home.youkai-ou.com/",
+      "status": 200
+    },
+    {
+      "url": "https://f1.youkai-ou.com/zh/home",
+      "status": 200
+    },
+    {
+      "url": "https://youkai-ou.com/",
+      "status": 200
+    }
+  ]
+}

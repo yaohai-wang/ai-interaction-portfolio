@@ -1,4 +1,4 @@
 ---
 import Layout from '../layouts/Layout.astro';import Block from '../components/Block.astro';import {content} from '../content/schema';
 ---
-<Layout title="关于王耀海 · AI 交互设计">{content.pages.filter(p=>['about','build-notes','closing'].includes(p.type)).map(b=><Block block={b} index={content.pages.indexOf(b)}/>)}</Layout>
+<Layout title="关于王耀海 · AI 交互设计">{content.pages.filter(p=>['overview','closing'].includes(p.type)).map(b=><Block block={b} index={content.pages.indexOf(b)}/>)}</Layout>

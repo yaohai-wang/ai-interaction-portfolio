@@ -1,42 +1,455 @@
 site:
   title: 王耀海 · AI 交互设计作品集 2027
-  description: 从交互概念到可以演示的作品。王耀海的 AI 交互设计作品集，本地审阅草稿。
+  description: 从交互概念到可运行的界面。王耀海的 AI 交互设计作品集：TasteTwin、理想之家、围场智析与桌面平行宇宙。
   name: 王耀海 / Kai Wang
-  year: '2027'
+  year: "2027"
   intro: 建筑训练带来的结构感，加上把概念做成 Demo 的能力。
   target: AI 创新交互设计师
-  draftLabel: 审阅草稿 · 有待确认内容
-cases: []
+  draftLabel: 审阅草稿 · 待确认
+cases:
+  - slug: agent
+    number: "01"
+    title: TasteTwin
+    tag: AI 交互原型
+    summary: 让推荐先成为可核对的选择，再进入生活记录。
+    accent: "#4d703b"
+    diagram:
+      - title: 理解意图
+        detail: ""
+        kind: default
+      - title: 核对建议
+        detail: ""
+        kind: default
+      - title: 确认记录
+        detail: ""
+        kind: default
+    status: 本地演示 / 示例数据 / 公开权限待确认
+  - slug: ideal-home
+    number: "02"
+    title: 理想之家
+    tag: 主打 · 空间反馈
+    summary: 从一句话手记，到用户确认，再到房间里的变化。
+    accent: "#617460"
+    demo: https://home.youkai-ou.com/
+    qr: /qr/ideal-home.svg
+    diagram:
+      - title: 表达愿景
+        detail: ""
+        kind: default
+      - title: 确认行动
+        detail: ""
+        kind: default
+      - title: 布置房间
+        detail: ""
+        kind: default
+    status: 可运行 Demo / 名称待确认
+  - slug: pitwall
+    number: "03"
+    title: 围场智析
+    tag: 上下文与可信交互
+    summary: 把范围、依据和不确定性放在回答之前。
+    accent: "#39d3c1"
+    demo: https://f1.youkai-ou.com/zh/home
+    qr: /qr/pitwall.svg
+    diagram:
+      - title: 当前页面
+        detail: ""
+        kind: default
+      - title: 选择范围
+        detail: ""
+        kind: default
+      - title: 查看依据
+        detail: ""
+        kind: default
+    status: 数据界面可浏览 / AI 回答可用性待复测
+  - slug: desktop
+    number: "04"
+    title: 桌面平行宇宙
+    tag: 空间导航与主题系统
+    summary: 保持同一张桌面，让五种主题共享内容与入口。
+    accent: "#bd2636"
+    demo: https://youkai-ou.com/
+    qr: /qr/desktop.svg
+    diagram:
+      - title: 物件入口
+        detail: ""
+        kind: default
+      - title: 共享面板
+        detail: ""
+        kind: default
+      - title: 切换主题
+        detail: ""
+        kind: default
+    status: 可运行 Demo / 原生 JavaScript
 pages:
   - id: cover
-    type: cover
+    type: statement
     eyebrow: KAI WANG / PORTFOLIO 2027
-    title: 把 AI 的能力，变成可理解的体验。
-    lead: 王耀海 · AI 交互设计作品集
-    draft: true
-    source: B01；定位与标题待 K01 确认。
-    todo: ['K01 · TODO(Kai)：确认封面定位句。']
-  - id: sample-flow
-    type: flow
-    eyebrow: 02 / IDEAL HOME
-    title: 先有愿景，再让日常行动留下痕迹。
-    lead: 由真实代码重建的核心循环；AI 提议，用户确认，业务规则计分。
+    title: |-
+      把 AI 的能力，
+      变成可理解的体验。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: about
+    type: statement
+    eyebrow: ABOUT / 从结构到交互
+    title: 理解结构，也把概念做成可以操作的界面。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: works
+    type: statement
+    eyebrow: SELECTED WORK / 01–04
+    title: 先看理想之家，再看三种交互探索。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: principles
+    type: statement
+    eyebrow: POINT OF VIEW / 三条判断
+    title: AI 交互，先回答人怎样参与。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: agent-intro
+    type: hero
+    case: agent
+    eyebrow: 01 / TASTETWIN · 交互原型
+    title: 让推荐先成为选择，再进入记录。
+    lead: 一个围绕饮食档案、餐食推荐与状态反馈的交互原型。
+    role: TODO(Kai)：确认本人在 TasteTwin 的设计与协作范围
+    period: 录屏文件：2026-10-29；实际项目期 TODO(Kai)
+    tools: Codex（已确认）；原型实现：HTML / CSS / JavaScript
     nodes:
-      - {title: 保存愿景, detail: 摘要与目标}
-      - {title: 记录今天, detail: 自然语言输入}
-      - {title: 整理行动, detail: 模型候选, kind: ai}
-      - {title: 勾选确认, detail: 人决定保留项, kind: human}
-      - {title: 规则计分, detail: 确定性公式}
-      - {title: 兑换家具, detail: 用户选择}
-      - {title: 布置房间, detail: 空间留下变化}
-    source: H / JournalPanel.tsx:137–174；economy.ts:15–31。
-  - id: sample-notes
-    type: reflection
-    eyebrow: DESIGN / EVIDENCE
-    title: 说明实现边界，也是交互的一部分。
-    lead: 草稿显式区分代码事实、设计分析和待本人确认的内容。
+      - title: 表达需求
+        detail: 自然语言与标签
+        kind: default
+      - title: 核对建议
+        detail: 原型示例结果
+        kind: default
+      - title: 确认记录
+        detail: 用户显式操作
+        kind: human
+    detail: 视频展示真实点击的原型流程。识别与推荐使用示例或本地规则，不代表真实模型执行。
+    video: /video/agent/tastetwin-recommend-candidate.mp4
+    poster: /video/agent/poster.jpg
+    caption: 候选精华 80 秒；最终片段和公开权限待 Kai 确认。
+    todo:
+      - K02 / K03 · TODO(Kai)：本人角色、能否公开、精华范围与公开链接。
+    source: Q · review/CODEX-TASK-flow-v1.md:13；README.md:224、228、232；03-recommend.mp4；候选片段不是正式发布版。
+  - id: agent-problem
+    type: decision
+    case: agent
+    eyebrow: 01 / 问题与取舍
+    title: 用户需要核对的是条件，不只是一段答案。
+    lead: 从原型界面可以看到：档案、场景、餐次与偏好共同进入推荐流程。
+    draft: true
     items:
-      - {title: 已实现, text: 自然语言行动整理、人工选择确认、确定性规则计分。}
-      - {title: 部署边界, text: 线上未来房间图片生成未启用；不把实现中的功能当作已上线成果。}
-      - {title: 待补证据, text: 原始用户反馈与设计动机由 Kai 补充。, href: https://home.youkai-ou.com/}
-    source: H / cloudflare/index.ts:49–51,86。
+      - title: 界面中确实存在的任务
+        text: 在家或外出、餐次、忌口、口味与时间都能调整；自然语言补充会回显为条件标签。
+        label: OBSERVED
+      - title: 采用的交互形式
+        text: 推荐以可查看详情、可加入计划的餐食卡呈现；计划与已记录摄入分别显示。
+        label: IMPLEMENTED
+      - title: 需要补充的设计依据
+        text: 目标用户、起因与这些取舍的原始理由尚未从材料中确认，不写成已完成的用户研究。
+        label: TODO(Kai) / K04
+    todo:
+      - K04 / K10 · TODO(Kai)：目标人群、问题来源，以及是否认可上述设计取舍。
+    source: Q · 03-recommend.mp4 00:10.2 / 00:16.7 / 00:31.5；产品分析非访谈结论。
+  - id: agent-framework
+    type: flow
+    case: agent
+    eyebrow: 01 / 视频中的交互框架
+    title: 把“推荐、计划、已记录”分成三个状态。
+    lead: 下图只包含录屏展示的环节，不补写自主规划、工具调用或异常恢复。
+    nodes:
+      - title: 读取档案
+        detail: 目标与忌口
+        kind: default
+      - title: 补充需求
+        detail: 文本与条件标签
+        kind: default
+      - title: 查看推荐
+        detail: 示例餐食卡
+        kind: default
+      - title: 加入计划
+        detail: 尚未计入已吃
+        kind: human
+      - title: 调整餐次
+        detail: 核对实际份量
+        kind: human
+      - title: 确认记录
+        detail: 写入共享状态
+        kind: human
+      - title: 查看反馈
+        detail: 合计与进度更新
+        kind: default
+    items:
+      - title: 过程可见
+        text: 条件回显、详情与计划清单让每一步有可检查的对象。
+        label: ""
+      - title: 人在环
+        text: 加入计划和确认已吃分开；确认时可以修改份量或先不记录。
+        label: ""
+      - title: 实际边界
+        text: 这里的“计划”是用户餐食清单，不是 Agent 自主任务规划。
+        label: ""
+    source: Q · 01-profile / 03-recommend 录屏；live-2d/store.js、recommend.js。
+  - id: agent-intent
+    type: annotated-shot
+    case: agent
+    eyebrow: 01 / KEYFRAME · 00:10.2
+    title: 让输入的含义可以被看见、被修改。
+    lead: 自然语言补充与结构化条件同时存在，帮助用户检查当前推荐条件。
+    shots:
+      - src: /shots/agent/intent.jpg
+        caption: 03-recommend.mp4 · 00:10.2；本地原型录屏，画面数值为示例。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.71
+        y: 0.226
+        title: 目标保持可见
+        text: 当前目标在推荐区顶部显示，可从同一区域修改。
+      - x: 0.77
+        y: 0.39
+        title: 带入已知上下文
+        text: 地区与忌口在本轮推荐前显示，不要求重新逐项输入。
+      - x: 0.77
+        y: 0.522
+        title: 解析结果回显
+        text: 文本补充映射为可核对的条件；这里是原型规则演示。
+      - x: 0.78
+        y: 0.6
+        title: 允许手动修正
+        text: 口味、食材与时间仍有标签入口，用户可以继续调整。
+    source: Q · 真实录屏关键帧与 recommend.js；标注为本轮代码/画面分析，待 K10 确认。
+  - id: agent-confirm
+    type: annotated-shot
+    case: agent
+    eyebrow: 01 / KEYFRAME · 00:56.3
+    title: 确认之前，计划不会变成已经发生的事。
+    lead: 推荐可以先进入计划，真正记录时再选择餐次与实际份量。
+    shots:
+      - src: /shots/agent/confirm.jpg
+        caption: 03-recommend.mp4 · 00:56.3；本地原型，计划及摄入值均为示例数据。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.52
+        y: 0.855
+        title: 先核对记录内容
+        text: 餐次和份量就地调整，避免把推荐份量直接当作实际摄入。
+      - x: 0.579
+        y: 0.855
+        title: 明确的生效点
+        text: 点击“确认记录”才写入；录屏后续展示合计更新。
+      - x: 0.613
+        y: 0.855
+        title: 保留暂不记录的出口
+        text: “先不记”让用户可以退出确认，不强迫完成记录。
+    todo:
+      - K03 · TODO(Kai)：确认这两张标注图与其他候选帧；全部素材公开权限待定。
+    source: Q · README.md:228、232 / recommend.js:22、30 / store.js:87–91；00:56.3 → 01:07.4；详见素材审阅页。
+  - id: home-intro
+    type: hero
+    case: ideal-home
+    eyebrow: 02 / IDEAL HOME · 理想之家
+    title: AI 的反馈，也可以成为房间的变化。
+    lead: 把愿景、日常行动与可布置的 3D 空间连在一起。
+    role: 独立设计与开发（任务书）；具体职责范围待 K04
+    period: 保留提交始于 2026-10-11；实际起止待 K04
+    tools: Codex；实现：React / TypeScript / Three.js / Vite
+    demo: https://home.youkai-ou.com/
+    qr: /qr/ideal-home.svg
+    nodes:
+      - title: 写下愿景
+        detail: 给行动方向
+        kind: default
+      - title: 确认行动
+        detail: AI 提议，人确认
+        kind: human
+      - title: 布置房间
+        detail: 以空间承载反馈
+        kind: default
+    detail: 线上数据保存在当前浏览器。可从样板间查看完整场景，无需发起 AI 请求。
+    draft: true
+    todo:
+      - K09 / K04 · TODO(Kai)：统一“理想之家 / 理想生活”名称，并确认项目起因、时间和角色。
+    source: "H-HOME01–05 / 10–23；主色 #617460 来自 refined-ui.css。"
+  - id: home-loop
+    type: flow
+    case: ideal-home
+    eyebrow: 02 / CORE LOOP
+    title: 先有愿景，再让日常行动留下痕迹。
+    lead: 模型整理候选行动，业务规则负责计分，用户控制结果何时生效。
+    nodes:
+      - title: 保存愿景
+        detail: 摘要与目标
+        kind: default
+      - title: 记录今天
+        detail: 自然语言输入
+        kind: default
+      - title: 整理行动
+        detail: 候选条目
+        kind: ai
+      - title: 勾选确认
+        detail: 只留真实完成项
+        kind: human
+      - title: 规则计分
+        detail: 确定性公式
+        kind: default
+      - title: 兑换家具
+        detail: 用户选择
+        kind: default
+      - title: 布置房间
+        detail: 可见的空间变化
+        kind: default
+    items:
+      - title: AI 介入点
+        text: 将手记整理为候选行动，关联目标和积分说明。
+        label: ""
+      - title: 人工确认点
+        text: 只有勾选并保存的行动进入存档与计分。
+        label: ""
+      - title: 取舍 · 待确认
+        text: 增加一次确认操作，换取可核对的记录与计分边界。
+        label: ""
+    draft: true
+    source: H-HOME10–14 · JournalPanel.tsx:137–174；domain/economy.ts:15–31。
+  - id: home-journal
+    type: annotated-shot
+    case: ideal-home
+    eyebrow: 02 / 关键交互 · 今日手记
+    title: 把确认规则写在用户开始输入之前。
+    lead: 这是新浏览器存档的真实空态，未提交输入或请求 AI。
+    shots:
+      - src: /shots/home/journal.jpg
+        caption: 线上只读截图 · 今日手记；未生成候选结果。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.3
+        y: 0.25
+        title: 先说明生效条件
+        text: 面板明确提示：确认做过的行动之后，才会计分。
+      - x: 0.42
+        y: 0.45
+        title: 自然语言输入
+        text: 用户描述今天做了什么；整理后的候选仍需本人确认。
+      - x: 0.5
+        y: 0.76
+        title: 愿景是前置条件
+        text: 尚未保存愿景时，先给“完善愿景”入口，说明行动需要方向。
+    source: H-HOME11–13 · JournalPanel.tsx:99、139–174、222–239；S-home/journal。
+  - id: home-space
+    type: annotated-shot
+    case: ideal-home
+    eyebrow: 02 / 关键交互 · 空间反馈
+    title: 先体验样板间，再回到自己的房间。
+    lead: 样板间用于体验空间，不作为真实用户的成长结果。
+    shots:
+      - src: /shots/home/showroom.jpg
+        caption: 线上样板间截图；预设展示场景，不代表用户通过 AI 获得的房间。
+        label: ""
+        notes: []
+    notes:
+      - x: 0.5
+        y: 0.48
+        title: 用空间呈现产品价值
+        text: 家具与房间提供可观看的反馈对象；图中为产品样板间。
+      - x: 0.5
+        y: 0.925
+        title: 视角服务观察
+        text: 底部提供全景、第一视角与重置视角，方便理解同一空间。
+      - x: 0.94
+        y: 0.06
+        title: 与自己的存档保持区分
+        text: 返回我的房间始终可见；参观样板间不更改用户的家具与积分。
+    source: H-HOME17–23 · RoomHome.tsx:142–175；设计分析待 K10；标注以样板间画面核对。
+  - id: home-iteration
+    type: before-after
+    case: ideal-home
+    eyebrow: 02 / ITERATION · 2026.10.17 → 10.18
+    title: 保留进入方式，重新组织入口的构图。
+    lead: 从旧入口到左侧文案、右侧浮岛；保留语言切换、进入与跳过。
+    shots:
+      - src: /shots/home/history-97bd65f-welcome.jpg
+        caption: git archive · 97bd65f · 2026-10-17
+        label: BEFORE
+        notes: []
+      - src: /shots/home/welcome.jpg
+        caption: 线上现状；浮岛改版见 8c468d4 · 2026-10-18
+        label: AFTER
+        notes: []
+    items:
+      - title: 改动有据可查
+        text: 任务文件要求移除玻璃卡片、重做浮岛构图，并保持原有入口能力。
+        label: ""
+      - title: 不扩大成果
+        text: 提交和截图证明形态发生变化；没有留存、转化或用户满意度证据。
+        label: ""
+      - title: 需要本人补充
+        text: 为什么选择这个方向、如何判断改版更合适，仍待 Kai 确认。
+        label: ""
+    source: H · docs/design/welcome-island/CODEX_TASK.md:18–23；97bd65f → 8c468d4 → 78d0202。
+  - id: home-reflection
+    type: reflection
+    case: ideal-home
+    eyebrow: 02 / 实现与反思
+    title: 异步状态要能恢复，能力边界也要明确。
+    lead: 从真实代码中提取完成态与失败态，不用成功截图掩盖部署限制。
+    nodes: []
+    items:
+      - title: 未知不等于失败
+        text: 通信结果未知时保留请求身份，提供“查询原结果”，不自动重新生成。
+        label: ""
+      - title: 终态不被旧响应覆盖
+        text: 已保存或已放弃的任务不能被迟到响应重新激活；草稿可保留。
+        label: ""
+      - title: 线上范围仍有限
+        text: 浏览器本地存档；未来房间图像生成未启用。真实用户反馈和评估结论待补。
+        label: ""
+    todo:
+      - K05 / K11 · TODO(Kai)：补充真实反馈、评估理由与下一步优先级。
+    source: H-HOME05–06 / 25–28 · ai-operations.ts:48–61；task-coordinator.ts:63–107。
+  - id: f1-intro
+    type: statement
+    eyebrow: 03 / PITWALL · 围场智析
+    title: 让范围、依据和边界，先于回答出现。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: f1-context
+    type: statement
+    eyebrow: 03 / INFORMATION ARCHITECTURE
+    title: 页面就是起点，但每页的证据范围不同。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: f1-assistant
+    type: statement
+    eyebrow: 03 / 可信交互 · 助手空态
+    title: 先告诉用户：你正在问哪个页面。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: f1-boundaries
+    type: statement
+    eyebrow: 03 / 实现与反思 · 方法与数据
+    title: 公开计算依据，也公开尚未验证的能力。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: desktop
+    type: statement
+    eyebrow: 04 / DESKTOP UNIVERSES
+    title: 同一张桌面，五种表达，共享一套内容。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: workflow
+    type: statement
+    eyebrow: WORKFLOW / VIBE CODING
+    title: 把方向、边界与验收条件留在实现过程里。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。
+  - id: closing
+    type: statement
+    eyebrow: NEXT / THANK YOU
+    title: 期待把这些交互判断，带进真实产品。
+    lead: 内容在 M4 整合。
+    source: 版式预留，不是最终页面。

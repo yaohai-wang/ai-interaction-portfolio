@@ -1,0 +1,30 @@
+[
+  {
+    "id": "history-36e5c70-home",
+    "title": "统一材质前 · 历史客户端",
+    "kind": "git-archive",
+    "commit": "36e5c70",
+    "date": "2026-10-18T15:13:02+09:00",
+    "capturedAt": "2026-11-12T12:47:11.749Z",
+    "sourceRepository": "/Users/youkaiou/Desktop/F1",
+    "sourceURL": "http://127.0.0.1:53577/zh/home",
+    "image": "/shots/f1/history-36e5c70-home.jpg",
+    "bytes": 225700,
+    "webp": "/shots/f1/history-36e5c70-home.webp",
+    "caption": "git archive 36e5c70；原 Vite 客户端与该提交的公开 seed 本地运行，显示时钟固定 2026-10-18。仅以只读本地 manifest 适配静态文件，助手关闭；原页面代码未改。官方赛车素材权利归原权利人；非商业展示。"
+  },
+  {
+    "id": "history-f7c61d3-home",
+    "title": "统一材质后 · 历史客户端",
+    "kind": "git-archive",
+    "commit": "f7c61d3",
+    "date": "2026-10-18T17:13:54+09:00",
+    "capturedAt": "2026-11-12T12:48:07.798Z",
+    "sourceRepository": "/Users/youkaiou/Desktop/F1",
+    "sourceURL": "http://127.0.0.1:53658/zh/home",
+    "image": "/shots/f1/history-f7c61d3-home.jpg",
+    "bytes": 228712,
+    "webp": "/shots/f1/history-f7c61d3-home.webp",
+    "caption": "git archive f7c61d3；原 Vite 客户端与该提交的公开 seed 本地运行，显示时钟固定 2026-10-18。仅以只读本地 manifest 适配静态文件，助手关闭；原页面代码未改。官方赛车素材权利归原权利人；非商业展示。"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "url": "https://f1.youkai-ou.com/zh/home",
+  "steps": [
+    "首页首屏与速览",
+    "仅打开AI空态",
+    "车队/升级/预测/方法页面"
+  ],
+  "wait": [
+    "real-page",
+    "已加载的官方图片",
+    "dialog[open]"
+  ],
+  "outputs": [
+    "home",
+    "home-overview",
+    "assistant-empty",
+    "team",
+    "upgrades",
+    "forecast",
+    "forecast-interval",
+    "methodology",
+    "methodology-rights"
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "locale": "zh-CN",
+  "timezoneId": "Asia/Shanghai",
+  "script": "scripts/capture-f1.mjs",
+  "safety": "只读；非GET/HEAD/OPTIONS及模型接口拦截；不填表、不发送、不购买、不保存"
+}

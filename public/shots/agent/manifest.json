@@ -1,0 +1,138 @@
+[
+  {
+    "title": "首页 · 共享状态的入口",
+    "image": "/shots/agent/home.jpg",
+    "webp": "/shots/agent/home.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/00-home.mp4",
+    "sourceSeconds": 1.5,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "先保存饮食档案，推荐继承上下文",
+    "image": "/shots/agent/profile.jpg",
+    "webp": "/shots/agent/profile.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/01-profile.mp4",
+    "sourceSeconds": 34,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "把自然语言意图转成可核对的条件",
+    "image": "/shots/agent/intent.jpg",
+    "webp": "/shots/agent/intent.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "sourceSeconds": 10.2,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "先查看菜品详情，再决定加入计划",
+    "image": "/shots/agent/details.jpg",
+    "webp": "/shots/agent/details.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "sourceSeconds": 16.7,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "区分已吃、计划与预计",
+    "image": "/shots/agent/plan.jpg",
+    "webp": "/shots/agent/plan.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "sourceSeconds": 31.5,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "明确餐次与实际份量，再确认记录",
+    "image": "/shots/agent/confirm.jpg",
+    "webp": "/shots/agent/confirm.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "sourceSeconds": 56.3,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "确认后更新合计，不重复计入",
+    "image": "/shots/agent/result.jpg",
+    "webp": "/shots/agent/result.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "sourceSeconds": 67.4,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "说明趋势依据与演示模型边界",
+    "image": "/shots/agent/uncertainty.jpg",
+    "webp": "/shots/agent/uncertainty.webp",
+    "kind": "video-frame",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/04-trends.mp4",
+    "sourceSeconds": 32.5,
+    "date": "2026-10-29",
+    "caption": "来源：TasteTwin 本地交互原型真实点击录屏。界面数值均为示例，不代表真实识别、健康建议或用户效果。关键帧为草稿推荐，待 Kai 确认。"
+  },
+  {
+    "title": "全片每5秒联系表 1",
+    "image": "/video/agent/contact-all-01.jpg",
+    "kind": "contact-sheet",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/TasteTwin-flow-all.mp4",
+    "date": "2026-10-29",
+    "startSeconds": 0,
+    "caption": "每5秒一帧，按从左到右、从上到下顺序。编号用于 Kai 选择关键帧，末页空格不是源视频黑屏。"
+  },
+  {
+    "title": "全片每5秒联系表 2",
+    "image": "/video/agent/contact-all-02.jpg",
+    "kind": "contact-sheet",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/TasteTwin-flow-all.mp4",
+    "date": "2026-10-29",
+    "startSeconds": 100,
+    "caption": "每5秒一帧，按从左到右、从上到下顺序。编号用于 Kai 选择关键帧，末页空格不是源视频黑屏。"
+  },
+  {
+    "title": "全片每5秒联系表 3",
+    "image": "/video/agent/contact-all-03.jpg",
+    "kind": "contact-sheet",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/TasteTwin-flow-all.mp4",
+    "date": "2026-10-29",
+    "startSeconds": 200,
+    "caption": "每5秒一帧，按从左到右、从上到下顺序。编号用于 Kai 选择关键帧，末页空格不是源视频黑屏。"
+  },
+  {
+    "title": "全片每5秒联系表 4",
+    "image": "/video/agent/contact-all-04.jpg",
+    "kind": "contact-sheet",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/TasteTwin-flow-all.mp4",
+    "date": "2026-10-29",
+    "startSeconds": 300,
+    "caption": "每5秒一帧，按从左到右、从上到下顺序。编号用于 Kai 选择关键帧，末页空格不是源视频黑屏。"
+  },
+  {
+    "title": "早期五模块首页",
+    "image": "/shots/agent/stage-before.jpg",
+    "webp": "/shots/agent/stage-before.webp",
+    "kind": "existing-review",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/00-home.png",
+    "date": "2026-10-18T03:24:28.344Z",
+    "sourceSha256": "4c578ee1a92e2775f2837369bb513589d87bbc3360744aeee7c6e7d413b76ce5",
+    "caption": "来源：TasteTwin原项目已有阶段检查截图，非Git恢复；示例数据，非真实健康结果。"
+  },
+  {
+    "title": "四模块流程版首页",
+    "image": "/shots/agent/stage-after.jpg",
+    "webp": "/shots/agent/stage-after.webp",
+    "kind": "existing-review",
+    "sourceURL": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-v1/F00-1-home.png",
+    "date": "2026-10-30T16:28:47.813Z",
+    "sourceSha256": "dc1ae28ac5a3cf6d16b956bf1f51717dc8f4af374dd8b70db81104f72f9d96d2",
+    "caption": "来源：TasteTwin原项目已有阶段检查截图，非Git恢复；示例数据，非真实健康结果。"
+  }
+]

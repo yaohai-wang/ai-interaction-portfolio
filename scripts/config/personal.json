@@ -1,0 +1,32 @@
+{
+  "url": "https://youkai-ou.com/",
+  "steps": [
+    "依次选择Comic/Cyberpunk/Pixel/Blueprint/Retro",
+    "每次reset-view",
+    "打开AI空态，不点建议问题",
+    "打开理想之家/F1介绍卡"
+  ],
+  "wait": [
+    "current-layer[data-scene-status=ready]",
+    "图像decode完成"
+  ],
+  "outputs": [
+    "comic",
+    "cyberpunk",
+    "pixel",
+    "blueprint",
+    "retro",
+    "chat-empty",
+    "ideal-home-card",
+    "f1-card"
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "locale": "zh-CN",
+  "timezoneId": "Asia/Shanghai",
+  "script": "scripts/capture-personal.mjs",
+  "safety": "只读；非GET/HEAD/OPTIONS及模型接口拦截；不填表、不发送、不购买、不保存"
+}

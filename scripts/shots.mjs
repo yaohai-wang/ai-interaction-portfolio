@@ -1,0 +1,4 @@
+import {spawnSync} from 'node:child_process';
+const args=process.argv.slice(2);const site=args.find(x=>['home','f1','personal'].includes(x));const history=args.includes('--history');
+const tasks={home:history?[['scripts/capture-home.mjs','--history-only']]:[['scripts/capture-home.mjs','--online-only']],f1:history?[['scripts/capture-f1-vite-history.mjs']]:[['scripts/capture-f1.mjs']],personal:history?[['scripts/capture-personal.mjs','--history-only']]:[['scripts/capture-personal.mjs','--live-only']]};
+for(const name of site?[site]:Object.keys(tasks)){for(const argv of tasks[name]){console.log('Capturing '+name+(history?' history':' live'));const r=spawnSync(process.execPath,argv,{stdio:'inherit',timeout:20*60*1000});if(r.status!==0)throw Error(`Capture ${name} failed; see docs/assets-${name}.md and manifest.`);}}

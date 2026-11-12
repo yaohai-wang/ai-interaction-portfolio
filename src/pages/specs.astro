@@ -1,4 +1,95 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Flow from '../components/Flow.astro';
+import '../styles/specs.css';
+import fs from 'node:fs';
+import YAML from 'yaml';
+import {z} from 'zod';
+const Ref=z.string().regex(/^[THF]\d+:\d+(?:[-,]\d+)*$/);
+const Kind=z.enum(['default','ai','human','muted','terminal']);
+const Sheet=z.object({
+  id:z.string().regex(/^[a-z][a-z-]+$/),number:z.string(),title:z.string(),subtitle:z.string(),accent:z.string().regex(/^#[0-9a-fA-F]{6}$/),repository:z.string(),boundary:z.string(),
+  flowTitle:z.string(),flowRefs:z.array(Ref),flow:z.array(z.object({title:z.string(),detail:z.string(),kind:z.enum(['default','ai','human'])})).length(4),
+  stateTitle:z.string(),stateRefs:z.array(Ref),stateNote:z.string(),
+  nodes:z.array(z.object({id:z.string(),x:z.number().min(0).max(840),y:z.number().min(0).max(154),code:z.string(),label:z.string(),kind:Kind})),
+  edges:z.array(z.object({from:z.string(),to:z.string(),d:z.string().regex(/^[MLHVQCZ0-9., -]+$/),label:z.string(),x:z.number(),y:z.number(),kind:Kind})),
+  components:z.array(z.object({label:z.string(),code:z.string(),refs:z.array(Ref)})).min(4).max(6),
+  tokenGroups:z.array(z.object({title:z.string(),items:z.array(z.object({label:z.string(),value:z.string(),swatch:z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),refs:z.array(Ref)})).length(3)})).length(4),
+  sourceKey:z.string(),sources:z.array(z.object({id:z.string(),path:z.string(),note:z.string()}))
+}).superRefine((sheet,ctx)=>{
+  const sourceIds=new Set(sheet.sources.map(s=>s.id));
+  const refs=[...sheet.flowRefs,...sheet.stateRefs,...sheet.components.flatMap(c=>c.refs),...sheet.tokenGroups.flatMap(g=>g.items.flatMap(i=>i.refs))];
+  for(const ref of refs)if(!sourceIds.has(ref.split(':')[0]))ctx.addIssue({code:'custom',message:`Unknown source ${ref} in ${sheet.id}`});
+  const nodes=new Set(sheet.nodes.map(n=>n.id));
+  for(const edge of sheet.edges)if(!nodes.has(edge.from)||!nodes.has(edge.to))ctx.addIssue({code:'custom',message:`Invalid state edge in ${sheet.id}`});
+});
+const schema=z.object({version:z.literal(1),reviewDate:z.string(),introduction:z.object({title:z.string(),text:z.string(),note:z.string()}),sheets:z.array(Sheet).length(3)});
+const specifications=schema.parse(YAML.parse(fs.readFileSync('src/content/specs.yaml','utf8')));
+const references=(refs:string[])=>refs.join(' · ');
 ---
-<Layout title="设计规格 · 王耀海"><div class="spec-intro"><h1>从实现中重建设计依据。</h1><p>流程、状态、组件与令牌来自源码，不称为 Figma 设计稿。M2 补齐两份规格。</p></div></Layout>
+<Layout title="交互设计规格 · 王耀海">
+  <div class="specification-root">
+    <header class="specification-intro">
+      <span class="specification-eyebrow">IMPLEMENTATION → DESIGN SPECIFICATION</span>
+      <h1>{specifications.introduction.title}</h1>
+      <p>{specifications.introduction.text}</p>
+      <p class="specification-context">{specifications.introduction.note}</p>
+      <nav class="specification-nav" aria-label="规格选择">
+        {specifications.sheets.map(sheet=><a href={`#${sheet.id}`}><span>{sheet.number}</span>{sheet.title}</a>)}
+      </nav>
+    </header>
+    <div class="specification-sheets">
+      {specifications.sheets.map(sheet=><section class="specification-sheet" id={sheet.id} data-spec-id={sheet.id} style={`--spec-accent:${sheet.accent}`} aria-labelledby={`title-${sheet.id}`}>
+        <header class="specification-title">
+          <div><p class="specification-eyebrow">交互规格 / {sheet.number} <span>源码整理稿</span></p><h2 id={`title-${sheet.id}`}>{sheet.title}<span>{sheet.subtitle}</span></h2></div>
+          <a class="specification-open" href={`?sheet=${sheet.id}&canvas=1`} aria-label={`单独打开${sheet.title}的1920×1080规格`}>单页 1920 × 1080 ↗</a>
+        </header>
+        <p class="specification-boundary">{sheet.boundary}</p>
+        <section class="specification-flow" aria-labelledby={`flow-${sheet.id}`}>
+          <div class="specification-panel-title"><h3 id={`flow-${sheet.id}`}>01 / {sheet.flowTitle}</h3><small>{references(sheet.flowRefs)}</small></div>
+          <Flow nodes={sheet.flow}/>
+          <ol class="specification-flow-mobile">{sheet.flow.map((node,index)=><li class={`is-${node.kind}`}><span>{String(index+1).padStart(2,'0')}</span><div><strong>{node.title}</strong><p>{node.detail}{node.kind==='ai'?' · AI 介入':node.kind==='human'?' · 人工操作':''}</p></div></li>)}</ol>
+        </section>
+        <div class="specification-middle">
+          <section class="specification-states" aria-labelledby={`state-${sheet.id}`}>
+            <div class="specification-panel-title"><h3 id={`state-${sheet.id}`}>02 / {sheet.stateTitle}</h3><small>{references(sheet.stateRefs)}</small></div>
+            <svg class="specification-state-diagram" viewBox="-12 0 1060 238" role="img" aria-labelledby={`state-title-${sheet.id} state-description-${sheet.id}`}>
+              <title id={`state-title-${sheet.id}`}>{sheet.stateTitle}</title>
+              <desc id={`state-description-${sheet.id}`}>{sheet.edges.map(edge=>`${edge.from} 经 ${edge.label} 到 ${edge.to}`).join('；')}。{sheet.stateNote}</desc>
+              <defs><marker id={`state-arrow-${sheet.id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+              {sheet.edges.map(edge=><g class={`specification-edge is-${edge.kind}`}><path d={edge.d} marker-end={`url(#state-arrow-${sheet.id})`}/><text x={edge.x} y={edge.y}>{edge.label}</text></g>)}
+              {sheet.nodes.map(node=><g class={`specification-state is-${node.kind}`} transform={`translate(${node.x},${node.y})`}><rect width="190" height="70" rx="10"/><text class="state-code" x="95" y="29">{node.code}</text><text class="state-label" x="95" y="54">{node.label}</text></g>)}
+            </svg>
+            <ul class="specification-state-mobile">{sheet.edges.map(edge=><li><span>{sheet.nodes.find(n=>n.id===edge.from)?.code}</span><em>{edge.label} →</em><span>{sheet.nodes.find(n=>n.id===edge.to)?.code}</span></li>)}</ul>
+            <p class="specification-state-note">{sheet.stateNote}</p>
+          </section>
+          <section class="specification-components" aria-labelledby={`components-${sheet.id}`}>
+            <div class="specification-panel-title"><h3 id={`components-${sheet.id}`}>03 / 组件与职责</h3></div>
+            <ul>{sheet.components.map(component=><li><div><strong>{component.label}</strong><code>{component.code}</code></div><small>{references(component.refs)}</small></li>)}</ul>
+          </section>
+        </div>
+        <section class="specification-tokens" aria-label="从实现提取的设计令牌">
+          {sheet.tokenGroups.map((group,index)=><div class="specification-token-group"><h3>{String(index+4).padStart(2,'0')} / {group.title}</h3><table><caption class="specification-sr-only">{sheet.title}的{group.title}实现值及源码行号</caption><thead class="specification-sr-only"><tr><th scope="col">属性</th><th scope="col">值与来源</th></tr></thead><tbody>{group.items.map(item=><tr><th scope="row">{item.label}</th><td><span class="specification-token-value">{item.swatch&&<i style={`background:${item.swatch}`} aria-hidden="true"/>}{item.value}</span><small>{references(item.refs)}</small></td></tr>)}</tbody></table></div>)}
+        </section>
+        <footer class="specification-sheet-footer"><span>{sheet.sourceKey}</span><span>核对 {specifications.reviewDate}</span></footer>
+      </section>)}
+    </div>
+    <section class="specification-source-ledger" aria-labelledby="spec-source-title">
+      <h2 id="spec-source-title">源码索引</h2><p>行号对应本机审计时的工作树。图仅提取主要交互路径，不把省略的分支视为不存在。完整解释见 docs/specs-provenance.md。</p>
+      {specifications.sheets.map(sheet=><details open><summary>{sheet.title} · {sheet.repository}</summary><dl>{sheet.sources.map(source=><div><dt>{source.id} · {source.path}</dt><dd>{source.note}</dd></div>)}</dl></details>)}
+      <a class="specification-back" href="/specs/">查看全部规格</a>
+    </section>
+  </div>
+</Layout>
+<script>
+  const params=new URLSearchParams(window.location.search);
+  const selected=params.get('sheet');
+  const root=document.querySelector<HTMLElement>('.specification-root');
+  const sheets=Array.from(document.querySelectorAll<HTMLElement>('[data-spec-id]'));
+  if(root&&selected&&sheets.some(sheet=>sheet.dataset.specId===selected)){
+    root.dataset.single='true';
+    if(params.get('canvas')==='1')root.dataset.canvas='true';
+    for(const sheet of sheets)sheet.hidden=sheet.dataset.specId!==selected;
+    document.title=(sheets.find(sheet=>sheet.dataset.specId===selected)?.querySelector('h2')?.textContent||'交互规格')+' · 王耀海';
+  }
+</script>

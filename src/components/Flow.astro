@@ -14,3 +14,5 @@ const positions=nodes.map((n:any,i:number)=>({...n,i,row:Math.floor(i/4),col:i%4
     <text class="node-detail" x={n.x+24} y={n.y+126}>{n.detail||''}</text>
   </g>)}
 </svg>
+
+<ol class="flow-mobile" aria-label="交互流程">{nodes.map((n:any,i:number)=><li class={`node-${n.kind||'default'}`}><small>{n.kind==='ai'?'AI':n.kind==='human'?'HUMAN':String(i+1).padStart(2,'0')}</small><b>{n.title}</b>{n.detail&&<span>{n.detail}</span>}</li>)}</ol>

@@ -1,0 +1,129 @@
+[
+  {
+    "title": "AI 分身 · 空态",
+    "image": "/shots/personal/chat-empty.jpg",
+    "webp": "/shots/personal/chat-empty.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/"
+  },
+  {
+    "title": "理想之家 · 项目介绍",
+    "image": "/shots/personal/ideal-home-card.jpg",
+    "webp": "/shots/personal/ideal-home-card.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/"
+  },
+  {
+    "title": "围场助手 · 项目介绍",
+    "image": "/shots/personal/f1-card.jpg",
+    "webp": "/shots/personal/f1-card.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/"
+  },
+  {
+    "title": "桌面平行宇宙 · Comic",
+    "image": "/shots/personal/comic.jpg",
+    "webp": "/shots/personal/comic.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/",
+    "theme": "comic"
+  },
+  {
+    "title": "桌面平行宇宙 · Cyberpunk",
+    "image": "/shots/personal/cyberpunk.jpg",
+    "webp": "/shots/personal/cyberpunk.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/",
+    "theme": "cyberpunk"
+  },
+  {
+    "title": "桌面平行宇宙 · Pixel",
+    "image": "/shots/personal/pixel.jpg",
+    "webp": "/shots/personal/pixel.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/",
+    "theme": "pixel"
+  },
+  {
+    "title": "桌面平行宇宙 · Blueprint",
+    "image": "/shots/personal/blueprint.jpg",
+    "webp": "/shots/personal/blueprint.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/",
+    "theme": "blueprint"
+  },
+  {
+    "title": "桌面平行宇宙 · Retro Computer",
+    "image": "/shots/personal/retro.jpg",
+    "webp": "/shots/personal/retro.webp",
+    "kind": "live",
+    "date": "2026-11-12",
+    "caption": "来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "sourceURL": "https://youkai-ou.com/",
+    "theme": "retro"
+  },
+  {
+    "title": "早期十主题 · 已有检查截图",
+    "image": "/shots/personal/history-existing-ten.jpg",
+    "webp": "/shots/personal/history-existing-ten.webp",
+    "kind": "existing-review",
+    "sourceURL": "/Users/youkaiou/Desktop/个人介绍/portfolio-web/work/qa/desk-universes/unified-magazine-comic.jpg",
+    "date": "2026-10-11T05:40:53.009Z",
+    "sourceSha256": "cca98696a4ea0d2c75256e83a641062728583857eb917da128713226b920d2b8",
+    "caption": "来源：原仓库已有阶段检查截图，非本轮Git还原；来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。"
+  },
+  {
+    "title": "五主题迁移中 · 已有检查截图",
+    "image": "/shots/personal/history-existing-five.jpg",
+    "webp": "/shots/personal/history-existing-five.webp",
+    "kind": "existing-review",
+    "sourceURL": "/Users/youkaiou/Desktop/个人介绍/portfolio-web/work/qa/five-theme-migration/overview-comic-final.png",
+    "date": "2026-10-11T16:19:50.976Z",
+    "sourceSha256": "3802cdc031d42d61a0696bcf6aa1de677ef46acf256234b3099109c713e6e1aa",
+    "caption": "来源：原仓库已有阶段检查截图，非本轮Git还原；来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。"
+  },
+  {
+    "title": "30c007c · Prepare private portfolio with isolated Cloudflare environments",
+    "image": "/shots/personal/history-30c007c.jpg",
+    "webp": "/shots/personal/history-30c007c.webp",
+    "kind": "history",
+    "date": "2026-10-11T21:54:08+09:00",
+    "caption": "来源：个人站 Git 30c007c 的本地静态还原；来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "commit": "30c007c",
+    "sourceURL": "/Users/youkaiou/Desktop/个人介绍/portfolio-web"
+  },
+  {
+    "title": "aea24b5 · Fix Safari desk masking and update shelf and news monitor",
+    "image": "/shots/personal/history-aea24b5.jpg",
+    "webp": "/shots/personal/history-aea24b5.webp",
+    "kind": "history",
+    "date": "2026-10-11T22:42:38+09:00",
+    "caption": "来源：个人站 Git aea24b5 的本地静态还原；来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "commit": "aea24b5",
+    "sourceURL": "/Users/youkaiou/Desktop/个人介绍/portfolio-web"
+  },
+  {
+    "title": "0deaeef · Publish integrated five-theme portfolio and personal modules",
+    "image": "/shots/personal/history-0deaeef.jpg",
+    "webp": "/shots/personal/history-0deaeef.webp",
+    "kind": "history",
+    "date": "2026-10-12T11:05:23+09:00",
+    "caption": "来源：个人站 Git 0deaeef 的本地静态还原；来源：Kai 个人站界面截图；第三方角色形象与品牌标识权利归原作品及各权利人，非商业展示。",
+    "commit": "0deaeef",
+    "sourceURL": "/Users/youkaiou/Desktop/个人介绍/portfolio-web"
+  }
+]

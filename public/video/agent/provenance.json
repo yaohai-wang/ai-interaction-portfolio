@@ -1,0 +1,130 @@
+{
+  "product": "TasteTwin",
+  "status": "draft-selection-pending-Kai",
+  "source": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/TasteTwin-flow-all.mp4",
+  "sourceSha256": "dff6d2187977f28d8d493545310b3a77e05685b1e517e22fc2d07ab2c3354650",
+  "sourceDuration": 357.263,
+  "sourceVideo": {
+    "index": 0,
+    "codec_name": "h264",
+    "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "profile": "High",
+    "codec_type": "video",
+    "codec_tag_string": "avc1",
+    "codec_tag": "0x31637661",
+    "width": 1920,
+    "height": 1280,
+    "coded_width": 1920,
+    "coded_height": 1280,
+    "closed_captions": 0,
+    "has_b_frames": 2,
+    "sample_aspect_ratio": "1:1",
+    "display_aspect_ratio": "3:2",
+    "pix_fmt": "yuv420p",
+    "level": 50,
+    "color_range": "tv",
+    "color_space": "bt709",
+    "chroma_location": "left",
+    "refs": 1,
+    "is_avc": "true",
+    "nal_length_size": "4",
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "time_base": "1/15360",
+    "start_pts": 0,
+    "start_time": "0.000000",
+    "duration_ts": 5487104,
+    "duration": "357.233333",
+    "bit_rate": "1153682",
+    "bits_per_raw_sample": "8",
+    "nb_frames": "10717",
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0
+    },
+    "tags": {
+      "language": "und",
+      "handler_name": "VideoHandler",
+      "vendor_id": "[0][0][0][0]",
+      "encoder": "Lavc61.19.100 libx264"
+    }
+  },
+  "highlightCandidate": {
+    "source": "/Users/youkaiou/Desktop/Qloo/design/live-2d/review/flow-videos/03-recommend.mp4",
+    "start": 0,
+    "duration": 80.208,
+    "reason": "保留完整推荐→核对→计划→确认记录流程，未加速；待Kai确定最终60–90秒区间"
+  },
+  "recommendedFrames": [
+    {
+      "file": "00-home.mp4",
+      "seconds": 1.5,
+      "name": "home",
+      "title": "首页 · 共享状态的入口"
+    },
+    {
+      "file": "01-profile.mp4",
+      "seconds": 34,
+      "name": "profile",
+      "title": "先保存饮食档案，推荐继承上下文"
+    },
+    {
+      "file": "03-recommend.mp4",
+      "seconds": 10.2,
+      "name": "intent",
+      "title": "把自然语言意图转成可核对的条件"
+    },
+    {
+      "file": "03-recommend.mp4",
+      "seconds": 16.7,
+      "name": "details",
+      "title": "先查看菜品详情，再决定加入计划"
+    },
+    {
+      "file": "03-recommend.mp4",
+      "seconds": 31.5,
+      "name": "plan",
+      "title": "区分已吃、计划与预计"
+    },
+    {
+      "file": "03-recommend.mp4",
+      "seconds": 56.3,
+      "name": "confirm",
+      "title": "明确餐次与实际份量，再确认记录"
+    },
+    {
+      "file": "03-recommend.mp4",
+      "seconds": 67.4,
+      "name": "result",
+      "title": "确认后更新合计，不重复计入"
+    },
+    {
+      "file": "04-trends.mp4",
+      "seconds": 32.5,
+      "name": "uncertainty",
+      "title": "说明趋势依据与演示模型边界"
+    }
+  ],
+  "publicPermission": "TODO(Kai): 确认可公开范围及团队角色",
+  "contacts": 4,
+  "output": {
+    "path": "/video/agent/tastetwin-recommend-candidate.mp4",
+    "duration": 80.208,
+    "bytes": 6761880,
+    "width": 1920,
+    "height": 1080,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "status": "candidate-awaiting-Kai"
+  }
+}

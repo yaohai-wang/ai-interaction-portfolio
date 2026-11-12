@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-12T12:46:55.085Z",
+  "source": "https://f1.youkai-ou.com",
+  "shots": 9,
+  "failures": [],
+  "blocked": [
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://f1.youkai-ou.com/cdn-cgi/rum?",
+      "method": "POST",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "noSubmittedMessages": true,
+  "note": "Context blocks generation endpoints and non-read methods; read-only context GET is allowed. An attempted POST would be blocked and reported; no send/form action exists in this script. The blocked POST requests are Cloudflare RUM telemetry, not user messages.",
+  "blockedNonReadRequests": 9
+}

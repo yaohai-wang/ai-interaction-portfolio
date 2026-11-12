@@ -1,0 +1,205 @@
+version: 1
+reviewDate: '2026-11-12'
+introduction:
+  title: 从实现中重建交互规格。
+  text: 流程、状态、组件与设计数值逐项回溯到现有代码。三份规格分别保留原型边界与产品限制，可单独浏览、打印，供后续整理进设计工具。
+  note: 这是源码整理稿，不是既有 Figma 设计稿。表中的数值属于原产品；本页外壳使用作品集的自托管中文字体。
+sheets:
+  - id: tastetwin
+    number: '01'
+    title: TasteTwin
+    subtitle: 建议、计划与已吃，是三件不同的事。
+    accent: '#4d703b'
+    repository: /Users/youkaiou/Desktop/Qloo/design/live-2d
+    boundary: 本地交互原型，条件识别与推荐由示例规则模拟；未验证服务端大模型或自主 Agent 执行。
+    flowTitle: 从上下文到明确确认
+    flowRefs: ['T3:9,16,26-30', 'T4:47-49,87-91']
+    flow:
+      - {title: 保存档案, detail: 目标与饮食条件, kind: default}
+      - {title: 查看建议, detail: 本地规则模拟, kind: default}
+      - {title: 加入计划, detail: 可改份量或撤销, kind: default}
+      - {title: 确认已吃, detail: 核对餐次与份量, kind: human}
+    stateTitle: 计划状态与确认界面
+    stateRefs: ['T3:22,30', 'T4:48,87-91']
+    stateNote: “移出”删除计划对象；撤销恢复原对象。planId 关联记录，避免重复计入。
+    nodes:
+      - {id: planned, x: 0, y: 16, code: planned, label: 计划中, kind: default}
+      - {id: confirming, x: 420, y: 16, code: 'planEdit: eat', label: 核对实际份量, kind: human}
+      - {id: eaten, x: 840, y: 16, code: eaten, label: 计入已吃, kind: terminal}
+      - {id: removed, x: 0, y: 154, code: removePlan, label: 计划对象移出, kind: muted}
+    edges:
+      - {from: planned, to: confirming, d: 'M 190 51 H 410', label: 点击吃了, x: 305, y: 40, kind: default}
+      - {from: confirming, to: eaten, d: 'M 610 51 H 830', label: 确认记录, x: 725, y: 40, kind: human}
+      - {from: confirming, to: planned, d: 'M 515 86 V 119 H 95 V 92', label: 取消，仍为计划, x: 315, y: 111, kind: muted}
+      - {from: planned, to: removed, d: 'M 45 86 V 145', label: 移出, x: 20, y: 125, kind: muted}
+      - {from: removed, to: planned, d: 'M 150 154 V 94', label: 撤销, x: 180, y: 125, kind: default}
+    components:
+      - {label: 档案与条件编辑, code: profile.js, refs: ['T5:19-21']}
+      - {label: 推荐与菜品详情, code: recommend.js, refs: ['T3:16,26-30']}
+      - {label: 计划内原位确认, code: plan-eat-confirm, refs: ['T3:30']}
+      - {label: 已吃与计划统计, code: eaten / planned, refs: ['T4:41-49']}
+      - {label: 趋势边界说明, code: demo-placeholder, refs: ['T6:1-10']}
+    tokenGroups:
+      - title: 颜色
+        items:
+          - {label: 品牌绿, value: '#4d703b', swatch: '#4d703b', refs: ['T1:11']}
+          - {label: 场景底色, value: '#152a2c', swatch: '#152a2c', refs: ['T1:1']}
+          - {label: 正文色, value: '#f5f8f7', swatch: '#f5f8f7', refs: ['T1:1']}
+      - title: 字号
+        items:
+          - {label: 页面标题, value: 30 px, refs: ['T1:1']}
+          - {label: 模块标题, value: 15 px, refs: ['T2:14']}
+          - {label: 基础正文, value: 13 px, refs: ['T1:1']}
+      - title: 圆角
+        items:
+          - {label: 玻璃容器, value: 22 px, refs: ['T1:1']}
+          - {label: 流程按钮, value: 18 px, refs: ['T2:15']}
+          - {label: 输入控件, value: 9 px, refs: ['T2:18']}
+      - title: 间距
+        items:
+          - {label: 卡片内边距, value: 22 / 24 px, refs: ['T1:1']}
+          - {label: 流程栏内边距, value: 22 px, refs: ['T2:11']}
+          - {label: 操作按钮间距, value: 8 px, refs: ['T2:20']}
+    sourceKey: 'T1 style.css · T2 flow.css · T3 recommend.js · T4 store.js · T5 profile.js · T6 forecast-model.js'
+    sources:
+      - {id: T1, path: style.css, note: ':root / body / .glass / h1 / .card；品牌色在第11行；材质覆盖在第7-8行。'}
+      - {id: T2, path: flow.css, note: '桌面流程栏；第24行 max-width:1200px 媒体查询另有紧凑覆盖。'}
+      - {id: T3, path: recommend.js, note: 条件识别、示例推荐、计划与确认事件。}
+      - {id: T4, path: store.js, note: 真实 localStorage 状态与计数，不是服务端模型结果。}
+      - {id: T5, path: profile.js, note: 编辑、校验、保存与取消。}
+      - {id: T6, path: forecast-model.js, note: 原型占位模型和输出边界。}
+  - id: ideal-home
+    number: '02'
+    title: 理想之家
+    subtitle: AI 给出候选，人确认后才计分。
+    accent: '#617460'
+    repository: /Users/youkaiou/Desktop/生活成长app
+    boundary: 当前源码名称为“理想生活”，统一名称待确认。线上为浏览器本地存档；“未来的家”图像生成未启用。
+    flowTitle: 把行动变成可见的空间变化
+    flowRefs: ['H3:137-174,221-239', 'H5:169-175', 'H6:15-31']
+    flow:
+      - {title: 愿景与手记, detail: 先保存有效愿景, kind: default}
+      - {title: 候选行动, detail: AI 整理与说明, kind: ai}
+      - {title: 勾选确认, detail: 保存后按规则计分, kind: human}
+      - {title: 家具与房间, detail: 用户兑换并布置, kind: default}
+    stateTitle: 手记 AI 操作的主要迁移
+    stateRefs: ['H1:48-61', 'H2:22-52,63-107', 'H3:153-174']
+    stateNote: unknown 查询原请求，不重复生成；saved / abandoned 是终态，旧返回不能复活。
+    nodes:
+      - {id: pending, x: 0, y: 16, code: pending, label: 请求待启动, kind: default}
+      - {id: running, x: 280, y: 16, code: running, label: 请求进行中, kind: ai}
+      - {id: received, x: 560, y: 16, code: received, label: 候选待确认, kind: default}
+      - {id: saved, x: 840, y: 16, code: saved, label: 已保存计分, kind: terminal}
+      - {id: unknown, x: 280, y: 154, code: unknown, label: 原结果未确认, kind: muted}
+      - {id: failed, x: 560, y: 154, code: failed, label: 明确失败, kind: muted}
+      - {id: abandoned, x: 840, y: 154, code: abandoned, label: 用户放弃, kind: terminal}
+    edges:
+      - {from: pending, to: running, d: 'M 190 51 H 270', label: 发起, x: 230, y: 39, kind: default}
+      - {from: running, to: received, d: 'M 470 51 H 550', label: 收到, x: 510, y: 39, kind: default}
+      - {from: received, to: saved, d: 'M 750 51 H 830', label: 确认, x: 790, y: 39, kind: human}
+      - {from: running, to: unknown, d: 'M 328 86 V 146', label: 未确认, x: 290, y: 125, kind: muted}
+      - {from: unknown, to: received, d: 'M 470 189 H 520 V 115 H 655 V 94', label: 查询原结果, x: 587, y: 109, kind: default}
+      - {from: running, to: failed, d: 'M 425 86 V 132 H 655 V 146', label: 明确失败, x: 518, y: 154, kind: muted}
+      - {from: failed, to: abandoned, d: 'M 750 189 H 830', label: 放弃, x: 790, y: 177, kind: human}
+    components:
+      - {label: 单任务模态层, code: ModuleShell, refs: ['H7:1-20', 'H4:52-58']}
+      - {label: 手记与候选确认, code: JournalPanel, refs: ['H3:214-245']}
+      - {label: 三维场景与导航, code: RoomHome / RoomWorld, refs: ['H5:92-180']}
+      - {label: 购买与立即摆放, code: ShopPanel, refs: ['H5:174']}
+      - {label: 房间编辑与撤销, code: FurnishPanel, refs: ['H5:157']}
+    tokenGroups:
+      - title: 颜色
+        items:
+          - {label: 主色, value: '#617460', swatch: '#617460', refs: ['H4:2']}
+          - {label: 画布, value: '#f7f6ef', swatch: '#f7f6ef', refs: ['H4:2']}
+          - {label: 墨色, value: '#393e35', swatch: '#393e35', refs: ['H4:2']}
+      - title: 字号
+        items:
+          - {label: 模块标题, value: 20 px, refs: ['H4:56']}
+          - {label: 模块正文, value: 15 px / 1.6, refs: ['H4:58']}
+          - {label: 任务按钮, value: 14 px, refs: ['H4:61']}
+      - title: 圆角
+        items:
+          - {label: 卡片变量, value: 18 px, refs: ['H4:2']}
+          - {label: 小圆角变量, value: 10 px, refs: ['H4:2']}
+          - {label: 模态容器, value: 22 px, refs: ['H4:54']}
+      - title: 间距
+        items:
+          - {label: 弹层内边距, value: 24 px, refs: ['H4:58']}
+          - {label: 表单网格, value: 16 px, refs: ['H4:86']}
+          - {label: 动作组, value: 10 px, refs: ['H4:69']}
+    sourceKey: 'H1 ai-operations.ts · H2 task-coordinator.ts · H3 JournalPanel.tsx · H4 refined-ui.css · H5 RoomHome.tsx · H6 economy.ts · H7 ModuleShell.tsx'
+    sources:
+      - {id: H1, path: src/domain/ai-operations.ts, note: 状态迁移白名单与终态保护。}
+      - {id: H2, path: src/ai/task-coordinator.ts, note: 显式提交、响应归类和原结果恢复。}
+      - {id: H3, path: src/features/journal/JournalPanel.tsx, note: 愿景门槛、候选展示与人工确认。}
+      - {id: H4, path: src/features/home/refined-ui.css, note: 当前生效的室内覆盖样式；不是旧 tokens.css 的青蓝色。}
+      - {id: H5, path: src/features/home/RoomHome.tsx, note: 房间、导航和模块调用。}
+      - {id: H6, path: src/domain/economy.ts, note: 确定性积分与家具经济规则。}
+      - {id: H7, path: src/components/ModuleShell.tsx, note: 单任务模态层组件。}
+  - id: pitwall
+    number: '03'
+    title: 围场智析
+    subtitle: 把页面、证据范围与不确定性放到界面里。
+    accent: '#39d3c1'
+    repository: /Users/youkaiou/Desktop/F1
+    boundary: 首页等页面仅提供 webOnly 导航上下文；已注册模块才有本页证据。代码核验不等于当前线上问答已恢复。
+    flowTitle: 让提问从现有页面开始
+    flowRefs: ['F3:35-52,74-108', 'F7:70-87']
+    flow:
+      - {title: 页面上下文, detail: 注册页面与版本, kind: default}
+      - {title: 选择范围, detail: 仅显示允许范围, kind: human}
+      - {title: 用户发送, detail: 显式发起请求, kind: human}
+      - {title: 回答与依据, detail: 来源、时间、状态, kind: ai}
+    stateTitle: 助手界面的主要状态
+    stateRefs: ['F3:12-27,58-108']
+    stateNote: 失败不会自动重试；rate_limited 等待 retryAt 后，由用户再次提交。图为界面状态归纳。
+    nodes:
+      - {id: empty, x: 0, y: 16, code: 'turns = []', label: 空态与建议问题, kind: default}
+      - {id: loading, x: 420, y: 16, code: 'loading = true', label: 请求进行中, kind: ai}
+      - {id: supported, x: 840, y: 16, code: supported, label: 依据来源回答, kind: default}
+      - {id: cancelled, x: 0, y: 154, code: 'cancelled = true', label: 已取消, kind: muted}
+      - {id: unavailable, x: 420, y: 154, code: unavailable, label: 暂时不可用, kind: muted}
+      - {id: limited, x: 840, y: 154, code: rate_limited, label: 等待允许重试, kind: muted}
+    edges:
+      - {from: empty, to: loading, d: 'M 190 51 H 410', label: 用户发送, x: 305, y: 39, kind: human}
+      - {from: loading, to: supported, d: 'M 610 51 H 830', label: 收到回答, x: 725, y: 39, kind: default}
+      - {from: loading, to: unavailable, d: 'M 480 86 V 146', label: 连接失败, x: 431, y: 125, kind: muted}
+      - {from: unavailable, to: loading, d: 'M 570 154 V 94', label: 重试, x: 610, y: 125, kind: human}
+      - {from: loading, to: cancelled, d: 'M 420 72 H 246 V 189 H 198', label: 用户取消, x: 290, y: 145, kind: human}
+      - {from: loading, to: limited, d: 'M 610 72 H 770 V 189 H 832', label: 限流, x: 772, y: 145, kind: muted}
+    components:
+      - {label: 数据保存状态, code: SnapshotStatus, refs: ['F5:14']}
+      - {label: 原生模态抽屉, code: dialog / Assistant, refs: ['F3:97-108']}
+      - {label: 资料范围切换, code: page / site / web, refs: ['F3:94-99']}
+      - {label: 引文与折叠来源, code: CitedAnswer, refs: ['F3:102,111-149']}
+      - {label: 区间与预测边界, code: RefreshForecast, refs: ['F6:17']}
+    tokenGroups:
+      - title: 颜色
+        items:
+          - {label: 强调色, value: '#39d3c1', swatch: '#39d3c1', refs: ['F2:3']}
+          - {label: 底色, value: '#081419', swatch: '#081419', refs: ['F2:3']}
+          - {label: 正文色, value: '#eff3ed', swatch: '#eff3ed', refs: ['F2:3']}
+      - title: 字号
+        items:
+          - {label: 主标题, value: 60 px, refs: ['F2:5']}
+          - {label: 次级标题, value: 30 px, refs: ['F2:5']}
+          - {label: 正文, value: 15 px / 1.65, refs: ['F2:4']}
+      - title: 圆角
+        items:
+          - {label: 卡片, value: 24 px, refs: ['F4:3']}
+          - {label: 面板, value: 16 px, refs: ['F4:4']}
+          - {label: 控件, value: 12 px, refs: ['F4:5']}
+      - title: 间距
+        items:
+          - {label: 面板内边距, value: 28 px, refs: ['F2:6']}
+          - {label: 分区顶部, value: 64 px, refs: ['F2:6']}
+          - {label: 网格间距, value: 20 px, refs: ['F2:6']}
+    sourceKey: 'F2 refresh.css · F3 Assistant.tsx · F4 glass.css · F5 RefreshShared.tsx · F6 RefreshForecast.tsx · F7 context.ts'
+    sources:
+      - {id: F2, path: src/components/live/refresh.css, note: 当前刷新页面颜色、字级与间距。}
+      - {id: F3, path: src/components/assistant/Assistant.tsx, note: 输入、请求、取消、引用与服务状态。}
+      - {id: F4, path: src/styles/glass.css, note: 统一圆角、同心内缩与材质降级。}
+      - {id: F5, path: src/components/live/RefreshShared.tsx, note: 已保存快照及截止时间。}
+      - {id: F6, path: src/components/live/RefreshForecast.tsx, note: 模拟区间、有限频率与方法说明。}
+      - {id: F7, path: hosted/lib/assistant/context.ts, note: webOnly 与已注册页面证据的区别。}

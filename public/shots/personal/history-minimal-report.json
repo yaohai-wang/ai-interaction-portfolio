@@ -1,0 +1,12 @@
+{
+  "captured": 2,
+  "errors": [
+    {
+      "task": "history-0deaeef",
+      "error": "spawnSync git ETIMEDOUT"
+    }
+  ],
+  "resolutions": {
+    "history-0deaeef": "Succeeded via complete git archive in parallel run; history-0deaeef.jpg and metadata in manifest."
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "日期、季节与可拖动浮岛",
+    "image": "/shots/home/welcome.jpg",
+    "bytes": 101541,
+    "webp": "/shots/home/welcome.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "默认室内视角",
+    "image": "/shots/home/room.jpg",
+    "bytes": 117367,
+    "webp": "/shots/home/room.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/space",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "今日手记：无愿景时的引导空态",
+    "image": "/shots/home/journal.jpg",
+    "bytes": 61036,
+    "webp": "/shots/home/journal.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/goals",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "愿景板：从愿景开始",
+    "image": "/shots/home/vision.jpg",
+    "bytes": 48478,
+    "webp": "/shots/home/vision.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/life",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "家具商店：成长积分兑换入口",
+    "image": "/shots/home/shop.jpg",
+    "bytes": 82145,
+    "webp": "/shots/home/shop.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/shop",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "布置房间：编辑工具的初始状态",
+    "image": "/shots/home/furnish.jpg",
+    "bytes": 102062,
+    "webp": "/shots/home/furnish.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/furnish",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "生活档案：篇章与记录",
+    "image": "/shots/home/archive.jpg",
+    "bytes": 49510,
+    "webp": "/shots/home/archive.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/archive",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "整栋视角",
+    "image": "/shots/home/whole-house.jpg",
+    "bytes": 102907,
+    "webp": "/shots/home/whole-house.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/space",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "第一视角",
+    "image": "/shots/home/first-person.jpg",
+    "bytes": 101408,
+    "webp": "/shots/home/first-person.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/space",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "样板间：无需修改个人房间的参观入口",
+    "image": "/shots/home/showroom.jpg",
+    "bytes": 89962,
+    "webp": "/shots/home/showroom.webp",
+    "kind": "online",
+    "sourceURL": "https://home.youkai-ou.com/#/showroom",
+    "date": "2026-11-12",
+    "caption": "原产品实际界面；隔离浏览器只读截图，未发送 AI 请求。"
+  },
+  {
+    "title": "2026-10-17 · 入口快照 97bd65f",
+    "image": "/shots/home/history-97bd65f-welcome.jpg",
+    "bytes": 107854,
+    "webp": "/shots/home/history-97bd65f-welcome.webp",
+    "kind": "history",
+    "date": "2026-10-17",
+    "caption": "git archive 本地复现；feat: publish showroom navigation and welcome language switching。日期为提交时间；未调用真实后端或 AI。",
+    "commit": "97bd65f66589096a0d6da9d5979e04638b8e17d9"
+  },
+  {
+    "title": "2026-10-17 · 房间快照 97bd65f",
+    "image": "/shots/home/history-97bd65f-room.jpg",
+    "bytes": 122194,
+    "webp": "/shots/home/history-97bd65f-room.webp",
+    "kind": "history",
+    "date": "2026-10-17",
+    "caption": "git archive 本地复现；feat: publish showroom navigation and welcome language switching。隔离浏览器初始房间；仅本地登录状态使用静态响应。",
+    "commit": "97bd65f66589096a0d6da9d5979e04638b8e17d9"
+  }
+]

@@ -17,7 +17,7 @@
 | B02 | 三个产品都在 Codex 中制作 | 用户本轮明确指示；工具只写 Codex，不推断模型 |
 | B03 | 教育与语言资料 | 任务书 §6.6，进一步与个人站源码 P 核对；准确性待 K16 |
 | B04 | 理想之家独立设计与开发 | 任务书 §6.2 已核实定位；具体职责/时段仍待 K04 |
-| B05 | Agent 视频存在但归属、主导程度和公开权限不明 | 任务书 §6.1；不得用候选代填 |
+| B05 | 已按用户补充定位 Qloo 的 TasteTwin 原型；主导程度和公开权限不明 | 更新后任务书 §6.1 与本轮用户补充；仅本地草稿使用候选 |
 | B06 | 目标岗位和 JD 能力映射 | 任务书 §1；职位 URL 本轮可访问但浏览器文本提取为空，未追加“目前仍开放”的实时判断 |
 | B07 | 原项目只读、不部署、不提交线上消息 | 本轮用户指示与任务书 §3 |
 
@@ -46,7 +46,13 @@ Codex `list_projects` 核实项目路径；域名分别由各仓库部署配置�
 - 中文字体来源：[Noto CJK 官方仓库](https://github.com/notofonts/noto-cjk)，Sans/LICENSE 为 SIL Open Font License；本地 `public/fonts/OFL.txt`。
 - Cloudflare Pages 单文件 25 MiB 上限，本轮核实：[官方 Limits](https://developers.cloudflare.com/pages/platform/limits/#file-size)。该限制用于视频脚本；未发生上传。
 
+## Qloo 补充
+
+用户已授权只读查找Qloo视频与相关设计材料，并用来完成案例01。根目录README是采集器，不能混作TasteTwin产品依据。该原型无真实识别/模型后端，采用本地示例和规则；Q01–Q19逐项来源见 audit-qloo.md。角色不从旧Hackathon团队介绍外推。第01案例为“AI场景交互原型”，不是已经验证的自主Agent。候选素材数值、人物信息均为示例，不当作真实健康记录或产品效果。
+
 ## 详细证据
+
+- [TasteTwin逐项审计](audit-qloo.md)
 
 - [理想之家逐项审计](audit-home.md)
 - [围场智析逐项审计](audit-f1.md)

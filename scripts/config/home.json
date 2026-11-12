@@ -1,0 +1,37 @@
+{
+  "url": "https://home.youkai-ou.com/",
+  "steps": [
+    "等待浮岛ready",
+    "截图欢迎页",
+    "跳过动画",
+    "打开今日手记/愿景板/家具商店/编辑态/生活档案",
+    "切换整栋/第一视角",
+    "参观样板间"
+  ],
+  "wait": [
+    "canvas绘制",
+    "home-game可见",
+    "模块class可见"
+  ],
+  "outputs": [
+    "welcome",
+    "room",
+    "journal",
+    "vision",
+    "shop",
+    "furnish",
+    "archive",
+    "whole-house",
+    "first-person",
+    "showroom"
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "locale": "zh-CN",
+  "timezoneId": "Asia/Shanghai",
+  "script": "scripts/capture-home.mjs",
+  "safety": "只读；非GET/HEAD/OPTIONS及模型接口拦截；不填表、不发送、不购买、不保存"
+}

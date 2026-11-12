@@ -1,0 +1,31 @@
+{
+  "captured": 8,
+  "errors": [
+    {
+      "task": "ideal-home-card",
+      "error": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+    },
+    {
+      "task": "history-30c007c",
+      "error": "spawnSync git ETIMEDOUT"
+    },
+    {
+      "task": "history-aea24b5",
+      "error": "spawnSync git ETIMEDOUT"
+    }
+  ],
+  "resolutions": {
+    "ideal-home-card": "Retried using --cards-only; successful image and manifest available.",
+    "history-30c007c": "Succeeded via minimal git archive; history-30c007c.jpg.",
+    "history-aea24b5": "Succeeded via minimal git archive; history-aea24b5.jpg."
+  },
+  "final": {
+    "live": 8,
+    "historicalCommits": [
+      "30c007c",
+      "aea24b5",
+      "0deaeef"
+    ],
+    "allRequestedViewsCaptured": true
+  }
+}

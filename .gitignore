@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+.astro/
+dist/
+tmp/
+tools/*.ttf
+.DS_Store
+*.log
+.env*
+!.env.example

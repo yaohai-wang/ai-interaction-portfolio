@@ -14,7 +14,8 @@
     "check": "node scripts/check.mjs",
     "qa": "node scripts/qa.mjs",
     "setup": "node scripts/bootstrap.mjs",
-    "specs": "node scripts/export-specs.mjs"
+    "specs": "node scripts/export-specs.mjs",
+    "build:deploy": "npm run build && node scripts/prepare-deploy.mjs"
   },
   "dependencies": {
     "astro": "^5.18.2",

@@ -8,3 +8,5 @@ tools/*.ttf
 *.log
 .env*
 !.env.example
+.wrangler/
+.dev.vars*

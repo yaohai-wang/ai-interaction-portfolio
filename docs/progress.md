@@ -96,3 +96,13 @@
 - 尚未在本机跑过 `npm run build`；改动未提交，旧版首页与案例页可用 git 找回。
 - 文案均取自 `portfolio.yaml` 与截图里能看到的内容，没有新增事实。
 - PDF 版已按同一套设计重排：`output/pdf/王耀海-AI交互设计作品集.pdf`（25 页，1600×900，约 9 MB），并替换了 `public/downloads/portfolio-ai-interaction-revised.pdf`（旧版仍在 `output/pdf/` 同名文件里）。版式在 `src/site/print.ts` 与 `public/site/print.css`，星群图在 `public/site/sky/`。这份 PDF 是在 Claude 的云端环境用无头 Chrome 打印的，`npm run pdf` 仍会生成旧版式。
+
+
+## 2026-11-15：发布作品集独立站点
+
+- 使用现有 Cloudflare 账号新增独立 Workers 静态资源项目 `kai-portfolio`，正式地址为 https://portfolio.youkai-ou.com。
+- `npm run build` 通过；部署产物从 `dist/` 中移除 `print/`、`specs/`、`assets-review/`。新增 `npm run build:deploy` 可重复生成清理后的部署目录。
+- 首页、`/cases/ideal-home/`、`/site/site.js`、`/downloads/portfolio-ai-interaction-revised.pdf` 的 curl HTTPS 验证均为 200；三个内部页面均为 404，TLS 证书验证成功。
+- 新增 `wrangler.jsonc`，仅绑定 `portfolio.youkai-ou.com`；未修改其他站点配置。Cloudflare 发布前后核验显示旧 Worker 修改时间和域名绑定保持不变。
+- `src/site/` 和 `public/site/` 内容哈希与本轮开始时一致。预览与验收直接访问正式地址；结果详见本地 `tmp/claude-stage/deploy.txt`。
+- 本次为纯静态资源直接发布，未配置 GitHub 自动部署。后续手动发布先运行 `npm run build:deploy`，再在交互终端使用 Wrangler 部署；已有 DNS 冲突须停止，不覆盖记录。

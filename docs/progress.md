@@ -86,3 +86,13 @@
 - 网页正文图片加入完整图查看、原始尺寸切换、Escape关闭与焦点返回；桌面/手机10次实际交互通过。
 - 18页主PDF5,163,975字节、轻量1,886,256字节。24组页面检查、18页边界、14项DNA核验、字体/链接/正文一致/原稿SHA检查通过；全部页面渲染和逐页记录见docs/full-interface/。
 - 预览命令仍为npm run dev；交付仍在output/pdf/portfolio-ai-interaction-revised{,-light}.pdf。不部署、不改原产品，本人事实缺口无新增。
+
+## 2026-11-14 网页版重做（Claude）
+
+- 首页与四个案例页改由 `src/site/content.ts`（内容）和 `src/site/render.ts`（生成 HTML）输出，外壳是 `src/layouts/SiteLayout.astro`，样式与交互在 `public/site/site.css`、`public/site/site.js`。视觉方向仍按 DESIGN.md。
+- 交互：首屏星群（随指针避让、按作品变形）、步骤播放器（积分与热量数字随步骤变化）、新旧版拖动对比、大图查看、案例间的转场。
+- `/about/` 跳转到首页的“关于”。`/print/`、`/specs/`、`/assets-review/` 与 PDF 没有改动，仍用 `Block.astro`、`global.css`、`revision.css`。
+- `npm run dev` 现在会先跑 `scripts/prepare.mjs`，保证新文案的字都在字体子集里。
+- 尚未在本机跑过 `npm run build`；改动未提交，旧版首页与案例页可用 git 找回。
+- 文案均取自 `portfolio.yaml` 与截图里能看到的内容，没有新增事实。
+- PDF 版已按同一套设计重排：`output/pdf/王耀海-AI交互设计作品集.pdf`（25 页，1600×900，约 9 MB），并替换了 `public/downloads/portfolio-ai-interaction-revised.pdf`（旧版仍在 `output/pdf/` 同名文件里）。版式在 `src/site/print.ts` 与 `public/site/print.css`，星群图在 `public/site/sky/`。这份 PDF 是在 Claude 的云端环境用无头 Chrome 打印的，`npm run pdf` 仍会生成旧版式。

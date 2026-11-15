@@ -1,0 +1,26 @@
+---
+// 网页版作品集的外壳。页面内容由 src/site/render.ts 生成，样式与交互在 public/site/。
+interface Props { title: string; description: string; body: string }
+const { title, description, body } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og-image.jpg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/noto-sc-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/site/site.css" />
+  </head>
+  <body>
+    <Fragment set:html={body} />
+    <script is:inline defer src="/site/site.js"></script>
+  </body>
+</html>

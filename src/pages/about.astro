@@ -1,4 +1,4 @@
 ---
-import Layout from '../layouts/Layout.astro';import Block from '../components/Block.astro';import {content} from '../content/schema';
+// “关于”已并入首页，这里只保留旧地址的跳转。
+return Astro.redirect('/#about');
 ---
-<Layout title="关于王耀海 · AI 交互设计">{content.pages.filter(p=>['overview','closing'].includes(p.type)).map(b=><Block block={b} index={content.pages.indexOf(b)}/>)}</Layout>

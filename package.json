@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
+    "dev": "node scripts/prepare.mjs && ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
     "build": "node scripts/prepare.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/check.mjs",
     "build:release": "node scripts/prepare.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/check.mjs --release",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",

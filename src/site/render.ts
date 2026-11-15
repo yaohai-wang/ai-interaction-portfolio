@@ -2,6 +2,7 @@
 // 这样同一份模板可以在没有 Astro 的环境里直接用 Node 预览。
 import fs from 'node:fs';
 import { site, cases } from './content.ts';
+import { flowSvg, flowLegend } from './flow.ts';
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const has = (p) => fs.existsSync('public' + p);
@@ -90,12 +91,24 @@ export function renderHome() {
     </div>
   </section>
 
+  <section class="why" aria-label="为什么做交互设计">
+    ${site.why.map((s, i) => `<p class="${i ? 'lead' : 'heading'}">${esc(s)}</p>`).join('')}
+  </section>
+
   <section class="works" id="works" aria-labelledby="works-title">
     <header class="section-head">
       <h2 class="heading-lg" id="works-title">四个项目，四种交互问题</h2>
       <p class="lead">空间反馈、状态确认、上下文与主题导航。</p>
     </header>
     ${works}
+  </section>
+
+  <section class="approach" id="approach" aria-labelledby="approach-title">
+    <header class="section-head">
+      <h2 class="heading-lg" id="approach-title">${esc(site.approach.title)}</h2>
+      <p class="lead">${esc(site.approach.lead)}</p>
+    </header>
+    <ol class="approach-list">${site.approach.items.map((a) => `<li><h3 class="heading-xs">${esc(a.title)}</h3><p class="body">${esc(a.text)}</p><p class="small"><a href="/cases/${a.slug}/">${esc(a.from)}</a></p></li>`).join('')}</ol>
   </section>
 
   <section class="about" id="about" aria-labelledby="about-title">
@@ -107,6 +120,10 @@ export function renderHome() {
     <div>
       <h2 class="heading-lg" id="closing-title">${esc(site.closing.title)}</h2>
       <p class="body">${esc(site.closing.text)}</p>
+      <dl class="contact">
+        <div><dt>邮箱</dt><dd><a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a></dd></div>
+        <div><dt>微信</dt><dd>${esc(site.contact.wechat)}</dd></div>
+      </dl>
     </div>
     <ul class="demos">${demos}</ul>
   </section>
@@ -185,6 +202,13 @@ function video(ch) {
   </section>`;
 }
 
+function flow(ch) {
+  return `<section class="chapter" aria-labelledby="${ch.id}-title">
+    ${chapterHead(ch)}
+    <figure class="flow"><div class="flow-scroll" tabindex="0">${flowSvg(ch)}</div><figcaption>${flowLegend(ch)}</figcaption></figure>
+  </section>`;
+}
+
 function notes(ch) {
   return `<section class="chapter" aria-labelledby="${ch.id}-title">
     ${chapterHead(ch)}
@@ -205,7 +229,7 @@ export function renderCase(slug) {
   const index = cases.findIndex((x) => x.slug === slug);
   const c = cases[index];
   const next = cases[(index + 1) % cases.length];
-  const chapters = c.chapters.map((ch) => ({ player, compare, video, notes })[ch.type](ch, c)).join('\n');
+  const chapters = c.chapters.map((ch) => ({ player, compare, video, notes, flow })[ch.type](ch, c)).join('\n');
   const meta = c.hero.meta.map((m) => `<div><dt>${esc(m.label)}</dt><dd>${esc(m.value)}</dd></div>`).join('');
   return `${nav()}
 <main id="main" class="case">

@@ -13,8 +13,23 @@ export const site = {
   about: [
     { label: '教育', title: '东京科学大学', text: '建筑结构工程硕士在读，预计 2027 年 3 月毕业。本科毕业于日本大学建筑工程。' },
     { label: '语言', title: '中文、日语、英语', text: '中文母语，日语 N1，TOEIC 805。' },
-    { label: '实践', title: '在 Codex 中制作', text: '从概念到可运行的界面，按项目说明完成范围。' },
+    { label: '实务', title: 'TikTok CSI 创作者成长 Agent', text: '参与搭建，负责用户分层、Skill 设计与 AI 效果评估，重点负责灵感选题模块的产品方案。' },
+    { label: '工具', title: 'Figma、Codex、Claude', text: '设计用 Figma，开发用 Codex 与 Claude，模型调用走 Cloudflare Workers AI。' },
   ],
+  // 为什么是我：建筑结构背景与交互设计之间的那条线。
+  why: ['本科和硕士都在学建筑结构，习惯先想清楚人在空间里怎么走。', '做界面时问的是同一件事：从哪里进来，下一步去哪，走错了怎么回来。理想之家把这种空间感带进了界面。'],
+  // 三个项目里反复用到的做法，只归纳已经做出来的东西。
+  approach: {
+    title: '我怎么处理 AI 的不确定',
+    lead: 'AI 会猜错，网络会断。三个项目里反复用到的四个做法。',
+    items: [
+      { title: 'AI 只给候选，确认后才生效', text: '一段手记整理出三个候选行动，逐条保留或取消，保存之后才计分。', slug: 'ideal-home', from: '理想之家' },
+      { title: '推荐、计划、实际分开记', text: '推荐只是候选；加入计划只改预计摄入；确认吃过，才计入已吃。', slug: 'agent', from: 'TasteTwin' },
+      { title: '回答写明来源和时间', text: '回答注明来自本页快照还是联网，数据时间与检索时间分开标注。', slug: 'pitwall', from: 'F1 围场智析' },
+      { title: '断网之后找得回，原文不丢', text: '结果未知时可以查询原结果；放弃这次整理，手记原文仍在。', slug: 'ideal-home', from: '理想之家' },
+    ],
+  },
+  contact: { email: 'xxcsyar@gmail.com', wechat: 'Yaooioo' },
   closing: {
     title: '打开作品，继续探索',
     text: '三个公开 Demo，一个仍在完善的交互原型。TasteTwin 暂无在线 Demo，这里展示的是本地原型的画面。',
@@ -42,6 +57,9 @@ export const cases = [
         { label: '项目性质', value: '个人生活产品，Web Demo' },
         { label: '我的工作', value: '独立设计与开发' },
         { label: '完成状态', value: 'AI 整理、确认计分、兑换与摆放已串联' },
+        { label: '时间', value: '2026.04 – 2026.09' },
+        { label: '开发工具', value: 'Codex、Claude' },
+        { label: '模型调用', value: 'Cloudflare Workers AI' },
       ],
     },
     chapters: [
@@ -55,6 +73,33 @@ export const cases = [
           { title: '让反馈成为可布置的空间', text: '把积分换为可选择、可摆放的家具，让每次记录有可见反馈。', note: '观察任务：理解积分来源，兑换家具，找到房间变化。' },
           { title: '由用户确认是否做过', text: '整理可能混淆计划与完成，或拆出多项行动。用户逐条保留或取消，再保存。', note: '假设：逐条核对比接受整段分析更易发现错误。' },
         ],
+      },
+      {
+        type: 'flow',
+        id: 'flow',
+        title: '整条流程，一张图',
+        lead: '主线九步，积分只在两处变化。断网时有两条退路。',
+        // who：you 是用户的动作，ai 是模型的输出，sys 是系统给的结果
+        main: [
+          { label: '写下手记', who: 'you' },
+          { label: '等待整理', who: 'ai' },
+          { label: '得到三个候选', who: 'ai' },
+          { label: '逐条核对', who: 'you' },
+          { label: '确认后计分', who: 'you', points: 314, delta: '+14' },
+          { label: '挑一件家具', who: 'you' },
+          { label: '兑换完成', who: 'sys', points: 294, delta: '−20' },
+          { label: '摆进房间', who: 'you' },
+          { label: '房间变了', who: 'sys' },
+        ],
+        start: 300,
+        branch: {
+          from: 1, cause: '断网', label: '结果未知',
+          back: [
+            { to: 2, label: '查询找回', note: '还没保存，不计分' },
+            { to: 0, label: '放弃这次整理', note: '手记原文还在' },
+          ],
+        },
+        legend: [{ who: 'you', label: '你的动作' }, { who: 'ai', label: 'AI 的输出' }, { who: 'sys', label: '系统的结果' }],
       },
       {
         type: 'player',
@@ -125,6 +170,8 @@ export const cases = [
         { label: '项目性质', value: '饮食管理交互原型' },
         { label: '实现方式', value: '本地规则识别与示例菜品' },
         { label: '本次展示', value: '条件核对、计划与实际记录' },
+        { label: '时间', value: '2026.10 – 至今' },
+        { label: '开发工具', value: 'Codex、Claude' },
       ],
       note: '本地规则原型，示例数据，没有调用真实模型。它验证的是交互与账务，不作为健康建议。',
     },
@@ -189,6 +236,9 @@ export const cases = [
         { label: '项目性质', value: 'F1 信息产品，Web Demo' },
         { label: '现有功能', value: '赛事浏览、预测与上下文助手' },
         { label: '已确认状态', value: '页面可访问，两次真实问答有返回' },
+        { label: '时间', value: '2026.05 – 2026.08' },
+        { label: '开发工具', value: 'Codex、Claude' },
+        { label: '模型调用', value: 'Cloudflare Workers AI' },
       ],
       note: '赛车与车队素材来自 Formula 1，权利归原权利人，这里是非商业展示。页面是保存的快照与模拟预测，不代表实时赛况或确定结果。',
     },
@@ -255,6 +305,8 @@ export const cases = [
         { label: '项目性质', value: '可运行的个人网站' },
         { label: '视觉系统', value: 'Comic、Cyberpunk、Pixel、Blueprint、Retro' },
         { label: '导航方式', value: '物件入口与顶部文字入口' },
+        { label: '时间', value: '2026.08 – 2026.09' },
+        { label: '开发工具', value: 'Codex、Claude' },
       ],
       note: '画面中的人物与品牌素材，权利归原权利人，这里是非商业展示。',
     },

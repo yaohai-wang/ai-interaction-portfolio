@@ -2,6 +2,7 @@
 // 交互在纸面上换成并排的画面：步骤变成连续帧，拖动对比变成左右两栏，切换变成一组画面。
 // 样式在 public/site/print.css。用无头浏览器按页面尺寸打印即可得到 PDF。
 import { site, cases } from './content.ts';
+import { flowSvg, flowLegend } from './flow.ts';
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const fmt = (n) => Number(n).toLocaleString('en-US');
@@ -15,7 +16,7 @@ function field(page, cls) {
   let seed = 4099 + page * 7919;
   const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
   const colors = ['#8052ff', '#a98bff', '#ffb829', '#3fb6a0', '#e85fb4', '#4f8dff', '#ffffff'];
-  const focus = cls.includes('is-cover') ? [470, 770] : cls.includes('is-toc') ? [1240, 790] : cls.includes('is-notes') ? [1320, 190] : [1380 + (rnd() - 0.5) * 120, 118 + (rnd() - 0.5) * 50];
+  const focus = cls.includes('is-cover') ? [470, 770] : cls.includes('is-toc') ? [1240, 790] : cls.includes('is-notes') || cls.includes('is-approach') ? [1320, 190] : cls.includes('is-flow') ? [1250, 700] : [1380 + (rnd() - 0.5) * 120, 118 + (rnd() - 0.5) * 50];
   const tri = (x, y, r, rot) => [0, 1, 2].map((v) => `${(x + Math.cos(rot + v * 2.0944) * r).toFixed(1)},${(y + Math.sin(rot + v * 2.0944) * r).toFixed(1)}`).join(' ');
   let dim = '', lit = '', links = '';
   for (let i = 0; i < 120; i++) {
@@ -48,12 +49,17 @@ export function renderPrint({ prefix = '', sky = (name) => `/site/sky/${name}.jp
       <p class="label">${esc(site.label)}</p>
       <h1>${site.headline.map((l) => `<span>${esc(l)}</span>`).join('')}</h1>
       <p class="lead"><strong>${esc(site.name)}</strong> ${esc(site.latin)}。${esc(site.lead)}</p>
+      <p class="why">${site.why.map(esc).join('')}</p>
     </div>
     <figure class="cover-sky">${img(sky('frame'), '')}</figure>`, { cls: 'is-cover' });
 
   // 目录：四个作品各自的星群形状
   const tocIndex = pages.length;
   add('', { cls: 'is-toc' });
+
+  // 处理 AI 不确定的四个做法，每条指向它出自的案例
+  const approachIndex = pages.length;
+  add('', { cls: 'is-approach' });
 
   const starts = {};
   for (const c of cases) {
@@ -73,6 +79,10 @@ export function renderPrint({ prefix = '', sky = (name) => `/site/sky/${name}.jp
     for (const ch of c.chapters) {
       if (ch.type === 'notes') {
         add(`${head(ch.title, ch.lead)}<div class="notes">${ch.items.map((i) => `<div><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p>${i.note ? `<p class="note">${esc(i.note)}</p>` : ''}</div>`).join('')}</div>`, { cls: 'is-notes', section });
+        continue;
+      }
+      if (ch.type === 'flow') {
+        add(`${head(ch.title, ch.lead)}<figure class="flow">${flowSvg(ch)}<figcaption>${flowLegend(ch)}</figcaption></figure>`, { cls: 'is-flow', section });
         continue;
       }
       if (ch.type === 'compare') {
@@ -124,7 +134,10 @@ export function renderPrint({ prefix = '', sky = (name) => `/site/sky/${name}.jp
 
   // 结尾：关于与 Demo 入口
   add(`<div class="end-about">
-      <h2>${esc(site.name)} <span>${esc(site.latin)}</span></h2>
+      <div class="end-name">
+        <h2>${esc(site.name)} <span>${esc(site.latin)}</span></h2>
+        <p class="contact"><a href="mailto:${esc(site.contact.email)}"><small>邮箱</small>${esc(site.contact.email)}</a><span><small>微信</small>${esc(site.contact.wechat)}</span></p>
+      </div>
       <div class="notes">${site.about.map((a) => `<div><p class="label">${esc(a.label)}</p><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p></div>`).join('')}</div>
     </div>
     <div class="end-demos">
@@ -140,6 +153,9 @@ export function renderPrint({ prefix = '', sky = (name) => `/site/sky/${name}.jp
       <p>${esc(c.summary)}</p>
       <p class="note">${esc(c.status)}<br>第 ${starts[c.slug]} 页</p>
     </a>`).join('')}</div>`;
+
+  pages[approachIndex].html = `${head(site.approach.title, site.approach.lead)}
+    <ol class="approach">${site.approach.items.map((a) => `<li><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p><a class="note" href="#p${starts[a.slug]}">${esc(a.from)}，第 ${starts[a.slug]} 页</a></li>`).join('')}</ol>`;
 
   const total = pages.length;
   return pages.map((p, i) => `<section class="page ${p.cls}" id="p${i + 1}">

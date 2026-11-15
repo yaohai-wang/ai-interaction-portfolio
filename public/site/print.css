@@ -41,6 +41,7 @@ h1, h2, h3, h4 { font-weight: 400; color: var(--bone); letter-spacing: -.03em; }
 .cover-copy h1 span { display: block; white-space: nowrap; }
 .cover-copy .lead { max-width: 27em; }
 .cover-copy .lead strong { font-weight: 400; color: var(--bone); }
+.cover-copy .why { max-width: 34em; font-size: 16px; line-height: 1.7; color: var(--ash); }
 .cover-sky { flex: 1; height: 760px; min-width: 0; display: grid; place-items: center; }
 .cover-sky img { width: 100%; height: 100%; object-fit: contain; }
 
@@ -77,6 +78,35 @@ h1, h2, h3, h4 { font-weight: 400; color: var(--bone); letter-spacing: -.03em; }
 .notes h3 { font-size: 30px; line-height: 1.3; }
 .notes p { font-size: 19px; }
 .notes .note { font-size: 14px; }
+
+/* 四个做法 */
+.is-approach { justify-content: center; gap: 72px; }
+.is-approach .head h2 { font-size: 54px; letter-spacing: -.04em; }
+.approach { display: grid; grid-template-columns: repeat(4, 1fr); gap: 44px; list-style: none; }
+.approach li { display: grid; gap: 14px; align-content: start; }
+.approach h3 { font-size: 32px; line-height: 1.28; text-wrap: balance; }
+.approach p { font-size: 20px; }
+.approach .note { font-size: 15px; color: var(--saffron); }
+
+/* 流程图 */
+.is-flow { justify-content: center; gap: 48px; }
+.flow { display: grid; gap: 28px; }
+.flow-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fl-node rect { fill: #000; stroke: #5c5c5c; stroke-width: 1.2; }
+.fl-node text { fill: var(--mist); font-size: 15px; font-weight: 400; font-family: var(--font); }
+.fl-node.is-you rect { stroke: var(--bone); } .fl-node.is-you text { fill: var(--bone); }
+.fl-node.is-ai rect { stroke: #a98bff; } .fl-node.is-ai text { fill: #c9b8ff; }
+.fl-node.is-alt rect { stroke: var(--ash); stroke-dasharray: 5 5; }
+.fl-edge { stroke: var(--ash); stroke-width: 1.2; fill: none; }
+.fl-edge.is-alt { stroke-dasharray: 5 5; }
+.fl-cap, .fl-note, .fl-delta { fill: var(--ash); font-size: 14px; font-weight: 300; font-family: var(--font); }
+.fl-num { fill: var(--bone); font-size: 30px; font-weight: 400; letter-spacing: -.03em; font-family: var(--font); }
+.fl-num.is-changed, .fl-delta { fill: var(--saffron); }
+.fl-track { stroke: #3d3d3d; stroke-width: 1; }
+.flow-legend { display: flex; gap: 32px; list-style: none; font-size: 14px; color: var(--ash); }
+.flow-legend li { display: flex; align-items: center; gap: 8px; }
+.flow-legend i { width: 18px; height: 12px; border-radius: 4px; border: 1.2px solid #5c5c5c; }
+.flow-legend .is-you i { border-color: var(--bone); } .flow-legend .is-ai i { border-color: #a98bff; } .flow-legend .is-alt i { border-style: dashed; border-color: var(--ash); }
 
 /* 画面 */
 .frames { display: grid; gap: 32px; align-items: start; margin-block: auto; }
@@ -136,10 +166,13 @@ h1, h2, h3, h4 { font-weight: 400; color: var(--bone); letter-spacing: -.03em; }
 
 /* 结尾 */
 .is-end { flex-direction: row; align-items: center; gap: 96px; }
-.end-about { flex: 1; display: grid; gap: 48px; }
+.end-about { flex: 1; display: grid; gap: 44px; }
 .end-about h2 { font-size: 64px; letter-spacing: -.04em; }
 .end-about h2 span { color: var(--ash); }
-.end-about .notes { gap: 36px; }
+.end-about .notes { grid-template-columns: repeat(2, 1fr); gap: 36px 56px; }
+.end-name { display: grid; gap: 18px; }
+.contact { display: flex; gap: 44px; font-size: 22px; font-weight: 400; color: var(--bone); }
+.contact small { font-size: 14px; font-weight: 300; color: var(--ash); margin-right: 12px; }
 .end-about .notes h3 { font-size: 24px; }
 .end-about .notes p:not(.label) { font-size: 16px; }
 .end-about .notes .label { font-size: 14px; }

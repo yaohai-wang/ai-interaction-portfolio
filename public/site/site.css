@@ -107,7 +107,7 @@ strong { font-weight: 400; }
 .sky-caption { min-height: 2.4em; max-width: 32em; }
 
 /* —— 作品列表 —— */
-.works, .about, .closing, .case > *, .foot { width: var(--page); margin-inline: auto; }
+.works, .why, .approach, .about, .closing, .case > *, .foot { width: var(--page); margin-inline: auto; }
 .works { padding-top: var(--gap); display: grid; gap: var(--gap); }
 .section-head { display: grid; gap: 24px; }
 .work { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
@@ -120,13 +120,32 @@ strong { font-weight: 400; }
 .work:has(.work-media:hover) .heading-lg a, .work-copy .heading-lg a:hover { color: var(--saffron); }
 
 /* —— 关于与结尾 —— */
+/* 为什么是我：两句话，安静地放在首屏之后 */
+.why { padding-top: calc(var(--gap) * .5); display: grid; gap: 18px; }
+.why .heading { max-width: none; text-wrap: balance; }
+.why .lead { max-width: 34em; }
+
+/* 处理 AI 不确定的四个做法 */
+.approach { padding-top: var(--gap); display: grid; gap: clamp(36px, 5vw, 60px); }
+.approach-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(24px, 3vw, 42px); list-style: none; }
+.approach-list li { display: grid; gap: 12px; align-content: start; }
+.approach-list h3, .about-grid h3 { text-wrap: balance; }
+.approach-list .body { color: var(--mist); }
+.approach-list .small a { color: var(--saffron); }
+.approach-list .small a:hover { color: var(--bone); }
+
 .about { padding-top: var(--gap); display: grid; gap: clamp(36px, 5vw, 60px); }
-.about-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 60px); }
+.about-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(28px, 4vw, 60px); }
 .about-grid > div { display: grid; gap: 12px; align-content: start; }
 .about-grid .body { color: var(--mist); }
 .closing { padding-top: var(--gap); display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
 .closing > div { display: grid; gap: 24px; }
 .closing .body { color: var(--mist); }
+.contact { display: grid; gap: 6px; margin-top: 6px; }
+.contact div { display: flex; gap: 18px; align-items: baseline; }
+.contact dt { width: 3em; font-size: 14px; font-weight: 400; color: var(--ash); }
+.contact dd { font-size: 18px; font-weight: 400; color: var(--bone); user-select: all; }
+.contact a:hover { color: var(--saffron); }
 .demos { display: grid; gap: 6px; }
 .demos li { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 0; }
 .demos a { display: grid; gap: 2px; }
@@ -158,6 +177,26 @@ strong { font-weight: 400; }
 .chapter { display: grid; gap: clamp(30px, 4vw, 54px); }
 .chapter-head { display: grid; gap: 18px; }
 .chapter-head .heading { max-width: 16em; }
+
+/* 流程图 */
+.flow { display: grid; gap: 24px; }
+.flow-scroll { overflow-x: auto; padding-bottom: 6px; }
+.flow-svg { display: block; width: 100%; min-width: 1040px; height: auto; overflow: visible; }
+.fl-node rect { fill: #000; stroke: #5c5c5c; stroke-width: 1.2; }
+.fl-node text { fill: var(--mist); font-size: 15px; font-weight: 400; }
+.fl-node.is-you rect { stroke: var(--bone); } .fl-node.is-you text { fill: var(--bone); }
+.fl-node.is-ai rect { stroke: #a98bff; } .fl-node.is-ai text { fill: #c9b8ff; }
+.fl-node.is-alt rect { stroke: var(--ash); stroke-dasharray: 5 5; }
+.fl-edge { stroke: var(--ash); stroke-width: 1.2; fill: none; }
+.fl-edge.is-alt { stroke-dasharray: 5 5; }
+.fl-cap, .fl-note, .fl-delta { fill: var(--ash); font-size: 14px; font-weight: 300; }
+.fl-num { fill: var(--bone); font-size: 30px; font-weight: 400; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.fl-num.is-changed, .fl-delta { fill: var(--saffron); }
+.fl-track { stroke: #3d3d3d; stroke-width: 1; }
+.flow-legend { display: flex; flex-wrap: wrap; gap: 8px 30px; list-style: none; font-size: 13px; font-weight: 400; color: var(--ash); }
+.flow-legend li { display: flex; align-items: center; gap: 8px; }
+.flow-legend i { width: 18px; height: 12px; border-radius: 4px; border: 1.2px solid #5c5c5c; }
+.flow-legend .is-you i { border-color: var(--bone); } .flow-legend .is-ai i { border-color: #a98bff; } .flow-legend .is-alt i { border-style: dashed; border-color: var(--ash); }
 
 .notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 60px); }
 .notes.count-1 { grid-template-columns: minmax(0, 30em); }
@@ -284,6 +323,7 @@ strong { font-weight: 400; }
   .work, .closing, .case-facts, .player { grid-template-columns: 1fr; }
   .work.is-flip .work-media { order: 0; }
   .about-grid, .notes, .compare-text { grid-template-columns: 1fr; }
+  .approach-list { grid-template-columns: 1fr 1fr; }
   .meta { grid-template-columns: 1fr 1fr; }
   .player-rail { position: static; order: 2; }
   .player .stage { order: 1; }
@@ -299,6 +339,7 @@ strong { font-weight: 400; }
 @media (max-width: 520px) {
   body, .body { font-size: 17px; }
   .meta { grid-template-columns: 1fr; }
+  .approach-list { grid-template-columns: 1fr; }
   .cmp-handle::before { width: 44px; height: 44px; margin: -22px 0 0 -22px; }
 }
 
